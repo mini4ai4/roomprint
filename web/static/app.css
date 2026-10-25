@@ -76,7 +76,7 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 24px 40px; }
 
 .lines { list-style: none; margin: 0; padding: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--r); }
 .line + .line { border-top: 1px solid var(--line); }
-.line.new { animation: rise .35s ease-out; }
+.line.new { animation: rise .35s ease-out both; }
 @keyframes rise { from { opacity: 0; transform: translateY(6px); } }
 .row { display: grid; grid-template-columns: 56px 1fr auto; gap: 12px; align-items: center; width: 100%; text-align: left; padding: 9px 12px; border: 0; background: none; cursor: pointer; }
 .row:hover, .line.hot .row { background: var(--accent-soft); }

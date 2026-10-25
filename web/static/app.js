@@ -44,13 +44,24 @@ function roomsOf(items) {
   return Object.entries(c).sort((a, b) => b[1] - a[1]);
 }
 
-function drawTotals() {
+function countUp(el, to, ms = 1400) {
+  const t0 = performance.now();
+  const step = now => {
+    const k = Math.min(1, (now - t0) / ms), e = 1 - Math.pow(1 - k, 3);
+    el.textContent = money(to * e);
+    if (k < 1) requestAnimationFrame(step);
+  };
+  requestAnimationFrame(step);
+}
+
+function drawTotals(animate) {
   const t = S.h.totals;
   $("#totals").innerHTML = `
     <div class="tot main"><small>Replacement cost</small><b>${money(t.rcv)}</b></div>
     <div class="tot"><small>Actual cash value</small><b>${money(t.acv)}</b></div>
     <div class="tot"><small>Things</small><b>${t.items}</b></div>
     <div class="tot"><small>Need a price</small><b>${t.needs_price}</b></div>`;
+  if (animate) { countUp($("#totals .tot.main b"), t.rcv); countUp($("#totals .tot:nth-child(2) b"), t.acv); }
 }
 
 function drawRoll() {
@@ -126,7 +137,7 @@ function drawForgotten() {
     `<div class="fine">From the room checklists claims advisers use. Add what you had; a photo isn't required for these.</div>`;
 }
 
-function drawLines() {
+function drawLines(animate) {
   drawForgotten();
   const ol = $("#lines");
   ol.innerHTML = "";
@@ -147,6 +158,7 @@ function drawLines() {
     $(".row", li).onclick = () => toggleMore(li);
     $(".row", li).onmouseenter = () => { if (l.sightings.some(s => s.photo === S.photo)) markBox(l.n, true); };
     $(".row", li).onmouseleave = () => markBox(l.n, false);
+    if (animate) { li.classList.add("new"); li.style.animationDelay = Math.min(ol.children.length * 25, 1200) + "ms"; }
     ol.appendChild(li);
   });
 }
@@ -217,7 +229,7 @@ async function showHousehold(h, base, who) {
   await loadSizes(Object.keys(h.photos));
   $("#app").hidden = false;
   $("#who").innerHTML = who;
-  drawTotals(); drawRoll(); drawRooms(); drawLines(); drawAlso(); drawClock();
+  drawTotals(true); drawRoll(); drawRooms(); drawLines(true); drawAlso(); drawClock();
   showPhoto(Object.keys(h.photos)[0]);
 }
 
