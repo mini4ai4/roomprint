@@ -282,3 +282,29 @@ async function poll(job, n) {
     `<div class="bar2"><i style="width:${pct}%"></i></div>`;
   setTimeout(() => poll(job, n), 1500);
 }
+
+// the hero: the birthday photo, with what was found appearing on it one by one
+(async () => {
+  try {
+    const h = await (await fetch("/api/demo")).json();
+    const hits = [];
+    h.items.forEach(l => l.sightings.forEach(s => { if (s.photo === "living" && s.boxf) hits.push({ l, s }); }));
+    hits.sort((a, b) => (b.l.rcv || 0) - (a.l.rcv || 0));
+    const hb = $(".hb");
+    hb.innerHTML = hits.slice(0, 9).map(({ l, s }) => {
+      const [x0, y0, x1, y1] = s.boxf;
+      return `<div class="box" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%">
+        <span class="tag">${esc(l.name)}${l.rcv ? " · " + money(l.rcv) : ""}</span></div>`;
+    }).join("");
+    const bs = [...hb.children];
+    let i = 0;
+    const next = () => {
+      bs.forEach(b => b.classList.remove("last"));
+      const b = bs[i % bs.length];
+      b.classList.add("on", "last");
+      i++;
+      setTimeout(next, i < bs.length ? 700 : 1600);
+    };
+    setTimeout(next, 500);
+  } catch (e) {}
+})();

@@ -29,7 +29,13 @@ button { font: inherit; color: inherit; }
 .mark::after { content: ""; position: absolute; inset: 4px 9px 0 4px; border: 2px solid var(--accent); border-bottom: 0; border-right: 0; }
 .top nav a { margin-left: 20px; color: var(--ink-2); text-decoration: none; font-size: 14px; }
 
-.hero { max-width: 880px; margin: 0 auto; padding: 64px 24px 40px; }
+.hero { max-width: 1240px; margin: 0 auto; padding: 56px 24px 40px; display: grid; grid-template-columns: 1.05fr 1fr; gap: 40px; align-items: center; }
+.hero-pic { margin: 0; }
+.hero-pic figcaption { font-size: 13px; color: var(--ink-3); margin-top: 8px; }
+.hb { position: absolute; inset: 0; }
+.hb .box .tag { opacity: 0; transition: opacity .25s; }
+.hb .box.last .tag { opacity: 1; }
+.hb .box.last { border-color: var(--accent); }
 .hero h1 { font: 600 clamp(36px, 5.2vw, 58px)/1.05 var(--serif); letter-spacing: -0.02em; margin: 0 0 18px; }
 .lede { font-size: 18px; color: var(--ink-2); max-width: 720px; margin: 0 0 26px; }
 .cta { display: flex; gap: 12px; flex-wrap: wrap; }
@@ -129,7 +135,7 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 24px 40px; }
 .err { color: var(--bad); }
 
 @media (max-width: 900px) {
-  .work { grid-template-columns: 1fr; }
+  .work, .hero { grid-template-columns: 1fr; }
   .photos { position: static; }
   .also, .clock .grid { grid-template-columns: 1fr; }
   .more { padding-left: 14px; }
