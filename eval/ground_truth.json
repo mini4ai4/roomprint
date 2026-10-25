@@ -1,0 +1,281 @@
+{
+ "_note": "Things a person can clearly see in each sample photo, written by hand from the photos. Each entry is a list of words; an item counts as found if the inventory has a line in that room whose name+brand+model+detail contains ALL words of one alternative. 'not_contents' must NOT appear as contents lines.",
+ "living": {
+  "room": "living room",
+  "must": [
+   [
+    "tv"
+   ],
+   [
+    "playstation|ps5|console"
+   ],
+   [
+    "sofa|sectional|couch"
+   ],
+   [
+    "bookshelf|bookcase|shelf|kallax"
+   ],
+   [
+    "lamp"
+   ],
+   [
+    "vacuum|dyson"
+   ],
+   [
+    "monstera|plant"
+   ],
+   [
+    "soundbar|sound bar"
+   ],
+   [
+    "media|console|tv stand"
+   ],
+   [
+    "switch|nintendo"
+   ],
+   [
+    "board game|games"
+   ],
+   [
+    "art|picture|print|frame"
+   ]
+  ],
+  "not_contents": []
+ },
+ "living_xmas": {
+  "room": "living room",
+  "must": [
+   [
+    "tv"
+   ],
+   [
+    "sofa|sectional|couch"
+   ],
+   [
+    "tree"
+   ],
+   [
+    "media|console|tv stand"
+   ]
+  ],
+  "not_contents": []
+ },
+ "kitchen": {
+  "room": "kitchen",
+  "must": [
+   [
+    "mixer|kitchenaid"
+   ],
+   [
+    "espresso|coffee"
+   ],
+   [
+    "air fryer|ninja"
+   ],
+   [
+    "blender|vitamix"
+   ],
+   [
+    "refrigerator|fridge"
+   ],
+   [
+    "microwave"
+   ],
+   [
+    "stove|range|oven"
+   ],
+   [
+    "knife|knives"
+   ],
+   [
+    "skillet|pan"
+   ],
+   [
+    "jar"
+   ],
+   [
+    "plate|bowl|dish"
+   ]
+  ],
+  "not_contents": [
+   "cabinet",
+   "sink",
+   "countertop"
+  ]
+ },
+ "kitchen_dog": {
+  "room": "kitchen",
+  "must": [
+   [
+    "refrigerator|fridge"
+   ],
+   [
+    "table"
+   ],
+   [
+    "chair"
+   ],
+   [
+    "mixer|kitchenaid"
+   ],
+   [
+    "microwave"
+   ],
+   [
+    "stove|range|oven"
+   ]
+  ],
+  "not_contents": [
+   "cabinet"
+  ]
+ },
+ "bedroom": {
+  "room": "bedroom",
+  "must": [
+   [
+    "bed"
+   ],
+   [
+    "nightstand|night stand|bedside"
+   ],
+   [
+    "lamp"
+   ],
+   [
+    "dresser"
+   ],
+   [
+    "tv"
+   ],
+   [
+    "bike|peloton"
+   ],
+   [
+    "ipad|tablet"
+   ],
+   [
+    "rug"
+   ]
+  ],
+  "not_contents": []
+ },
+ "kids_room": {
+  "room": "kid's room",
+  "must": [
+   [
+    "bed"
+   ],
+   [
+    "bookcase|bookshelf|shelf"
+   ],
+   [
+    "lego"
+   ],
+   [
+    "ukulele|guitar"
+   ],
+   [
+    "desk"
+   ],
+   [
+    "chair"
+   ],
+   [
+    "scooter"
+   ],
+   [
+    "kitchen"
+   ],
+   [
+    "stuffed|plush"
+   ]
+  ],
+  "not_contents": []
+ },
+ "office": {
+  "room": "office",
+  "must": [
+   [
+    "desk"
+   ],
+   [
+    "monitor"
+   ],
+   [
+    "laptop|macbook"
+   ],
+   [
+    "chair"
+   ],
+   [
+    "camera|canon"
+   ],
+   [
+    "guitar"
+   ],
+   [
+    "printer"
+   ],
+   [
+    "bookcase|bookshelf|shelf"
+   ]
+  ],
+  "not_contents": []
+ },
+ "garage": {
+  "room": "garage",
+  "must": [
+   [
+    "bike|bicycle"
+   ],
+   [
+    "tool chest|toolbox|tool cabinet|tool storage"
+   ],
+   [
+    "drill"
+   ],
+   [
+    "grill"
+   ],
+   [
+    "cooler"
+   ],
+   [
+    "golf"
+   ],
+   [
+    "freezer"
+   ],
+   [
+    "shelving|shelf|rack"
+   ]
+  ],
+  "not_contents": [
+   "garage door"
+  ]
+ },
+ "dining": {
+  "room": "dining room",
+  "must": [
+   [
+    "table"
+   ],
+   [
+    "chair"
+   ],
+   [
+    "china|hutch|cabinet"
+   ],
+   [
+    "painting|art|canvas"
+   ],
+   [
+    "record player|turntable"
+   ],
+   [
+    "record|vinyl"
+   ]
+  ],
+  "not_contents": []
+ }
+}

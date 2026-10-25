@@ -10,7 +10,7 @@ from datetime import date
 
 from PIL import Image
 
-from . import dedupe, prices, rules, vision
+from . import dedupe, forgotten, prices, rules, vision
 from .llm import OverBudget, calls
 
 ROOMS = {"family room": "living room", "lounge": "living room", "den": "living room", "master bedroom": "bedroom",
@@ -107,6 +107,7 @@ def build(raws: dict[str, bytes], loss_date: date | None = None, price_workers: 
                    for pid, r in photos.items()},
         "items": lines,
         "merges": decisions,
+        "forgotten": forgotten.suggestions(lines),
         "building": [b for r in photos.values() for b in r["building"]],
         "dropped": [d for r in photos.values() for d in r["dropped"]],
         "totals": {"items": len(lines), "priced": len(priced_lines),

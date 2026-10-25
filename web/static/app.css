@@ -136,3 +136,7 @@ main { max-width: 1320px; margin: 0 auto; padding: 0 24px 40px; }
   .top { padding: 12px 16px; }
   main, .hero, .how { padding-left: 16px; padding-right: 16px; }
 }
+
+.fg { font-size: 13.5px; margin: 6px 0; line-height: 2; }
+.fg b { text-transform: capitalize; margin-right: 6px; }
+.fg span { display: inline-block; border: 1px dashed var(--ink-3); border-radius: 999px; padding: 0 9px; margin: 0 4px 0 0; color: var(--ink-2); line-height: 22px; }

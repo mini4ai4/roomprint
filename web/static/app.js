@@ -116,7 +116,18 @@ function drawRooms() {
   });
 }
 
+function drawForgotten() {
+  const f = S.h.forgotten || {};
+  const rooms = S.room === "all" ? Object.keys(f) : [S.room].filter(r => f[r]);
+  const el = $("#forgot");
+  if (!rooms.length) { el.innerHTML = ""; return; }
+  el.innerHTML = `<div class="side-label" style="margin-top:16px">Not in any photo, but easy to forget</div>` +
+    rooms.map(r => `<div class="fg"><b>${esc(r)}</b> ${f[r].map(x => `<span>${esc(x)}</span>`).join("")}</div>`).join("") +
+    `<div class="fine">From the room checklists claims advisers use. Add what you had; a photo isn't required for these.</div>`;
+}
+
 function drawLines() {
+  drawForgotten();
   const ol = $("#lines");
   ol.innerHTML = "";
   const tpl = $("#line-tpl");
