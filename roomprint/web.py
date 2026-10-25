@@ -38,7 +38,14 @@ def _over(_, e):
 
 @app.get("/")
 def index():
-    return FileResponse(WEB / "index.html")
+    """The page, with the stylesheet and script stamped by their modification time so a new deploy is never
+    hidden behind a cached old copy."""
+    from fastapi.responses import HTMLResponse
+    html = (WEB / "index.html").read_text()
+    for name in ("app.css", "app.js"):
+        v = int((WEB / "static" / name).stat().st_mtime)
+        html = html.replace(f"/static/{name}", f"/static/{name}?v={v}")
+    return HTMLResponse(html, headers={"Cache-Control": "no-cache"})
 
 
 @app.get("/api/health")

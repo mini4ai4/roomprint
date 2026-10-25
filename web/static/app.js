@@ -251,6 +251,10 @@ $("#files").onchange = async e => {
   $("#export").innerHTML = ""; $("#boxes").innerHTML = ""; $("#big").removeAttribute("src");
   $("#lines").insertAdjacentHTML("beforebegin", `<div class="live" id="live">Uploading…<div class="bar2"><i></i></div></div>`);
   $("#app").scrollIntoView({ behavior: "smooth" });
+  // show the visitor's first photo straight away; boxes arrive as Nemotron reads it
+  S.livePreview = URL.createObjectURL(files[0]);
+  $("#big").src = S.livePreview;
+  $("#caption").textContent = "Reading your photo on live Nemotron…";
   const fd = new FormData();
   files.forEach(f => fd.append("photos", f));
   let r;
@@ -274,6 +278,25 @@ async function poll(job, n) {
     return;
   }
   const read = Object.keys(j.photos || {}).length, priced = Object.keys(j.prices || {}).length, total = (j.items || []).length;
+  // draw what is known so far: boxes on the first photo, then lines filling in with prices
+  const first = (j.photo_ids || [])[0], ph = (j.photos || {})[first];
+  if (ph && ph.items && !$("#boxes").children.length) {
+    $("#boxes").innerHTML = ph.items.filter(i => i.boxf).map(i => {
+      const [x0, y0, x1, y1] = i.boxf;
+      return `<div class="box" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%"><span class="tag">${esc(i.name)}</span></div>`;
+    }).join("");
+    [...$("#boxes").children].forEach((b, k) => setTimeout(() => b.classList.add("on"), 120 * k));
+    $("#caption").textContent = `${ph.room ? ph.room[0].toUpperCase() + ph.room.slice(1) : "Your photo"} · ${ph.items.length} things found`;
+  }
+  if (total) {
+    $("#lines").innerHTML = (j.items || []).map(i => {
+      const p = (j.prices || {})[i.id];
+      const price = p && p.price ? money(p.price) : "";
+      return `<li class="line"><div class="row"><span class="thumb" style="background:var(--glass-2)"></span>
+        <span class="what"><span class="name">${esc(i.name)}</span><span class="sub">${esc(i.room)}</span></span>
+        <span class="money"><span class="rcv">${price}</span>${chip(p ? { status: p.status, sources: new Array(p.status === "priced" ? 2 : 1) } : undefined)}</span></div></li>`;
+    }).join("");
+  }
   const pct = j.stage === "pricing" || j.stage === "priced" ? 40 + 60 * priced / Math.max(1, total) : 40 * read / n;
   live.innerHTML = (j.stage === "priced" || j.stage === "pricing" ? `Found ${total} things. Pricing each at real stores: ${priced} of ${total}…` :
     j.stage === "merging" ? "Checking which things appear in more than one photo…" : `Reading photos: ${read} of ${n}…`) +
