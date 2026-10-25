@@ -6,7 +6,7 @@
 <title>Roomprint</title>
 <meta name="description" content="After a fire, flood or earthquake, insurers ask for a list of everything you owned. Roomprint builds it from the photos already on your phone, with a source for every price. NVIDIA Nemotron on Nebius Token Factory, Tavily.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/static/app.css">
 </head>
 <body>
@@ -20,24 +20,25 @@
 
 <section class="hero">
  <div class="hero-text">
-  <h1>Your home is still in your photos.</h1>
-  <p class="lede">After a fire, flood or earthquake, the insurer asks for a list of everything you owned: what it was,
-    how old, what it costs to replace. Most families have no list. But the birthday photos, the Christmas mornings and
-    the first-day-of-school pictures show the rooms behind the people. Roomprint reads them, prices each thing at a real
-    store, and hands you a list your insurer can load, with proof on every line.</p>
+  <div class="eyebrow">For families after a fire, flood or earthquake</div>
+  <h1>Your home is still<br>in your photos.</h1>
+  <p class="lede">The insurer wants a list of everything you owned. Roomprint rebuilds it from the birthday and
+    holiday photos already on your phone: every thing it finds, priced at a real store, with the photo that proves it.</p>
   <div class="cta">
-    <button id="show-sample" class="btn primary">See a family's list, built from 9 old photos</button>
+    <button id="show-sample" class="btn primary">Rebuild a sample home</button>
     <label class="btn ghost" for="files">Try your own photos
       <input id="files" type="file" accept="image/*" multiple hidden>
     </label>
   </div>
-  <p class="fine">The sample family, their home and photos are made up. Your own photos are read once to build your
-    list and are not used for anything else.</p>
+  <div class="stat" id="hero-stat"><span class="dot"></span><b id="hs-things">0</b> things · <b id="hs-total">$0</b> rebuilt from <b>9</b> photos</div>
+  <p class="fine">The sample family, home and photos are made up. Your own photos are only used to build your list.</p>
  </div>
- <figure class="hero-pic" id="hero-pic">
-  <div class="stage"><img src="/photos/demo/living.jpg" alt="A birthday party in a living room"><div class="hb"></div></div>
-  <figcaption>A birthday photo, April 2024. What Nemotron saw behind the people.</figcaption>
- </figure>
+ <div class="house" id="house">
+  <img src="/static/house.webp" alt="A cutaway of the sample family's house, room by room">
+  <svg class="wires" id="wires" viewBox="0 0 100 100" preserveAspectRatio="none"></svg>
+  <div id="pins"></div>
+  <div id="floats"></div>
+ </div>
 </section>
 
 <main id="app" hidden>

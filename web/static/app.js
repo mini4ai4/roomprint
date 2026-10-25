@@ -233,15 +233,13 @@ async function showHousehold(h, base, who) {
   showPhoto(Object.keys(h.photos)[0]);
 }
 
-$("#show-sample").onclick = async () => {
-  $("#show-sample").disabled = true;
+async function loadSample() {
   const h = await (await fetch("/api/demo")).json();
   await showHousehold(h, "/photos/demo",
     `<b>The Reyes family's list</b><span>A made-up family. Their home burned on ${new Date(h.loss_date + "T12:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}; these are ${Object.keys(h.photos).length} photos from their phones. Recorded on live Nemotron: ${h.cost.calls} model calls, $${h.cost.usd.toFixed(2)}.</span>`);
   drawExport("demo");
-  $("#app").scrollIntoView({ behavior: "smooth" });
-  $("#show-sample").disabled = false;
-};
+}
+$("#show-sample").onclick = () => openSample();
 
 // live run on the visitor's own photos
 $("#files").onchange = async e => {
@@ -283,28 +281,57 @@ async function poll(job, n) {
   setTimeout(() => poll(job, n), 1500);
 }
 
-// the hero: the birthday photo, with what was found appearing on it one by one
+// the hero: the sample family's house, rooms lighting up with what their photos proved
+const ROOM_AT = { "bedroom": [27, 47], "kid's room": [47, 33], "office": [61, 40], "living room": [31, 69],
+                  "kitchen": [50, 58], "dining room": [60, 70], "garage": [77, 57] };
+// photos floating around the house, and the room each one proves
+const FLOATS = [{ p: "living", x: 1, y: 6, ry: 10 }, { p: "kitchen_dog", x: 84, y: 4, ry: -10 },
+                { p: "garage", x: 85, y: 70, ry: -10 }, { p: "bedroom", x: 2, y: 74, ry: 10 }];
+
+async function openSample(room) {
+  if (!S.h || S.base !== "/photos/demo") await loadSample();
+  if (room) {
+    S.room = room; drawRooms(); drawLines();
+    const first = Object.keys(S.h.photos).find(p => S.h.photos[p].room === room);
+    if (first) showPhoto(first);
+  }
+  $("#app").scrollIntoView({ behavior: "smooth" });
+}
+
 (async () => {
-  try {
-    const h = await (await fetch("/api/demo")).json();
-    const hits = [];
-    h.items.forEach(l => l.sightings.forEach(s => { if (s.photo === "living" && s.boxf) hits.push({ l, s }); }));
-    hits.sort((a, b) => (b.l.rcv || 0) - (a.l.rcv || 0));
-    const hb = $(".hb");
-    hb.innerHTML = hits.slice(0, 9).map(({ l, s }) => {
-      const [x0, y0, x1, y1] = s.boxf;
-      return `<div class="box" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%">
-        <span class="tag">${esc(l.name)}${l.rcv ? " · " + money(l.rcv) : ""}</span></div>`;
-    }).join("");
-    const bs = [...hb.children];
-    let i = 0;
-    const next = () => {
-      bs.forEach(b => b.classList.remove("last"));
-      const b = bs[i % bs.length];
-      b.classList.add("on", "last");
-      i++;
-      setTimeout(next, i < bs.length ? 700 : 1600);
-    };
-    setTimeout(next, 500);
-  } catch (e) {}
+  let h;
+  try { h = await (await fetch("/api/demo")).json(); } catch (e) { return; }
+  const per = {};
+  h.items.forEach(l => { const r = per[l.room] ||= { n: 0, rcv: 0 }; r.n++; r.rcv += l.rcv || 0; });
+  const rooms = Object.keys(ROOM_AT).filter(r => per[r]);
+  $("#pins").innerHTML = rooms.map(r => {
+    const [x, y] = ROOM_AT[r];
+    return `<div class="pin" data-r="${esc(r)}" style="left:${x}%;top:${y}%"><div class="head"><b>${per[r].n}</b></div>
+      <div class="card">${esc(r[0].toUpperCase() + r.slice(1))} · ${per[r].n} things · <span>${money(per[r].rcv)}</span></div></div>`;
+  }).join("");
+  $("#floats").innerHTML = FLOATS.map(f => `<div class="float" data-p="${f.p}" style="left:${f.x}%;top:${f.y}%;--ry:${f.ry}deg">
+      <img src="/photos/demo/${f.p}.jpg" alt=""><i>${esc((h.photos[f.p] || {}).taken || "")}</i></div>`).join("");
+  // dotted wires from each floating photo to the room it shows
+  const wires = FLOATS.map(f => {
+    const room = (h.photos[f.p] || {}).room, to = ROOM_AT[room];
+    if (!to) return "";
+    const fx = f.x + 7.5, fy = f.y + (f.y < 50 ? 14 : 0), [tx, ty] = to;
+    return `<path d="M${fx},${fy} C${(fx + tx) / 2},${fy} ${(fx + tx) / 2},${ty} ${tx},${ty - 4}" />`;
+  }).join("");
+  $("#wires").innerHTML = wires;
+  $("#pins").querySelectorAll(".pin").forEach(p => p.onclick = () => openSample(p.dataset.r));
+  $("#floats").querySelectorAll(".float").forEach(f => f.onclick = () => openSample((h.photos[f.dataset.p] || {}).room));
+
+  // the sequence: photos arrive, wires connect, rooms light up one by one while the count runs
+  const pins = [...$("#pins").children], floats = [...$("#floats").children], paths = [...$("#wires").children];
+  floats.forEach((f, i) => setTimeout(() => f.classList.add("on"), 300 + 250 * i));
+  paths.forEach((p, i) => setTimeout(() => p.classList.add("on"), 1100 + 250 * i));
+  let n = 0, total = 0;
+  pins.forEach((p, i) => setTimeout(() => {
+    p.classList.add("on", "hot");
+    pins.forEach(q => q !== p && q.classList.remove("hot"));
+    const r = per[p.dataset.r]; n += r.n; total += r.rcv;
+    $("#hs-things").textContent = n; countUp($("#hs-total"), total, 600);
+  }, 1500 + 650 * i));
+  setTimeout(() => pins.forEach(q => q.classList.remove("hot")), 1500 + 650 * pins.length + 1200);
 })();
