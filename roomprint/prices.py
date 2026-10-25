@@ -23,9 +23,12 @@ from .llm import nemotron
 TAVILY = "https://api.tavily.com/search"
 DOLLARS = re.compile(r"\$\s?(\d{1,3}(?:,\d{3})+|\d+)(?:\.(\d{2}))?")
 STOP = {"a", "an", "the", "with", "and", "of", "for", "in", "on", "to", "set", "large", "small", "new"}
-BAD_CONTEXT = re.compile(r"(?i)\b(used|refurb\w*|restored|renewed|pre-?owned|open[- ]box|rental|/mo\b|per month|"
-                         r"a month|monthly|financ\w*|save \$|off\b|coupon|rebate|shipping|warranty|replacement part|"
-                         r"filter|battery pack|remote|cover only|case for)\b")
+# Anywhere in the sentence: it's about a second-hand item.
+NOT_NEW = re.compile(r"(?i)\b(used|refurb\w*|restored|renewed|pre-?owned|open[- ]box|rental|second[- ]hand)\b")
+# Right around the amount: not the price of the item itself.
+BAD_CONTEXT = re.compile(r"(?i)(/mo\b|per month|a month|monthly|financ\w*|save \$|\boff\b|coupon|rebate|shipping|"
+                         r"warranty|replacement part|filter|battery pack|\bremote\b|cover only|case for)")
+WAS = re.compile(r"(?i)\b(was|reg\.?|regular|list|msrp|compare at)\s*:?\s*(us\s*)?$")
 
 
 def query_for(item: dict) -> str:
@@ -151,9 +154,13 @@ def check_pick(p: dict, cands: dict[int, dict]) -> tuple[dict | None, str | None
     if not spots:
         return None, f"${price:g} isn't in sentence {c['n']}"
     m = spots[0]
-    context = text[max(0, m.start() - 45): m.end() + 25]
+    if NOT_NEW.search(text):
+        return None, "a used or refurbished item"
+    if WAS.search(text[max(0, m.start() - 16): m.start()]):
+        return None, "an old 'was' price, not today's"
+    context = text[max(0, m.start() - 30): m.end() + 25]
     if BAD_CONTEXT.search(context):
-        return None, "a used, sale-was, monthly or accessory price"
+        return None, "a monthly, discount or accessory amount"
     if re.search(r"(?i)\b(starting|starts) at\b|\bfrom\s*$", text[max(0, m.start() - 20): m.start()]):
         return None, "a 'starting at' price, the cheapest of a range"
     try:
