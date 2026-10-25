@@ -1,0 +1,8093 @@
+{
+ "loss_date": "2025-09-14",
+ "photos": {
+  "bedroom": {
+   "room": "bedroom",
+   "dropped": [
+    {
+     "id": "bedroom.12",
+     "photo": "bedroom",
+     "name": "children's toys",
+     "brand": null,
+     "model": null,
+     "category": "toys_games",
+     "quantity": 5,
+     "detail": "stuffed animals and colorful toys on rug and floor",
+     "shop_as": "children's plush toys and activity toys",
+     "seen": "scattered on rug and floor",
+     "confidence": 0.8,
+     "box": [
+      944,
+      872,
+      1600,
+      1194
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    }
+   ],
+   "building": [],
+   "seconds": 12.1,
+   "usd": 0.0022728,
+   "taken": "2022-06-05",
+   "n_items": 13
+  },
+  "dining": {
+   "room": "dining room",
+   "dropped": [],
+   "building": [],
+   "seconds": 12.9,
+   "usd": 0.0020541,
+   "taken": "2024-11-28",
+   "n_items": 12
+  },
+  "garage": {
+   "room": "garage",
+   "dropped": [
+    {
+     "id": "garage.2",
+     "photo": "garage",
+     "name": "child's bicycle",
+     "brand": null,
+     "model": null,
+     "category": "sports_outdoor",
+     "quantity": 1,
+     "detail": "small blue bike with training wheels, on drop cloth",
+     "shop_as": "child bicycle with training wheels",
+     "seen": "being worked on by person in center",
+     "confidence": 0.95,
+     "box": [
+      896,
+      591,
+      1040,
+      884
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    }
+   ],
+   "building": [
+    {
+     "id": "garage.15",
+     "photo": "garage",
+     "name": "garage door opener light",
+     "brand": null,
+     "model": null,
+     "category": "lighting",
+     "quantity": 1,
+     "detail": "ceiling-mounted garage light fixture",
+     "shop_as": "garage door opener light fixture",
+     "seen": "hanging from ceiling center",
+     "confidence": 0.85,
+     "box": [
+      760,
+      179,
+      872,
+      227
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    }
+   ],
+   "seconds": 12.9,
+   "usd": 0.0024483,
+   "taken": "2023-05-20",
+   "n_items": 14
+  },
+  "kids_room": {
+   "room": "kid's room",
+   "dropped": [
+    {
+     "id": "kids_room.5",
+     "photo": "kids_room",
+     "name": "children's books",
+     "brand": null,
+     "model": null,
+     "category": "books_media",
+     "quantity": 40,
+     "detail": "mixed hardcover and paperback children's books on shelves",
+     "shop_as": "children's books",
+     "seen": "on middle and bottom shelves of bookcase",
+     "confidence": 0.85,
+     "box": [
+      584,
+      543,
+      856,
+      955
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    },
+    {
+     "id": "kids_room.8",
+     "photo": "kids_room",
+     "name": "white child's desk and chair set",
+     "brand": null,
+     "model": null,
+     "category": "furniture",
+     "quantity": 1,
+     "detail": "small white desk with matching white chair, child height",
+     "shop_as": "white kids desk and chair set",
+     "seen": "by window, child sitting at desk",
+     "confidence": 0.9,
+     "box": [
+      864,
+      728,
+      1208,
+      1110
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    }
+   ],
+   "building": [],
+   "seconds": 9.0,
+   "usd": 0.0022061999999999997,
+   "taken": "2024-09-02",
+   "n_items": 11
+  },
+  "kitchen": {
+   "room": "kitchen",
+   "dropped": [
+    {
+     "id": "kitchen.9",
+     "photo": "kitchen",
+     "name": "baking sheet with cookies",
+     "brand": null,
+     "model": null,
+     "category": "kitchenware",
+     "quantity": 1,
+     "detail": "metal baking sheet with about 12 chocolate chip cookies",
+     "shop_as": "rimmed baking sheet half size aluminum",
+     "seen": "being held by person being removed from oven",
+     "confidence": 0.95,
+     "box": [
+      1032,
+      960,
+      1568,
+      1236
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    }
+   ],
+   "building": [
+    {
+     "id": "kitchen.16",
+     "photo": "kitchen",
+     "name": "white kitchen cabinets",
+     "brand": null,
+     "model": null,
+     "category": "furniture",
+     "quantity": 1,
+     "detail": "white shaker-style upper cabinets with round knobs",
+     "shop_as": "white shaker kitchen cabinets upper 30 inch",
+     "seen": "upper right above microwave and refrigerator",
+     "confidence": 0.9,
+     "box": [
+      872,
+      0,
+      1600,
+      180
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    },
+    {
+     "id": "kitchen.17",
+     "photo": "kitchen",
+     "name": "white lower cabinet",
+     "brand": null,
+     "model": null,
+     "category": "furniture",
+     "quantity": 1,
+     "detail": "white shaker-style lower cabinet with round knob under counter",
+     "shop_as": "white shaker kitchen cabinet lower 24 inch",
+     "seen": "under counter between sink and stove",
+     "confidence": 0.85,
+     "box": [
+      688,
+      822,
+      928,
+      1374
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    },
+    {
+     "id": "kitchen.18",
+     "photo": "kitchen",
+     "name": "wood countertop",
+     "brand": null,
+     "model": null,
+     "category": "furniture",
+     "quantity": 1,
+     "detail": "butcher block wood countertop with flour dusting",
+     "shop_as": "butcher block countertop 1.5 inch thick",
+     "seen": "horizontal surface across left and center",
+     "confidence": 0.9,
+     "box": [
+      0,
+      753,
+      944,
+      1374
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    },
+    {
+     "id": "kitchen.19",
+     "photo": "kitchen",
+     "name": "stainless steel sink",
+     "brand": null,
+     "model": null,
+     "category": "kitchenware",
+     "quantity": 1,
+     "detail": "single basin stainless steel kitchen sink",
+     "shop_as": "kitchen sink stainless steel single bowl",
+     "seen": "bottom left corner",
+     "confidence": 0.9,
+     "box": [
+      0,
+      1105,
+      648,
+      1374
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    }
+   ],
+   "seconds": 8.6,
+   "usd": 0.0028704,
+   "taken": "2023-10-14",
+   "n_items": 15
+  },
+  "kitchen_dog": {
+   "room": "kitchen",
+   "dropped": [],
+   "building": [
+    {
+     "id": "kitchen_dog.10",
+     "photo": "kitchen_dog",
+     "name": "dishwasher",
+     "brand": null,
+     "model": null,
+     "category": "appliances_large",
+     "quantity": 1,
+     "detail": "stainless steel dishwasher under counter on right",
+     "shop_as": "stainless steel dishwasher",
+     "seen": "under counter on far right",
+     "confidence": 0.85,
+     "box": [
+      1344,
+      656,
+      1600,
+      780
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    }
+   ],
+   "seconds": 11.8,
+   "usd": 0.0025932,
+   "taken": "2023-10-14",
+   "n_items": 15
+  },
+  "living": {
+   "room": "living room",
+   "dropped": [],
+   "building": [],
+   "seconds": 12.1,
+   "usd": 0.0024564,
+   "taken": "2024-04-13",
+   "n_items": 16
+  },
+  "living_xmas": {
+   "room": "living room",
+   "dropped": [
+    {
+     "id": "living_xmas.13",
+     "photo": "living_xmas",
+     "name": "birthday banner",
+     "brand": null,
+     "model": null,
+     "category": "decor",
+     "quantity": 1,
+     "detail": "colorful HAPPY BIRTHDAY letter banner on wall",
+     "shop_as": "HAPPY BIRTHDAY banner",
+     "seen": "on wall above TV",
+     "confidence": 0.95,
+     "box": [
+      1280,
+      209,
+      1600,
+      304
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    },
+    {
+     "id": "living_xmas.14",
+     "photo": "living_xmas",
+     "name": "child's pajamas",
+     "brand": null,
+     "model": null,
+     "category": "clothing",
+     "quantity": 1,
+     "detail": "patterned pajamas with vehicle prints worn by child",
+     "shop_as": "children's pajamas",
+     "seen": "worn by child sitting on floor",
+     "confidence": 0.9,
+     "box": [
+      544,
+      901,
+      752,
+      1182
+     ],
+     "why": "a person, pet, food or decoration, not property"
+    }
+   ],
+   "building": [
+    {
+     "id": "living_xmas.12",
+     "photo": "living_xmas",
+     "name": "window blinds",
+     "brand": null,
+     "model": null,
+     "category": "other",
+     "quantity": 2,
+     "detail": "white horizontal blinds on two windows",
+     "shop_as": "window blinds",
+     "seen": "covering both windows in background",
+     "confidence": 0.9,
+     "box": [
+      584,
+      215,
+      1184,
+      298
+     ],
+     "why": "part of the building (dwelling coverage), not contents"
+    }
+   ],
+   "seconds": 7.5,
+   "usd": 0.0024096,
+   "taken": "2023-12-25",
+   "n_items": 12
+  },
+  "office": {
+   "room": "office",
+   "dropped": [],
+   "building": [],
+   "seconds": 7.7,
+   "usd": 0.0019901999999999997,
+   "taken": "2025-03-11",
+   "n_items": 13
+  }
+ },
+ "items": [
+  {
+   "n": 1,
+   "id": "bedroom.0",
+   "photo": "bedroom",
+   "name": "gray upholstered bed with headboard",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "queen or king size, gray fabric headboard and frame",
+   "shop_as": "gray upholstered bed frame with headboard queen",
+   "seen": "center of room with child standing on it",
+   "confidence": 0.95,
+   "box": [
+    216,
+    352,
+    1368,
+    1194
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.0",
+     "box": [
+      216,
+      352,
+      1368,
+      1194
+     ],
+     "boxf": [
+      0.135,
+      0.2948,
+      0.855,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "gray upholstered bed frame with headboard queen price",
+    "depth": "basic+advanced",
+    "candidates": 7,
+    "sources": [
+     {
+      "price": 249.0,
+      "listed": 249.0,
+      "set_of": 1,
+      "url": "https://www.mattressfirm.com/shop/gray-queen-bed-frames",
+      "site": "mattressfirm.com",
+      "quote": "$249 \u00b7 Deluxe Maddon Platform Bed"
+     },
+     {
+      "price": 199.0,
+      "listed": 199.0,
+      "set_of": 1,
+      "url": "https://www.roomstogo.com/furniture/bedrooms/beds/size/queen/color/gray",
+      "site": "roomstogo.com",
+      "quote": "Gray Queen Upholstered Bed Price $199.99 $199 99 gray Allpeina Gray Queen B"
+     },
+     {
+      "price": 135.0,
+      "listed": 135.0,
+      "set_of": 1,
+      "url": "https://www.ebay.com/b/Queen-Gray-Beds-and-Bed-Frames/175758/bn_99097726",
+      "site": "ebay.com",
+      "quote": "Bed Frame Full/Queen/King Size with 2-Tier Storage and LED Lights Headboard \u00b7 US $134.99 to US $172.99 ; Queen Adjusta"
+     }
+    ],
+    "rejected": [
+     {
+      "n": 2,
+      "price": 149,
+      "why": "a 'starting at' price, the cheapest of a range"
+     },
+     {
+      "n": 5,
+      "price": 399,
+      "why": "$399 isn't in sentence 5"
+     },
+     {
+      "n": 7,
+      "price": 453,
+      "why": "$453 isn't in sentence 7"
+     }
+    ],
+    "status": "priced",
+    "price": 199.0,
+    "note": "Priced as a gray upholstered queen/king bed with headboard, mid-range",
+    "set_aside": []
+   },
+   "unit_rcv": 199.0,
+   "rcv": 199.0,
+   "acv": 133.33,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.135,
+    0.2948,
+    0.855,
+    1.0
+   ]
+  },
+  {
+   "n": 2,
+   "id": "bedroom.1",
+   "photo": "bedroom",
+   "name": "white comforter and bedding set",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "white duvet/comforter with two pillows",
+   "shop_as": "white queen comforter bedding set",
+   "seen": "covering the bed",
+   "confidence": 0.9,
+   "box": [
+    304,
+    507,
+    1368,
+    1194
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.1",
+     "box": [
+      304,
+      507,
+      1368,
+      1194
+     ],
+     "boxf": [
+      0.19,
+      0.4246,
+      0.855,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "white queen comforter bedding set price",
+    "depth": "basic+advanced",
+    "candidates": 1,
+    "sources": [
+     {
+      "price": 189.0,
+      "listed": 189.0,
+      "set_of": 1,
+      "url": "https://www.ebay.com/b/Queen-Comforters-Sets/262977/bn_36843602",
+      "site": "ebay.com",
+      "quote": "White US $189.00 New Hotel Collection European"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 189.0,
+    "note": "Priced as a new white duvet/comforter with two pillows, mid-range equivalent"
+   },
+   "unit_rcv": 189.0,
+   "rcv": 189.0,
+   "acv": 64.26,
+   "dep_pct": 66.0,
+   "life": 5,
+   "dep_why": "3.3 yr x 1 (Average) / 5 yr life = 66%",
+   "boxf": [
+    0.19,
+    0.4246,
+    0.855,
+    1.0
+   ]
+  },
+  {
+   "n": 3,
+   "id": "bedroom.2",
+   "photo": "bedroom",
+   "name": "wooden nightstand with open shelf",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "light wood, one drawer, open lower shelf with books",
+   "shop_as": "light wood nightstand with drawer and open shelf",
+   "seen": "left side of bed",
+   "confidence": 0.9,
+   "box": [
+    8,
+    621,
+    280,
+    937
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.2",
+     "box": [
+      8,
+      621,
+      280,
+      937
+     ],
+     "boxf": [
+      0.005,
+      0.5201,
+      0.175,
+      0.7848
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "light wood nightstand with drawer and open shelf price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.005,
+    0.5201,
+    0.175,
+    0.7848
+   ]
+  },
+  {
+   "n": 4,
+   "id": "bedroom.3",
+   "photo": "bedroom",
+   "name": "ceramic table lamp with white shade",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "white textured ceramic base, white drum shade",
+   "shop_as": "ceramic table lamp with white drum shade",
+   "seen": "on left nightstand",
+   "confidence": 0.9,
+   "box": [
+    24,
+    436,
+    192,
+    651
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.3",
+     "box": [
+      24,
+      436,
+      192,
+      651
+     ],
+     "boxf": [
+      0.015,
+      0.3652,
+      0.12,
+      0.5452
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "ceramic table lamp with white drum shade price",
+    "depth": "basic",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 54.99,
+      "listed": 109.99,
+      "set_of": 2,
+      "url": "https://www.walmart.com/c/kp/white-ceramic-lamps",
+      "site": "walmart.com",
+      "quote": "Table Lamp Set (2), White, Contemporary Textured Lamps with Drum Shades and 3-Way Switch $109.99 Was $200.38 $55.00/ea [...] W"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 54.99,
+    "note": "priced per unit at half of set price"
+   },
+   "unit_rcv": 54.99,
+   "rcv": 54.99,
+   "acv": 36.84,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.015,
+    0.3652,
+    0.12,
+    0.5452
+   ]
+  },
+  {
+   "n": 5,
+   "id": "bedroom.4",
+   "photo": "bedroom",
+   "name": "stack of books",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 6,
+   "detail": "mixed hardcover and paperback books on nightstand and shelf",
+   "shop_as": "hardcover and paperback books",
+   "seen": "on left nightstand and lower shelf",
+   "confidence": 0.8,
+   "box": [
+    168,
+    597,
+    264,
+    830
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.4",
+     "box": [
+      168,
+      597,
+      264,
+      830
+     ],
+     "boxf": [
+      0.105,
+      0.5,
+      0.165,
+      0.6951
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "hardcover and paperback books price",
+    "depth": "basic+advanced",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 20.0,
+      "listed": 20.0,
+      "set_of": 1,
+      "url": "https://ebookwritingexperts.com/blog/how-much-does-a-book-cost",
+      "site": "ebookwritingexperts.com",
+      "quote": "Then, hardcover books will, on average, cost between $20 and $35."
+     },
+     {
+      "price": 8.0,
+      "listed": 8.0,
+      "set_of": 1,
+      "url": "https://heyimreading.com/2024/08/15/paperback-vs-hardcover-books",
+      "site": "heyimreading.com",
+      "quote": "Hardcover books are typically more expensive, too, maybe $8-10 more, depending on the boo"
+     },
+     {
+      "price": 15.95,
+      "listed": 15.95,
+      "set_of": 1,
+      "url": "https://prcbookprinting.com/hardcover-vs-paperback-book-printing-costs",
+      "site": "prcbookprinting.com",
+      "quote": "A paperback priced at $15.95 would be released in hardcove"
+     },
+     {
+      "price": 10.0,
+      "listed": 10.0,
+      "set_of": 1,
+      "url": "https://thepublishingheaven.com/blog/average-book-price",
+      "site": "thepublishingheaven.com",
+      "quote": "Paperback $10 to $20 Hardcover $20 to $35+"
+     }
+    ],
+    "rejected": [
+     {
+      "n": 3,
+      "price": 10,
+      "why": "$10 isn't in sentence 3"
+     }
+    ],
+    "status": "priced",
+    "price": 12.97,
+    "note": "Priced as individual books, mainstream mid-range",
+    "set_aside": [
+     {
+      "price": 4.89,
+      "listed": 4.89,
+      "set_of": 1,
+      "url": "https://www.printingcenterusa.com/blog/hardcover-vs-paperback-which-is-best",
+      "site": "printingcenterusa.com",
+      "quote": "gCenterUSA, 500 copies of the same 100-page, 6\u00d79 book, paperback runs $2,443.23  which is $4.89 per copy, and hardcover runs"
+     }
+    ]
+   },
+   "unit_rcv": 12.97,
+   "rcv": 77.82,
+   "acv": 52.14,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.105,
+    0.5,
+    0.165,
+    0.6951
+   ]
+  },
+  {
+   "n": 6,
+   "id": "bedroom.5",
+   "photo": "bedroom",
+   "name": "tablet in case",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "tablet with dark case lying on bed",
+   "shop_as": "tablet with protective case",
+   "seen": "on white comforter",
+   "confidence": 0.85,
+   "box": [
+    760,
+    740,
+    928,
+    800
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.5",
+     "box": [
+      760,
+      740,
+      928,
+      800
+     ],
+     "boxf": [
+      0.475,
+      0.6198,
+      0.58,
+      0.67
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "tablet with protective case price",
+    "depth": "basic+advanced",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 35.99,
+      "listed": 35.99,
+      "set_of": 1,
+      "url": "https://www.walmart.com/c/kp/tablets-with-cases",
+      "site": "walmart.com",
+      "quote": "tablets with protective cases, From$14800 onn 11\" Kids Tablet (2026 Model) current price $35.99 Kids Tablet, Tablet with Prot"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 35.99,
+    "note": "Priced as new tablet with protective case"
+   },
+   "unit_rcv": 35.99,
+   "rcv": 35.99,
+   "acv": 12.24,
+   "dep_pct": 66.0,
+   "life": 5,
+   "dep_why": "3.3 yr x 1 (Average) / 5 yr life = 66%",
+   "boxf": [
+    0.475,
+    0.6198,
+    0.58,
+    0.67
+   ]
+  },
+  {
+   "n": 7,
+   "id": "bedroom.6",
+   "photo": "bedroom",
+   "name": "wooden nightstand",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "light wood, one drawer, right side of bed",
+   "shop_as": "light wood nightstand with drawer",
+   "seen": "right side of bed",
+   "confidence": 0.85,
+   "box": [
+    776,
+    496,
+    944,
+    579
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.6",
+     "box": [
+      776,
+      496,
+      944,
+      579
+     ],
+     "boxf": [
+      0.485,
+      0.4154,
+      0.59,
+      0.4849
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "light wood nightstand with drawer price",
+    "depth": "basic",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 249.99,
+      "listed": 249.99,
+      "set_of": 1,
+      "url": "https://walkeredison.com/collections/nightstands",
+      "site": "walkeredison.com",
+      "quote": "Sale Diedra Modern Side Table & Nighstand with Drawers $249.99 ~~Regular price $264.99~~  Ad"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 249.99,
+    "note": "Priced as new mid-range single-drawer wooden nightstand"
+   },
+   "unit_rcv": 249.99,
+   "rcv": 249.99,
+   "acv": 167.49,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.485,
+    0.4154,
+    0.59,
+    0.4849
+   ]
+  },
+  {
+   "n": 8,
+   "id": "bedroom.7",
+   "photo": "bedroom",
+   "name": "ceramic table lamp with white shade",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "white textured ceramic base, white drum shade",
+   "shop_as": "ceramic table lamp with white drum shade",
+   "seen": "on right nightstand",
+   "confidence": 0.9,
+   "box": [
+    808,
+    370,
+    904,
+    501
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.7",
+     "box": [
+      808,
+      370,
+      904,
+      501
+     ],
+     "boxf": [
+      0.505,
+      0.3099,
+      0.565,
+      0.4196
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "ceramic table lamp with white drum shade price",
+    "depth": "basic",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 54.99,
+      "listed": 109.99,
+      "set_of": 2,
+      "url": "https://www.walmart.com/c/kp/white-ceramic-lamps",
+      "site": "walmart.com",
+      "quote": "Table Lamp Set (2), White, Contemporary Textured Lamps with Drum Shades and 3-Way Switch $109.99 Was $200.38 $55.00/ea [...] W"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 54.99,
+    "note": "priced per unit at half of set price"
+   },
+   "unit_rcv": 54.99,
+   "rcv": 54.99,
+   "acv": 36.84,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.505,
+    0.3099,
+    0.565,
+    0.4196
+   ]
+  },
+  {
+   "n": 9,
+   "id": "bedroom.8",
+   "photo": "bedroom",
+   "name": "flat-screen TV",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "large black flat-screen TV on dresser",
+   "shop_as": "large flat-screen TV",
+   "seen": "on top of wooden dresser",
+   "confidence": 0.9,
+   "box": [
+    1072,
+    287,
+    1312,
+    436
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.8",
+     "box": [
+      1072,
+      287,
+      1312,
+      436
+     ],
+     "boxf": [
+      0.67,
+      0.2404,
+      0.82,
+      0.3652
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "large flat-screen TV price",
+    "depth": "basic+advanced",
+    "candidates": 1,
+    "sources": [
+     {
+      "price": 193.99,
+      "listed": 193.99,
+      "set_of": 1,
+      "url": "https://www.walmart.com/c/kp/large-screen-smart-tvs",
+      "site": "walmart.com",
+      "quote": "Explore large screen smart TVs with \u30fb current price Now $193.99, 40-inch Smart TV, 1080P Fhd"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 193.99,
+    "note": "Priced as a new 40-inch mid-range flat-screen TV"
+   },
+   "unit_rcv": 193.99,
+   "rcv": 193.99,
+   "acv": 129.97,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.67,
+    0.2404,
+    0.82,
+    0.3652
+   ]
+  },
+  {
+   "n": 10,
+   "id": "bedroom.9",
+   "photo": "bedroom",
+   "name": "wooden dresser",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "light wood, 6-drawer dresser with TV on top",
+   "shop_as": "light wood 6-drawer dresser",
+   "seen": "right wall under TV",
+   "confidence": 0.9,
+   "box": [
+    960,
+    430,
+    1400,
+    698
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.9",
+     "box": [
+      960,
+      430,
+      1400,
+      698
+     ],
+     "boxf": [
+      0.6,
+      0.3601,
+      0.875,
+      0.5846
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "light wood 6-drawer dresser price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [],
+    "rejected": [
+     {
+      "n": 1,
+      "price": 165.58,
+      "why": "a 'starting at' price, the cheapest of a range"
+     },
+     {
+      "n": 2,
+      "price": 129.99,
+      "why": "a 'starting at' price, the cheapest of a range"
+     }
+    ],
+    "status": "needs a price",
+    "price": null,
+    "note": "priced as new mid-range 6-drawer wooden dresser",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.6,
+    0.3601,
+    0.875,
+    0.5846
+   ]
+  },
+  {
+   "n": 11,
+   "id": "bedroom.10",
+   "photo": "bedroom",
+   "name": "stationary exercise bike",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "black exercise bike with screen and flywheel",
+   "shop_as": "stationary exercise bike with screen",
+   "seen": "right side near window",
+   "confidence": 0.9,
+   "box": [
+    1384,
+    316,
+    1600,
+    770
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.10",
+     "box": [
+      1384,
+      316,
+      1600,
+      770
+     ],
+     "boxf": [
+      0.865,
+      0.2647,
+      1.0,
+      0.6449
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "stationary exercise bike with screen price",
+    "depth": "basic+advanced",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 188.0,
+      "listed": 188.0,
+      "set_of": 1,
+      "url": "https://www.ebay.com/b/Exercise-Bikes-with-LCD-Display/58102/bn_42704849",
+      "site": "ebay.com",
+      "quote": "play ; Indoor Stationary Bike Recumbent Exercise Bike Cycling Fitness Bike Workout Bike \u00b7 $188.00 \u00b7 or Best Offer."
+     }
+    ],
+    "rejected": [
+     {
+      "n": 3,
+      "price": 250,
+      "why": "$250 isn't in sentence 3"
+     }
+    ],
+    "status": "one source",
+    "price": 188.0,
+    "note": "Priced as a new mainstream mid-range stationary exercise bike with screen"
+   },
+   "unit_rcv": 188.0,
+   "rcv": 188.0,
+   "acv": 125.96,
+   "dep_pct": 33.0,
+   "life": 10,
+   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%",
+   "boxf": [
+    0.865,
+    0.2647,
+    1.0,
+    0.6449
+   ]
+  },
+  {
+   "n": 12,
+   "id": "bedroom.11",
+   "photo": "bedroom",
+   "name": "area rug",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "large light gray textured area rug under bed",
+   "shop_as": "large gray area rug 8x10",
+   "seen": "under bed and extending to floor",
+   "confidence": 0.9,
+   "box": [
+    192,
+    848,
+    1600,
+    1194
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.11",
+     "box": [
+      192,
+      848,
+      1600,
+      1194
+     ],
+     "boxf": [
+      0.12,
+      0.7102,
+      1.0,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "large gray area rug 8x10 price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No valid new-price sentences found",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.12,
+    0.7102,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "n": 13,
+   "id": "bedroom.13",
+   "photo": "bedroom",
+   "name": "curtains",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "patterned floor-length curtains at window",
+   "shop_as": "patterned floor-length curtains",
+   "seen": "right side window",
+   "confidence": 0.85,
+   "box": [
+    1416,
+    36,
+    1576,
+    704
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.13",
+     "box": [
+      1416,
+      36,
+      1576,
+      704
+     ],
+     "boxf": [
+      0.885,
+      0.0302,
+      0.985,
+      0.5896
+     ]
+    }
+   ],
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "price": {
+    "query": "patterned floor-length curtains price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.885,
+    0.0302,
+    0.985,
+    0.5896
+   ]
+  },
+  {
+   "n": 14,
+   "id": "dining.0",
+   "photo": "dining",
+   "name": "wooden dining table",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "large rectangular wood table with extension leaf, seats 6+",
+   "shop_as": "wood dining table with extension leaf 6 seat",
+   "seen": "center of room with people eating around it",
+   "confidence": 0.95,
+   "box": [
+    448,
+    609,
+    848,
+    1182
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.0",
+     "box": [
+      448,
+      609,
+      848,
+      1182
+     ],
+     "boxf": [
+      0.28,
+      0.5101,
+      0.53,
+      0.9899
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "wood dining table with extension leaf 6 seat price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.28,
+    0.5101,
+    0.53,
+    0.9899
+   ]
+  },
+  {
+   "n": 15,
+   "id": "dining.1",
+   "photo": "dining",
+   "name": "upholstered dining chair",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 6,
+   "detail": "light beige fabric seat and back with wood frame",
+   "shop_as": "beige upholstered dining chair wood frame",
+   "seen": "six chairs around the table, some partially hidden by people",
+   "confidence": 0.9,
+   "box": [
+    16,
+    621,
+    1376,
+    1194
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.1",
+     "box": [
+      16,
+      621,
+      1376,
+      1194
+     ],
+     "boxf": [
+      0.01,
+      0.5201,
+      0.86,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "beige upholstered dining chair wood frame price",
+    "depth": "basic",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 159.99,
+      "listed": 159.99,
+      "set_of": 1,
+      "url": "https://www.target.com/c/dining-chairs-kitchen-furniture-home-decor/beige/-/N-5xtmlZ5y6q6",
+      "site": "target.com",
+      "quote": "Discover beige upholstered dining chairs \u2026 solid wood frames, $159.99 - $459.99 reg $228.56 - $657."
+     },
+     {
+      "price": 124.99,
+      "listed": 124.99,
+      "set_of": 1,
+      "url": "https://www.ebay.com/b/Beige-Dining-Chairs/54235/bn_95238967",
+      "site": "ebay.com",
+      "quote": "Upholstered Wood Frame Dining Chair \u30fb $124.99 New $120.00 \u30fb $48.00 New $"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 142.49,
+    "note": "Priced as mainstream mid-range new upholstered dining chairs with wood frames and beige fabric"
+   },
+   "unit_rcv": 142.49,
+   "rcv": 854.94,
+   "acv": 786.54,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.01,
+    0.5201,
+    0.86,
+    1.0
+   ]
+  },
+  {
+   "n": 16,
+   "id": "dining.2",
+   "photo": "dining",
+   "name": "wooden china cabinet",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "tall hutch with glass doors, wood, displays dishes and glassware",
+   "shop_as": "wooden china cabinet hutch with glass doors",
+   "seen": "left wall behind diners",
+   "confidence": 0.95,
+   "box": [
+    24,
+    197,
+    488,
+    693
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.2",
+     "box": [
+      24,
+      197,
+      488,
+      693
+     ],
+     "boxf": [
+      0.015,
+      0.165,
+      0.305,
+      0.5804
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "wooden china cabinet hutch with glass doors price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.015,
+    0.165,
+    0.305,
+    0.5804
+   ]
+  },
+  {
+   "n": 17,
+   "id": "dining.3",
+   "photo": "dining",
+   "name": "white plates",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 12,
+   "detail": "stacked white dinner plates inside cabinet",
+   "shop_as": "white ceramic dinner plates set",
+   "seen": "visible through glass doors of china cabinet",
+   "confidence": 0.85,
+   "box": [
+    96,
+    334,
+    208,
+    537
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.3",
+     "box": [
+      96,
+      334,
+      208,
+      537
+     ],
+     "boxf": [
+      0.06,
+      0.2797,
+      0.13,
+      0.4497
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "white ceramic dinner plates set price",
+    "depth": "basic+advanced",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 11.25,
+      "listed": 44.99,
+      "set_of": 4,
+      "url": "https://www.fitzandfloyd.com/collections/everyday-white-full-collection",
+      "site": "fitzandfloyd.com",
+      "quote": "Everyday White\u00ae Organic Set of 4 Dinner Plates Sale price$44.99"
+     },
+     {
+      "price": 5.62,
+      "listed": 44.95,
+      "set_of": 8,
+      "url": "https://www.crateandbarrel.com/white-dinnerware-sets",
+      "site": "crateandbarrel.com",
+      "quote": "Aspen Porcelain Coupe Dinner Plates, Set of 8 Set Savings $44.95 open stock $47.60 \u2026 $47.60 Le"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 8.44,
+    "note": "Priced as new mid-range white dinner plates per set"
+   },
+   "unit_rcv": 8.44,
+   "rcv": 101.28,
+   "acv": 93.18,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.06,
+    0.2797,
+    0.13,
+    0.4497
+   ]
+  },
+  {
+   "n": 18,
+   "id": "dining.4",
+   "photo": "dining",
+   "name": "wine glasses",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 24,
+   "detail": "clear stemmed wine glasses stored in cabinet",
+   "shop_as": "clear wine glasses set",
+   "seen": "hanging and stacked in glass cabinet",
+   "confidence": 0.85,
+   "box": [
+    320,
+    275,
+    456,
+    430
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.4",
+     "box": [
+      320,
+      275,
+      456,
+      430
+     ],
+     "boxf": [
+      0.2,
+      0.2303,
+      0.285,
+      0.3601
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "clear wine glasses set price",
+    "depth": "basic+advanced",
+    "candidates": 5,
+    "sources": [
+     {
+      "price": 5.55,
+      "listed": 33.3,
+      "set_of": 6,
+      "url": "https://www.walmart.com/browse/home/wine-glass-sets/4044_623679_639999_6972768_2061025_2840619",
+      "site": "walmart.com",
+      "quote": "Set of 6 - 8 oz Clear White Wine Glasses Short Stem, Price $33.30."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 5.55,
+    "note": "Priced as clear stemmed wine glasses, mainstream mid-range"
+   },
+   "unit_rcv": 5.55,
+   "rcv": 133.2,
+   "acv": 122.54,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.2,
+    0.2303,
+    0.285,
+    0.3601
+   ]
+  },
+  {
+   "n": 19,
+   "id": "dining.5",
+   "photo": "dining",
+   "name": "teapot",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "white ceramic teapot in cabinet",
+   "shop_as": "white ceramic teapot",
+   "seen": "on shelf inside china cabinet",
+   "confidence": 0.8,
+   "box": [
+    168,
+    298,
+    264,
+    340
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.5",
+     "box": [
+      168,
+      298,
+      264,
+      340
+     ],
+     "boxf": [
+      0.105,
+      0.2496,
+      0.165,
+      0.2848
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "white ceramic teapot price",
+    "depth": "basic+advanced",
+    "candidates": 1,
+    "sources": [
+     {
+      "price": 9.0,
+      "listed": 9.0,
+      "set_of": 1,
+      "url": "https://royaltablesettings.com/products/white-teapot",
+      "site": "royaltablesettings.com",
+      "quote": "White Teapot/Coffee Pot - $9.00 USD."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 9.0,
+    "note": "priced as new white ceramic teapot"
+   },
+   "unit_rcv": 9.0,
+   "rcv": 9.0,
+   "acv": 8.28,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.105,
+    0.2496,
+    0.165,
+    0.2848
+   ]
+  },
+  {
+   "n": 20,
+   "id": "dining.6",
+   "photo": "dining",
+   "name": "large abstract painting",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "large canvas with white, blue, gray and brown abstract strokes",
+   "shop_as": "large abstract canvas wall art white blue gray",
+   "seen": "hanging on right wall above sideboard",
+   "confidence": 0.95,
+   "box": [
+    1048,
+    12,
+    1568,
+    525
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.6",
+     "box": [
+      1048,
+      12,
+      1568,
+      525
+     ],
+     "boxf": [
+      0.655,
+      0.0101,
+      0.98,
+      0.4397
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "large abstract canvas wall art white blue gray price",
+    "depth": "basic+advanced",
+    "candidates": 3,
+    "sources": [
+     {
+      "price": 129.0,
+      "listed": 129.0,
+      "set_of": 1,
+      "url": "https://www.athome.com/canvas-art/blue",
+      "site": "athome.com",
+      "quote": "Blue Abstract Canvas Wall Art, 60x30 $ 129 ."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 129.0,
+    "note": "Priced as new large abstract canvas wall art"
+   },
+   "unit_rcv": 129.0,
+   "rcv": 129.0,
+   "acv": 118.68,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.655,
+    0.0101,
+    0.98,
+    0.4397
+   ]
+  },
+  {
+   "n": 21,
+   "id": "dining.7",
+   "photo": "dining",
+   "name": "wooden sideboard",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "long wood credenza under painting, holds turntable and records",
+   "shop_as": "wooden sideboard credenza dining room",
+   "seen": "right wall beneath painting",
+   "confidence": 0.9,
+   "box": [
+    1144,
+    645,
+    1600,
+    1069
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.7",
+     "box": [
+      1144,
+      645,
+      1600,
+      1069
+     ],
+     "boxf": [
+      0.715,
+      0.5402,
+      1.0,
+      0.8953
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "wooden sideboard credenza dining room price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.715,
+    0.5402,
+    1.0,
+    0.8953
+   ]
+  },
+  {
+   "n": 22,
+   "id": "dining.8",
+   "photo": "dining",
+   "name": "turntable",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "silver record player on sideboard",
+   "shop_as": "belt drive turntable record player",
+   "seen": "on top of sideboard",
+   "confidence": 0.85,
+   "box": [
+    1144,
+    591,
+    1360,
+    663
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.8",
+     "box": [
+      1144,
+      591,
+      1360,
+      663
+     ],
+     "boxf": [
+      0.715,
+      0.495,
+      0.85,
+      0.5553
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "belt drive turntable record player price",
+    "depth": "basic",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 999.0,
+      "listed": 999.0,
+      "set_of": 1,
+      "url": "https://www.audio-technica.com/en-us/turntables/type/belt-drive",
+      "site": "audio-technica.com",
+      "quote": "$999.00 ; AT-LPA2 \u00b7 Fully Manual Belt"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 999.0,
+    "note": "priced as new mid-range belt-drive turntable"
+   },
+   "unit_rcv": 999.0,
+   "rcv": 999.0,
+   "acv": 919.08,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.715,
+    0.495,
+    0.85,
+    0.5553
+   ]
+  },
+  {
+   "n": 23,
+   "id": "dining.9",
+   "photo": "dining",
+   "name": "vinyl records",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 25,
+   "detail": "stack of LP album sleeves on sideboard",
+   "shop_as": "vinyl record LP albums",
+   "seen": "stacked on right side of sideboard",
+   "confidence": 0.9,
+   "box": [
+    1352,
+    597,
+    1584,
+    704
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.9",
+     "box": [
+      1352,
+      597,
+      1584,
+      704
+     ],
+     "boxf": [
+      0.845,
+      0.5,
+      0.99,
+      0.5896
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "vinyl record LP albums price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [
+     {
+      "price": 20.99,
+      "listed": 20.99,
+      "set_of": 1,
+      "url": "https://www.ratherrarerecords.com/retail-price",
+      "site": "ratherrarerecords.com",
+      "quote": "In 2025, a new LP of old or newly record\u00aded ma\u00adte\u00adr\u00adi\u00adal costs $20.99-29.99."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 20.99,
+    "note": "priced per vinyl record sleeve"
+   },
+   "unit_rcv": 20.99,
+   "rcv": 524.75,
+   "acv": 482.77,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.845,
+    0.5,
+    0.99,
+    0.5896
+   ]
+  },
+  {
+   "n": 24,
+   "id": "dining.10",
+   "photo": "dining",
+   "name": "chandelier",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "brass multi-arm chandelier with candle-style bulbs",
+   "shop_as": "brass candle-style chandelier dining room",
+   "seen": "hanging from ceiling center",
+   "confidence": 0.95,
+   "box": [
+    400,
+    0,
+    752,
+    233
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.10",
+     "box": [
+      400,
+      0,
+      752,
+      233
+     ],
+     "boxf": [
+      0.25,
+      0.0,
+      0.47,
+      0.1951
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "brass candle-style chandelier dining room price",
+    "depth": "basic+advanced",
+    "candidates": 5,
+    "sources": [],
+    "rejected": [],
+    "status": "check",
+    "price": null,
+    "note": "Priced as new mid-range brass candle-style chandelier",
+    "set_aside": [
+     {
+      "price": 111.79,
+      "listed": 111.79,
+      "set_of": 1,
+      "url": "https://www.walmart.com/c/best-sellers/candle-chandeliers",
+      "site": "walmart.com",
+      "quote": "e Candle Style Chandelier - Brass Capital Lighting \u2026 for Dining Room, Living Room, Foyer, $111.79,"
+     },
+     {
+      "price": 557.0,
+      "listed": 557.0,
+      "set_of": 1,
+      "url": "https://m.beautifulhalo.com/brass-candlestyle-chandelier-light-fixture-simple-crystal-479-lights-dining-room-hanging-pendant-p-407727.html",
+      "site": "m.beautifulhalo.com",
+      "quote": "le Chandelier Light Fixture Simple Crystal 4/7/9 Lights Dining Room Hanging Pendant ; USD $557."
+     }
+    ],
+    "why": "two sources disagree too much ($111.79 vs $557.00); pick one by hand"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.25,
+    0.0,
+    0.47,
+    0.1951
+   ]
+  },
+  {
+   "n": 25,
+   "id": "dining.11",
+   "photo": "dining",
+   "name": "candles",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 2,
+   "detail": "tall pillar candles on sideboard",
+   "shop_as": "tall pillar candles home decor",
+   "seen": "on sideboard near turntable",
+   "confidence": 0.75,
+   "box": [
+    1040,
+    501,
+    1088,
+    585
+   ],
+   "room": "dining room",
+   "sightings": [
+    {
+     "photo": "dining",
+     "id": "dining.11",
+     "box": [
+      1040,
+      501,
+      1088,
+      585
+     ],
+     "boxf": [
+      0.65,
+      0.4196,
+      0.68,
+      0.4899
+     ]
+    }
+   ],
+   "earliest_photo": "2024-11-28",
+   "age_years": 0.8,
+   "condition": "Average",
+   "price": {
+    "query": "tall pillar candles home decor price",
+    "depth": "basic+advanced",
+    "candidates": 4,
+    "sources": [
+     {
+      "price": 9.95,
+      "listed": 9.95,
+      "set_of": 1,
+      "url": "https://www.etsy.com/market/decorative_tall_pillar_candles",
+      "site": "etsy.com",
+      "quote": "Pillar Candle: Soy Wax Home Decor (5.7k) Sale Price $9.95 $9.95 $14.21."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 9.95,
+    "note": "Priced as individual tall pillar candles, mainstream mid-range"
+   },
+   "unit_rcv": 9.95,
+   "rcv": 19.9,
+   "acv": 18.31,
+   "dep_pct": 8.0,
+   "life": 10,
+   "dep_why": "0.8 yr x 1 (Average) / 10 yr life = 8%",
+   "boxf": [
+    0.65,
+    0.4196,
+    0.68,
+    0.4899
+   ]
+  },
+  {
+   "n": 26,
+   "id": "garage.0",
+   "photo": "garage",
+   "name": "black mountain bike",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "full suspension, black frame, wall-mounted",
+   "shop_as": "mountain bike full suspension",
+   "seen": "hanging on wall rack left side",
+   "confidence": 0.9,
+   "box": [
+    240,
+    298,
+    496,
+    537
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.0",
+     "box": [
+      240,
+      298,
+      496,
+      537
+     ],
+     "boxf": [
+      0.15,
+      0.2496,
+      0.31,
+      0.4497
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "mountain bike full suspension price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No valid new-price sentences found",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.15,
+    0.2496,
+    0.31,
+    0.4497
+   ]
+  },
+  {
+   "n": 27,
+   "id": "garage.1",
+   "photo": "garage",
+   "name": "blue mountain bike",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "blue frame, wall-mounted",
+   "shop_as": "mountain bike",
+   "seen": "hanging on wall rack left side",
+   "confidence": 0.9,
+   "box": [
+    464,
+    298,
+    640,
+    573
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.1",
+     "box": [
+      464,
+      298,
+      640,
+      573
+     ],
+     "boxf": [
+      0.29,
+      0.2496,
+      0.4,
+      0.4799
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "mountain bike price",
+    "depth": "basic+advanced",
+    "candidates": 10,
+    "sources": [
+     {
+      "price": 598.0,
+      "listed": 598.0,
+      "set_of": 1,
+      "url": "https://www.walmart.com/browse/sports-outdoors/mountain-bikes/4125_1081404_2768744",
+      "site": "walmart.com",
+      "quote": "ountain Bike, Large Frame, Fits Riders 5 ft 10 in-6 ft 2 in+, Black, Adult, Unisex, Price $598.00"
+     },
+     {
+      "price": 500.0,
+      "listed": 500.0,
+      "set_of": 1,
+      "url": "https://www.glercbikes.com/blogs/news/how-much-is-a-mountain-bike",
+      "site": "glercbikes.com",
+      "quote": "A new mountain bike costs about $250 for light riding, $500 to $1,000 for a dependable be"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 549.0,
+    "note": "Priced as a mainstream mid-range new mountain bike"
+   },
+   "unit_rcv": 549.0,
+   "rcv": 549.0,
+   "acv": 422.73,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%",
+   "boxf": [
+    0.29,
+    0.2496,
+    0.4,
+    0.4799
+   ]
+  },
+  {
+   "n": 28,
+   "id": "garage.3",
+   "photo": "garage",
+   "name": "gas grill",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "stainless steel, 4-burner, on cart",
+   "shop_as": "4 burner stainless steel gas grill cart",
+   "seen": "left of tool chest, under workbench",
+   "confidence": 0.9,
+   "box": [
+    256,
+    531,
+    512,
+    836
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.3",
+     "box": [
+      256,
+      531,
+      512,
+      836
+     ],
+     "boxf": [
+      0.16,
+      0.4447,
+      0.32,
+      0.7002
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "4 burner stainless steel gas grill cart price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.16,
+    0.4447,
+    0.32,
+    0.7002
+   ]
+  },
+  {
+   "n": 29,
+   "id": "garage.4",
+   "photo": "garage",
+   "name": "red rolling tool chest",
+   "brand": "Craftsman",
+   "model": null,
+   "category": "tools",
+   "quantity": 1,
+   "detail": "tall red cabinet with multiple drawers, on wheels",
+   "shop_as": "Craftsman rolling tool chest cabinet",
+   "seen": "center back wall, red with black drawers",
+   "confidence": 0.95,
+   "box": [
+    648,
+    424,
+    792,
+    734
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.4",
+     "box": [
+      648,
+      424,
+      792,
+      734
+     ],
+     "boxf": [
+      0.405,
+      0.3551,
+      0.495,
+      0.6147
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "Craftsman rolling tool chest cabinet price",
+    "depth": "basic+advanced",
+    "candidates": 5,
+    "sources": [
+     {
+      "price": 449.0,
+      "listed": 449.0,
+      "set_of": 1,
+      "url": "https://www.farmandfleet.com/tool-cabinets?brand=Craftsman",
+      "site": "farmandfleet.com",
+      "quote": "Craftsman 52\" 8-Drawer Tool Chest Sale Price: $ 449 ."
+     }
+    ],
+    "rejected": [
+     {
+      "n": 3,
+      "price": 229,
+      "why": "a used, sale-was, monthly or accessory price"
+     }
+    ],
+    "status": "one source",
+    "price": 449.0,
+    "note": "Priced as a standard-sized rolling tool chest at mid-range retail."
+   },
+   "unit_rcv": 449.0,
+   "rcv": 449.0,
+   "acv": 345.73,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%",
+   "boxf": [
+    0.405,
+    0.3551,
+    0.495,
+    0.6147
+   ]
+  },
+  {
+   "n": 30,
+   "id": "garage.5",
+   "photo": "garage",
+   "name": "grill cover",
+   "brand": "Weber",
+   "model": null,
+   "category": "other",
+   "quantity": 1,
+   "detail": "black cover over large grill, Weber logo visible",
+   "shop_as": "Weber grill cover large",
+   "seen": "right of tool chest, covering grill",
+   "confidence": 0.95,
+   "box": [
+    912,
+    496,
+    1224,
+    746
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.5",
+     "box": [
+      912,
+      496,
+      1224,
+      746
+     ],
+     "boxf": [
+      0.57,
+      0.4154,
+      0.765,
+      0.6248
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Weber grill cover large price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.57,
+    0.4154,
+    0.765,
+    0.6248
+   ]
+  },
+  {
+   "n": 31,
+   "id": "garage.6",
+   "photo": "garage",
+   "name": "golf bag with clubs",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "black golf bag standing upright with clubs",
+   "shop_as": "golf bag with clubs",
+   "seen": "right side near shelving",
+   "confidence": 0.9,
+   "box": [
+    1216,
+    525,
+    1360,
+    836
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.6",
+     "box": [
+      1216,
+      525,
+      1360,
+      836
+     ],
+     "boxf": [
+      0.76,
+      0.4397,
+      0.85,
+      0.7002
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "golf bag with clubs price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [
+     {
+      "price": 189.95,
+      "listed": 189.95,
+      "set_of": 1,
+      "url": "https://foundersclub.com/collections/golf-bags",
+      "site": "foundersclub.com",
+      "quote": "Club 3rd Generation Premium Organizer 14 Way Golf Cart Bag 222 reviews $189.95 $279.95 Founders Club Frankli"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 189.95,
+    "note": "priced as new golf bag with clubs"
+   },
+   "unit_rcv": 189.95,
+   "rcv": 189.95,
+   "acv": 146.26,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%",
+   "boxf": [
+    0.76,
+    0.4397,
+    0.85,
+    0.7002
+   ]
+  },
+  {
+   "n": 32,
+   "id": "garage.7",
+   "photo": "garage",
+   "name": "white chest freezer",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "large white chest freezer, right foreground",
+   "shop_as": "white chest freezer large",
+   "seen": "bottom right corner",
+   "confidence": 0.95,
+   "box": [
+    1352,
+    645,
+    1600,
+    1134
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.7",
+     "box": [
+      1352,
+      645,
+      1600,
+      1134
+     ],
+     "boxf": [
+      0.845,
+      0.5402,
+      1.0,
+      0.9497
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "white chest freezer large price",
+    "depth": "basic",
+    "candidates": 8,
+    "sources": [
+     {
+      "price": 198.0,
+      "listed": 198.0,
+      "set_of": 1,
+      "url": "https://www.walmart.com/browse/home/chest-freezers/4044_90548_6828819_6907335",
+      "site": "walmart.com",
+      "quote": "Hisense 5 cu ft Garage Ready Chest Freezer- White, Price $198.00"
+     },
+     {
+      "price": 229.0,
+      "listed": 229.0,
+      "set_of": 1,
+      "url": "https://www.samsclub.com/browse/chest-freezers/2253",
+      "site": "samsclub.com",
+      "quote": "Chest Freezer, White $229.00"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 213.5,
+    "note": "Priced as new white chest freezer, mainstream mid-range replacement",
+    "set_aside": [
+     {
+      "price": 859.9,
+      "listed": 859.9,
+      "set_of": 1,
+      "url": "https://www.bestbuy.com/site/shop/large-chest-freezer",
+      "site": "bestbuy.com",
+      "quote": "A spacious white chest freezer \u30fb $859.90 Your price for this item is $"
+     }
+    ]
+   },
+   "unit_rcv": 213.5,
+   "rcv": 213.5,
+   "acv": 164.4,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%",
+   "boxf": [
+    0.845,
+    0.5402,
+    1.0,
+    0.9497
+   ]
+  },
+  {
+   "n": 33,
+   "id": "garage.8",
+   "photo": "garage",
+   "name": "blue cooler",
+   "brand": null,
+   "model": null,
+   "category": "other",
+   "quantity": 1,
+   "detail": "large blue cooler under workbench",
+   "shop_as": "blue cooler large",
+   "seen": "under workbench left side",
+   "confidence": 0.9,
+   "box": [
+    232,
+    788,
+    416,
+    991
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.8",
+     "box": [
+      232,
+      788,
+      416,
+      991
+     ],
+     "boxf": [
+      0.145,
+      0.66,
+      0.26,
+      0.83
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "blue cooler large price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.145,
+    0.66,
+    0.26,
+    0.83
+   ]
+  },
+  {
+   "n": 34,
+   "id": "garage.9",
+   "photo": "garage",
+   "name": "blue cooler",
+   "brand": null,
+   "model": null,
+   "category": "other",
+   "quantity": 1,
+   "detail": "smaller blue cooler near grill",
+   "shop_as": "blue cooler medium",
+   "seen": "near grill cart left side",
+   "confidence": 0.85,
+   "box": [
+    488,
+    663,
+    552,
+    776
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.9",
+     "box": [
+      488,
+      663,
+      552,
+      776
+     ],
+     "boxf": [
+      0.305,
+      0.5553,
+      0.345,
+      0.6499
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "blue cooler medium price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.305,
+    0.5553,
+    0.345,
+    0.6499
+   ]
+  },
+  {
+   "n": 35,
+   "id": "garage.10",
+   "photo": "garage",
+   "name": "green duffel bag",
+   "brand": "Coleman",
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "large green duffel bag with Coleman logo",
+   "shop_as": "Coleman duffel bag large",
+   "seen": "leaning against coolers left foreground",
+   "confidence": 0.95,
+   "box": [
+    16,
+    782,
+    320,
+    1146
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.10",
+     "box": [
+      16,
+      782,
+      320,
+      1146
+     ],
+     "boxf": [
+      0.01,
+      0.6549,
+      0.2,
+      0.9598
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Coleman duffel bag large price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.01,
+    0.6549,
+    0.2,
+    0.9598
+   ]
+  },
+  {
+   "n": 36,
+   "id": "garage.11",
+   "photo": "garage",
+   "name": "yellow cordless drill",
+   "brand": "DeWalt",
+   "model": null,
+   "category": "tools",
+   "quantity": 1,
+   "detail": "yellow DeWalt drill on workbench",
+   "shop_as": "DeWalt cordless drill",
+   "seen": "on wooden workbench left",
+   "confidence": 0.95,
+   "box": [
+    112,
+    555,
+    216,
+    651
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.11",
+     "box": [
+      112,
+      555,
+      216,
+      651
+     ],
+     "boxf": [
+      0.07,
+      0.4648,
+      0.135,
+      0.5452
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "query": "DeWalt cordless drill price",
+    "depth": "basic",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 129.95,
+      "listed": 129.95,
+      "set_of": 1,
+      "url": "https://www.walmart.com/c/kp/dewalt-cordless-drills",
+      "site": "walmart.com",
+      "quote": "DEWALT DCD794D1 20V, Cordless.5 in Drill Driver, 2 Ah $129.95 Was $155.85 $129.95/count"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 129.95,
+    "note": "priced as new mid-range cordless drill/driver kits"
+   },
+   "unit_rcv": 129.95,
+   "rcv": 129.95,
+   "acv": 100.06,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%",
+   "boxf": [
+    0.07,
+    0.4648,
+    0.135,
+    0.5452
+   ]
+  },
+  {
+   "n": 37,
+   "id": "garage.12",
+   "photo": "garage",
+   "name": "wooden workbench",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "long wooden workbench along left wall",
+   "shop_as": "wooden workbench garage",
+   "seen": "left wall with tools on it",
+   "confidence": 0.9,
+   "box": [
+    0,
+    615,
+    288,
+    824
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.12",
+     "box": [
+      0,
+      615,
+      288,
+      824
+     ],
+     "boxf": [
+      0.0,
+      0.5151,
+      0.18,
+      0.6901
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden workbench garage price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.5151,
+    0.18,
+    0.6901
+   ]
+  },
+  {
+   "n": 38,
+   "id": "garage.13",
+   "photo": "garage",
+   "name": "metal shelving unit",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "tall metal shelving with plastic bins, right wall",
+   "shop_as": "metal garage shelving unit",
+   "seen": "right wall with storage bins",
+   "confidence": 0.9,
+   "box": [
+    1344,
+    316,
+    1600,
+    651
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.13",
+     "box": [
+      1344,
+      316,
+      1600,
+      651
+     ],
+     "boxf": [
+      0.84,
+      0.2647,
+      1.0,
+      0.5452
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "metal garage shelving unit price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.84,
+    0.2647,
+    1.0,
+    0.5452
+   ]
+  },
+  {
+   "n": 39,
+   "id": "garage.14",
+   "photo": "garage",
+   "name": "plastic storage bins",
+   "brand": null,
+   "model": null,
+   "category": "other",
+   "quantity": 10,
+   "detail": "clear and blue plastic bins on shelves",
+   "shop_as": "plastic storage bins clear blue",
+   "seen": "on metal shelving right side",
+   "confidence": 0.85,
+   "box": [
+    1360,
+    197,
+    1600,
+    645
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.14",
+     "box": [
+      1360,
+      197,
+      1600,
+      645
+     ],
+     "boxf": [
+      0.85,
+      0.165,
+      1.0,
+      0.5402
+     ]
+    }
+   ],
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "plastic storage bins clear blue price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.85,
+    0.165,
+    1.0,
+    0.5402
+   ]
+  },
+  {
+   "n": 40,
+   "id": "kids_room.0",
+   "photo": "kids_room",
+   "name": "white twin bed with slat headboard",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "twin size, white wood, slat headboard",
+   "shop_as": "white twin bed frame with slat headboard",
+   "seen": "left side of room, bed with unicorn bedding",
+   "confidence": 0.95,
+   "box": [
+    0,
+    484,
+    560,
+    1194
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.0",
+     "box": [
+      0,
+      484,
+      560,
+      1194
+     ],
+     "boxf": [
+      0.0,
+      0.4054,
+      0.35,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "query": "white twin bed frame with slat headboard price",
+    "depth": "basic+advanced",
+    "candidates": 9,
+    "sources": [
+     {
+      "price": 65.98,
+      "listed": 65.98,
+      "set_of": 1,
+      "url": "https://www.walmart.com/ip/4-EVER-WINNER-Twin-Bed-Frame-White-Twin-Bed-Frame-for-Kids-Twin-Size-Upholstered-Bed-Frame-with-Headboard-White/5375281156",
+      "site": "walmart.com",
+      "quote": "oard, metal slat support, Twin Bed Frame $148.37 \u30fb $39.99 (4.4)735 seller \u30fb current price $65.98"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 65.98,
+    "note": "Priced as new white twin bed with headboard, mid-range"
+   },
+   "unit_rcv": 65.98,
+   "rcv": 65.98,
+   "acv": 59.38,
+   "dep_pct": 10.0,
+   "life": 10,
+   "dep_why": "1 yr x 1 (Average) / 10 yr life = 10%",
+   "boxf": [
+    0.0,
+    0.4054,
+    0.35,
+    1.0
+   ]
+  },
+  {
+   "n": 41,
+   "id": "kids_room.1",
+   "photo": "kids_room",
+   "name": "unicorn comforter and pillow set",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "twin size, white with large unicorn graphic and stars",
+   "shop_as": "twin unicorn comforter set",
+   "seen": "on bed, large unicorn print on duvet and pillow",
+   "confidence": 0.9,
+   "box": [
+    0,
+    615,
+    552,
+    1194
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.1",
+     "box": [
+      0,
+      615,
+      552,
+      1194
+     ],
+     "boxf": [
+      0.0,
+      0.5151,
+      0.345,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "twin unicorn comforter set price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.5151,
+    0.345,
+    1.0
+   ]
+  },
+  {
+   "n": 42,
+   "id": "kids_room.2",
+   "photo": "kids_room",
+   "name": "stuffed animals",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 6,
+   "detail": "plush toys including unicorn, bear, dog, pink bunny",
+   "shop_as": "plush stuffed animal set",
+   "seen": "piled on bed against headboard",
+   "confidence": 0.85,
+   "box": [
+    24,
+    609,
+    336,
+    770
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.2",
+     "box": [
+      24,
+      609,
+      336,
+      770
+     ],
+     "boxf": [
+      0.015,
+      0.5101,
+      0.21,
+      0.6449
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "plush stuffed animal set price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.015,
+    0.5101,
+    0.21,
+    0.6449
+   ]
+  },
+  {
+   "n": 43,
+   "id": "kids_room.3",
+   "photo": "kids_room",
+   "name": "white bookshelf",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "4-shelf white bookcase, approximately 5 feet tall",
+   "shop_as": "white 4-shelf bookcase",
+   "seen": "center of room, holding books and LEGO box",
+   "confidence": 0.95,
+   "box": [
+    568,
+    519,
+    872,
+    1027
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.3",
+     "box": [
+      568,
+      519,
+      872,
+      1027
+     ],
+     "boxf": [
+      0.355,
+      0.4347,
+      0.545,
+      0.8601
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "query": "white 4-shelf bookcase price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.355,
+    0.4347,
+    0.545,
+    0.8601
+   ]
+  },
+  {
+   "n": 44,
+   "id": "kids_room.4",
+   "photo": "kids_room",
+   "name": "LEGO Friends set box",
+   "brand": "LEGO",
+   "model": "Friends",
+   "category": "toys_games",
+   "quantity": 1,
+   "detail": "large box on top of bookshelf, building set",
+   "shop_as": "LEGO Friends building set",
+   "seen": "on top shelf of bookcase",
+   "confidence": 0.95,
+   "box": [
+    600,
+    394,
+    840,
+    531
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.4",
+     "box": [
+      600,
+      394,
+      840,
+      531
+     ],
+     "boxf": [
+      0.375,
+      0.33,
+      0.525,
+      0.4447
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "query": "LEGO Friends building set price",
+    "depth": "basic+advanced",
+    "candidates": 6,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No clear match found for 'LEGO Friends set box, large box on top of bookshelf' \u2014 none of the listed items correspond to a known standard-sized new LEGO Friends set matching the description.",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.375,
+    0.33,
+    0.525,
+    0.4447
+   ]
+  },
+  {
+   "n": 45,
+   "id": "kids_room.6",
+   "photo": "kids_room",
+   "name": "pink kick scooter",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "pink three-wheel kick scooter, child size",
+   "shop_as": "pink kids kick scooter",
+   "seen": "leaning against bookshelf on floor",
+   "confidence": 0.9,
+   "box": [
+    568,
+    734,
+    808,
+    1075
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.6",
+     "box": [
+      568,
+      734,
+      808,
+      1075
+     ],
+     "boxf": [
+      0.355,
+      0.6147,
+      0.505,
+      0.9003
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "pink kids kick scooter price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.355,
+    0.6147,
+    0.505,
+    0.9003
+   ]
+  },
+  {
+   "n": 46,
+   "id": "kids_room.7",
+   "photo": "kids_room",
+   "name": "ukulele",
+   "brand": null,
+   "model": null,
+   "category": "musical",
+   "quantity": 1,
+   "detail": "small wooden string instrument, child size",
+   "shop_as": "child ukulele",
+   "seen": "leaning against bookshelf next to scooter",
+   "confidence": 0.9,
+   "box": [
+    768,
+    716,
+    888,
+    1027
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.7",
+     "box": [
+      768,
+      716,
+      888,
+      1027
+     ],
+     "boxf": [
+      0.48,
+      0.5997,
+      0.555,
+      0.8601
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "child ukulele price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.48,
+    0.5997,
+    0.555,
+    0.8601
+   ]
+  },
+  {
+   "n": 47,
+   "id": "kids_room.9",
+   "photo": "kids_room",
+   "name": "Nintendo Switch",
+   "brand": "Nintendo",
+   "model": "Switch",
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "tablet with green and blue Joy-Con controllers, docked or on desk",
+   "shop_as": "Nintendo Switch console",
+   "seen": "on desk in front of child",
+   "confidence": 0.9,
+   "box": [
+    1048,
+    693,
+    1160,
+    746
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.9",
+     "box": [
+      1048,
+      693,
+      1160,
+      746
+     ],
+     "boxf": [
+      0.655,
+      0.5804,
+      0.725,
+      0.6248
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "query": "Nintendo Switch console price",
+    "depth": "basic",
+    "candidates": 19,
+    "sources": [
+     {
+      "price": 339.99,
+      "listed": 339.99,
+      "set_of": 1,
+      "url": "https://www.theverge.com/news/717610/nintendo-switch-original-price-increase",
+      "site": "theverge.com",
+      "quote": "endo Switch, which has cost $299.99 in the US since its release in 2017, is now priced at $339.99 on Nintendo\u2019s online store."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 339.99,
+    "note": "Priced as current Nintendo Switch Standard model"
+   },
+   "unit_rcv": 339.99,
+   "rcv": 339.99,
+   "acv": 271.99,
+   "dep_pct": 20.0,
+   "life": 5,
+   "dep_why": "1 yr x 1 (Average) / 5 yr life = 20%",
+   "boxf": [
+    0.655,
+    0.5804,
+    0.725,
+    0.6248
+   ]
+  },
+  {
+   "n": 48,
+   "id": "kids_room.10",
+   "photo": "kids_room",
+   "name": "wooden play kitchen",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 1,
+   "detail": "light wood play kitchen with sink, stove, microwave, cabinets",
+   "shop_as": "wooden play kitchen set",
+   "seen": "right side of room, child-size kitchen toy",
+   "confidence": 0.95,
+   "box": [
+    1264,
+    549,
+    1600,
+    1194
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.10",
+     "box": [
+      1264,
+      549,
+      1600,
+      1194
+     ],
+     "boxf": [
+      0.79,
+      0.4598,
+      1.0,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden play kitchen set price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.79,
+    0.4598,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "n": 49,
+   "id": "kids_room.11",
+   "photo": "kids_room",
+   "name": "toy laundry basket with toys",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 1,
+   "detail": "gray and white striped fabric basket filled with toys",
+   "shop_as": "toy storage basket",
+   "seen": "on floor next to desk and play kitchen",
+   "confidence": 0.85,
+   "box": [
+    1176,
+    806,
+    1288,
+    1021
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.11",
+     "box": [
+      1176,
+      806,
+      1288,
+      1021
+     ],
+     "boxf": [
+      0.735,
+      0.675,
+      0.805,
+      0.8551
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "query": "toy storage basket price",
+    "depth": "basic+advanced",
+    "candidates": 2,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No suitable match found \u2014 listed items are either storage baskets without toys or organizers not matching the described toy-filled laundry basket",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.735,
+    0.675,
+    0.805,
+    0.8551
+   ]
+  },
+  {
+   "n": 50,
+   "id": "kids_room.12",
+   "photo": "kids_room",
+   "name": "string lights",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "string of small bulbs hung across ceiling",
+   "shop_as": "indoor string lights",
+   "seen": "hanging across top of wall",
+   "confidence": 0.9,
+   "box": [
+    0,
+    0,
+    1600,
+    119
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.12",
+     "box": [
+      0,
+      0,
+      1600,
+      119
+     ],
+     "boxf": [
+      0.0,
+      0.0,
+      1.0,
+      0.0997
+     ]
+    }
+   ],
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "indoor string lights price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.0,
+    1.0,
+    0.0997
+   ]
+  },
+  {
+   "n": 51,
+   "id": "kitchen.0",
+   "photo": "kitchen",
+   "name": "red KitchenAid stand mixer with stainless steel bowl",
+   "brand": "KitchenAid",
+   "model": null,
+   "category": "appliances_small",
+   "quantity": 1,
+   "detail": "red tilt-head stand mixer, 5-quart stainless steel bowl, with flat beater attached",
+   "shop_as": "KitchenAid Artisan series 5-quart stand mixer red",
+   "seen": "sitting on left countertop next to knife block",
+   "confidence": 0.95,
+   "box": [
+    48,
+    545,
+    400,
+    911
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.0",
+     "box": [
+      48,
+      545,
+      400,
+      911
+     ],
+     "boxf": [
+      0.03,
+      0.3946,
+      0.25,
+      0.6597
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.6",
+     "box": [
+      1384,
+      449,
+      1520,
+      628
+     ],
+     "boxf": [
+      0.865,
+      0.3251,
+      0.95,
+      0.4547
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "KitchenAid Artisan series 5-quart stand mixer red price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.03,
+    0.3946,
+    0.25,
+    0.6597
+   ]
+  },
+  {
+   "n": 52,
+   "id": "kitchen.1",
+   "photo": "kitchen",
+   "name": "wooden knife block with kitchen knives",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "wood block holding about 8 knives with black handles",
+   "shop_as": "wooden knife block set 8 piece",
+   "seen": "on counter in front of stand mixer",
+   "confidence": 0.9,
+   "box": [
+    24,
+    642,
+    240,
+    1015
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.1",
+     "box": [
+      24,
+      642,
+      240,
+      1015
+     ],
+     "boxf": [
+      0.015,
+      0.4649,
+      0.15,
+      0.735
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden knife block set 8 piece price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.015,
+    0.4649,
+    0.15,
+    0.735
+   ]
+  },
+  {
+   "n": 53,
+   "id": "kitchen.2",
+   "photo": "kitchen",
+   "name": "espresso machine",
+   "brand": null,
+   "model": null,
+   "category": "appliances_small",
+   "quantity": 1,
+   "detail": "silver and black semi-automatic espresso machine with portafilter",
+   "shop_as": "semi-automatic espresso machine stainless steel",
+   "seen": "on counter behind stand mixer",
+   "confidence": 0.85,
+   "box": [
+    296,
+    476,
+    584,
+    822
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.2",
+     "box": [
+      296,
+      476,
+      584,
+      822
+     ],
+     "boxf": [
+      0.185,
+      0.3447,
+      0.365,
+      0.5952
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.5",
+     "box": [
+      1128,
+      435,
+      1264,
+      615
+     ],
+     "boxf": [
+      0.705,
+      0.315,
+      0.79,
+      0.4453
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "semi-automatic espresso machine stainless steel price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.185,
+    0.3447,
+    0.365,
+    0.5952
+   ]
+  },
+  {
+   "n": 54,
+   "id": "kitchen.3",
+   "photo": "kitchen",
+   "name": "Ninja air fryer",
+   "brand": "Ninja",
+   "model": null,
+   "category": "appliances_small",
+   "quantity": 1,
+   "detail": "gray digital air fryer with basket and control panel",
+   "shop_as": "Ninja air fryer 4 quart digital",
+   "seen": "on counter between espresso machine and blender",
+   "confidence": 0.9,
+   "box": [
+    600,
+    539,
+    768,
+    766
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.3",
+     "box": [
+      600,
+      539,
+      768,
+      766
+     ],
+     "boxf": [
+      0.375,
+      0.3903,
+      0.48,
+      0.5547
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.4",
+     "box": [
+      1000,
+      476,
+      1112,
+      615
+     ],
+     "boxf": [
+      0.625,
+      0.3447,
+      0.695,
+      0.4453
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Ninja air fryer 4 quart digital price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.375,
+    0.3903,
+    0.48,
+    0.5547
+   ]
+  },
+  {
+   "n": 55,
+   "id": "kitchen.4",
+   "photo": "kitchen",
+   "name": "Vitamix blender",
+   "brand": "Vitamix",
+   "model": null,
+   "category": "appliances_small",
+   "quantity": 1,
+   "detail": "blender with clear pitcher and black lid on gray base",
+   "shop_as": "Vitamix blender professional series",
+   "seen": "on counter to right of air fryer",
+   "confidence": 0.85,
+   "box": [
+    776,
+    463,
+    912,
+    760
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.4",
+     "box": [
+      776,
+      463,
+      912,
+      760
+     ],
+     "boxf": [
+      0.485,
+      0.3353,
+      0.57,
+      0.5503
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.3",
+     "box": [
+      896,
+      428,
+      1016,
+      608
+     ],
+     "boxf": [
+      0.56,
+      0.3099,
+      0.635,
+      0.4403
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Vitamix blender professional series price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.485,
+    0.3353,
+    0.57,
+    0.5503
+   ]
+  },
+  {
+   "n": 56,
+   "id": "kitchen.5",
+   "photo": "kitchen",
+   "name": "stainless steel microwave oven",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "over-the-range stainless steel microwave with control panel on right",
+   "shop_as": "over the range microwave stainless steel 30 inch",
+   "seen": "mounted above stove under cabinets",
+   "confidence": 0.9,
+   "box": [
+    872,
+    152,
+    1256,
+    407
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.5",
+     "box": [
+      872,
+      152,
+      1256,
+      407
+     ],
+     "boxf": [
+      0.545,
+      0.1101,
+      0.785,
+      0.2947
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "over the range microwave stainless steel 30 inch price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.545,
+    0.1101,
+    0.785,
+    0.2947
+   ]
+  },
+  {
+   "n": 57,
+   "id": "kitchen.6",
+   "photo": "kitchen",
+   "name": "gas stove and oven range",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "stainless steel gas range with 5 burners, oven door open, cast iron grates",
+   "shop_as": "gas stove oven range stainless steel 30 inch",
+   "seen": "center right, oven door open with cookie sheet being removed",
+   "confidence": 0.95,
+   "box": [
+    912,
+    552,
+    1424,
+    1374
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.6",
+     "box": [
+      912,
+      552,
+      1424,
+      1374
+     ],
+     "boxf": [
+      0.57,
+      0.3997,
+      0.89,
+      0.9949
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.2",
+     "box": [
+      664,
+      504,
+      1032,
+      1056
+     ],
+     "boxf": [
+      0.415,
+      0.365,
+      0.645,
+      0.7647
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "gas stove oven range stainless steel 30 inch price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.57,
+    0.3997,
+    0.89,
+    0.9949
+   ]
+  },
+  {
+   "n": 58,
+   "id": "kitchen.7",
+   "photo": "kitchen",
+   "name": "stainless steel refrigerator with water dispenser",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "side-by-side stainless steel refrigerator with external ice and water dispenser on left door",
+   "shop_as": "side by side refrigerator stainless steel 36 inch",
+   "seen": "right side of kitchen, tall appliance",
+   "confidence": 0.95,
+   "box": [
+    1256,
+    200,
+    1600,
+    994
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.7",
+     "box": [
+      1256,
+      200,
+      1600,
+      994
+     ],
+     "boxf": [
+      0.785,
+      0.1448,
+      1.0,
+      0.7198
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "side by side refrigerator stainless steel 36 inch price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.785,
+    0.1448,
+    1.0,
+    0.7198
+   ]
+  },
+  {
+   "n": 59,
+   "id": "kitchen.8",
+   "photo": "kitchen",
+   "name": "cast iron skillet",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "black cast iron frying pan on stovetop burner",
+   "shop_as": "cast iron skillet 10 inch",
+   "seen": "on gas stovetop front left burner",
+   "confidence": 0.9,
+   "box": [
+    944,
+    704,
+    1152,
+    787
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.8",
+     "box": [
+      944,
+      704,
+      1152,
+      787
+     ],
+     "boxf": [
+      0.59,
+      0.5098,
+      0.72,
+      0.5699
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "cast iron skillet 10 inch price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.59,
+    0.5098,
+    0.72,
+    0.5699
+   ]
+  },
+  {
+   "n": 60,
+   "id": "kitchen.10",
+   "photo": "kitchen",
+   "name": "glass mixing bowl with flour",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "large clear glass bowl containing white flour on counter",
+   "shop_as": "glass mixing bowl large 8 quart",
+   "seen": "on countertop left foreground",
+   "confidence": 0.9,
+   "box": [
+    336,
+    884,
+    576,
+    1105
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.10",
+     "box": [
+      336,
+      884,
+      576,
+      1105
+     ],
+     "boxf": [
+      0.21,
+      0.6401,
+      0.36,
+      0.8001
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "glass mixing bowl large 8 quart price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.21,
+    0.6401,
+    0.36,
+    0.8001
+   ]
+  },
+  {
+   "n": 61,
+   "id": "kitchen.11",
+   "photo": "kitchen",
+   "name": "measuring cups and spoons",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "set of metal measuring cups and spoons on counter",
+   "shop_as": "measuring cups and spoons set stainless steel",
+   "seen": "on counter near mixing bowl",
+   "confidence": 0.8,
+   "box": [
+    504,
+    842,
+    664,
+    967
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.11",
+     "box": [
+      504,
+      842,
+      664,
+      967
+     ],
+     "boxf": [
+      0.315,
+      0.6097,
+      0.415,
+      0.7002
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "measuring cups and spoons set stainless steel price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.315,
+    0.6097,
+    0.415,
+    0.7002
+   ]
+  },
+  {
+   "n": 62,
+   "id": "kitchen.12",
+   "photo": "kitchen",
+   "name": "spatula",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "metal spatula with slotted head on counter",
+   "shop_as": "slotted spatula stainless steel",
+   "seen": "on countertop left of mixing bowl",
+   "confidence": 0.8,
+   "box": [
+    184,
+    1022,
+    368,
+    1070
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.12",
+     "box": [
+      184,
+      1022,
+      368,
+      1070
+     ],
+     "boxf": [
+      0.115,
+      0.74,
+      0.23,
+      0.7748
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "slotted spatula stainless steel price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.115,
+    0.74,
+    0.23,
+    0.7748
+   ]
+  },
+  {
+   "n": 63,
+   "id": "kitchen.13",
+   "photo": "kitchen",
+   "name": "glass storage jars with dry goods",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 12,
+   "detail": "clear glass jars with metal lids containing grains, flour, sugar on open shelves",
+   "shop_as": "glass storage jars with lids set of 12",
+   "seen": "on white open shelves above countertop",
+   "confidence": 0.85,
+   "box": [
+    424,
+    76,
+    872,
+    407
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.13",
+     "box": [
+      424,
+      76,
+      872,
+      407
+     ],
+     "boxf": [
+      0.265,
+      0.055,
+      0.545,
+      0.2947
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.12",
+     "box": [
+      944,
+      173,
+      1160,
+      394
+     ],
+     "boxf": [
+      0.59,
+      0.1253,
+      0.725,
+      0.2853
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "glass storage jars with lids set of 12 price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.265,
+    0.055,
+    0.545,
+    0.2947
+   ]
+  },
+  {
+   "n": 64,
+   "id": "kitchen.14",
+   "photo": "kitchen",
+   "name": "white plates and bowls",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 30,
+   "detail": "stacks of white ceramic plates and bowls on open shelves",
+   "shop_as": "white ceramic dinnerware set plates and bowls",
+   "seen": "on open shelves left side",
+   "confidence": 0.85,
+   "box": [
+    0,
+    0,
+    536,
+    407
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.14",
+     "box": [
+      0,
+      0,
+      536,
+      407
+     ],
+     "boxf": [
+      0.0,
+      0.0,
+      0.335,
+      0.2947
+     ]
+    },
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.13",
+     "box": [
+      1104,
+      200,
+      1600,
+      394
+     ],
+     "boxf": [
+      0.69,
+      0.1448,
+      1.0,
+      0.2853
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "white ceramic dinnerware set plates and bowls price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.0,
+    0.335,
+    0.2947
+   ]
+  },
+  {
+   "n": 65,
+   "id": "kitchen.15",
+   "photo": "kitchen",
+   "name": "white mugs",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "white ceramic mugs on shelf",
+   "shop_as": "white ceramic mugs set of 4",
+   "seen": "on open shelf left side",
+   "confidence": 0.8,
+   "box": [
+    152,
+    283,
+    264,
+    400
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen",
+     "id": "kitchen.15",
+     "box": [
+      152,
+      283,
+      264,
+      400
+     ],
+     "boxf": [
+      0.095,
+      0.2049,
+      0.165,
+      0.2896
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "white ceramic mugs set of 4 price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.095,
+    0.2049,
+    0.165,
+    0.2896
+   ]
+  },
+  {
+   "n": 66,
+   "id": "kitchen_dog.0",
+   "photo": "kitchen_dog",
+   "name": "stainless steel French door refrigerator with bottom freezer",
+   "brand": "Samsung",
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "double-door fridge with bottom freezer drawer, external water/ice dispensers on both doors",
+   "shop_as": "Samsung French door refrigerator with bottom freezer",
+   "seen": "large appliance on left side of kitchen",
+   "confidence": 0.95,
+   "box": [
+    176,
+    200,
+    672,
+    1132
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.0",
+     "box": [
+      176,
+      200,
+      672,
+      1132
+     ],
+     "boxf": [
+      0.11,
+      0.1448,
+      0.42,
+      0.8197
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Samsung French door refrigerator with bottom freezer price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.11,
+    0.1448,
+    0.42,
+    0.8197
+   ]
+  },
+  {
+   "n": 67,
+   "id": "kitchen_dog.1",
+   "photo": "kitchen_dog",
+   "name": "over-the-range microwave",
+   "brand": "Samsung",
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "stainless steel microwave mounted above stove",
+   "shop_as": "Samsung over-the-range microwave",
+   "seen": "mounted above the stove between cabinets",
+   "confidence": 0.9,
+   "box": [
+    656,
+    193,
+    968,
+    400
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.1",
+     "box": [
+      656,
+      193,
+      968,
+      400
+     ],
+     "boxf": [
+      0.41,
+      0.1398,
+      0.605,
+      0.2896
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Samsung over-the-range microwave price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.41,
+    0.1398,
+    0.605,
+    0.2896
+   ]
+  },
+  {
+   "n": 68,
+   "id": "kitchen_dog.7",
+   "photo": "kitchen_dog",
+   "name": "knife block with knives",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "wooden knife block holding multiple knives",
+   "shop_as": "knife block set",
+   "seen": "on counter to the right of stand mixer",
+   "confidence": 0.85,
+   "box": [
+    1512,
+    490,
+    1592,
+    628
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.7",
+     "box": [
+      1512,
+      490,
+      1592,
+      628
+     ],
+     "boxf": [
+      0.945,
+      0.3548,
+      0.995,
+      0.4547
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "knife block set price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.945,
+    0.3548,
+    0.995,
+    0.4547
+   ]
+  },
+  {
+   "n": 69,
+   "id": "kitchen_dog.8",
+   "photo": "kitchen_dog",
+   "name": "wooden dining table",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "large rectangular wooden dining table with visible grain",
+   "shop_as": "wooden dining table",
+   "seen": "foreground right, large table surface",
+   "confidence": 0.95,
+   "box": [
+    768,
+    766,
+    1600,
+    1374
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.8",
+     "box": [
+      768,
+      766,
+      1600,
+      1374
+     ],
+     "boxf": [
+      0.48,
+      0.5547,
+      1.0,
+      0.9949
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden dining table price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.48,
+    0.5547,
+    1.0,
+    0.9949
+   ]
+  },
+  {
+   "n": 70,
+   "id": "kitchen_dog.9",
+   "photo": "kitchen_dog",
+   "name": "wooden dining chair",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 4,
+   "detail": "wooden slat-back dining chairs with dark upholstered seats",
+   "shop_as": "wooden dining chair with upholstered seat",
+   "seen": "around the dining table",
+   "confidence": 0.9,
+   "box": [
+    824,
+    711,
+    1600,
+    1381
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.9",
+     "box": [
+      824,
+      711,
+      1600,
+      1381
+     ],
+     "boxf": [
+      0.515,
+      0.5148,
+      1.0,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden dining chair with upholstered seat price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.515,
+    0.5148,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "n": 71,
+   "id": "kitchen_dog.11",
+   "photo": "kitchen_dog",
+   "name": "cookbooks on shelf",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 12,
+   "detail": "row of cookbooks on top open shelf",
+   "shop_as": "cookbooks",
+   "seen": "top shelf in corner",
+   "confidence": 0.8,
+   "box": [
+    936,
+    14,
+    1096,
+    145
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.11",
+     "box": [
+      936,
+      14,
+      1096,
+      145
+     ],
+     "boxf": [
+      0.585,
+      0.0101,
+      0.685,
+      0.105
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "query": "cookbooks price",
+    "depth": "basic+advanced",
+    "candidates": 1,
+    "sources": [],
+    "rejected": [
+     {
+      "n": 1,
+      "price": 22.5,
+      "why": "$22.5 isn't in sentence 1"
+     }
+    ],
+    "status": "needs a price",
+    "price": null,
+    "note": "priced per cookbook at average new cost",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.585,
+    0.0101,
+    0.685,
+    0.105
+   ]
+  },
+  {
+   "n": 72,
+   "id": "kitchen_dog.14",
+   "photo": "kitchen_dog",
+   "name": "wooden bowl",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "large wooden bowl on top shelf",
+   "shop_as": "wooden serving bowl",
+   "seen": "top right shelf",
+   "confidence": 0.8,
+   "box": [
+    1488,
+    48,
+    1600,
+    110
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.14",
+     "box": [
+      1488,
+      48,
+      1600,
+      110
+     ],
+     "boxf": [
+      0.93,
+      0.0348,
+      1.0,
+      0.0797
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wooden serving bowl price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.93,
+    0.0348,
+    1.0,
+    0.0797
+   ]
+  },
+  {
+   "n": 73,
+   "id": "kitchen_dog.15",
+   "photo": "kitchen_dog",
+   "name": "area rug",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "patterned area rug visible in adjacent room through doorway",
+   "shop_as": "area rug",
+   "seen": "through doorway on far left",
+   "confidence": 0.7,
+   "box": [
+    0,
+    766,
+    96,
+    953
+   ],
+   "room": "kitchen",
+   "sightings": [
+    {
+     "photo": "kitchen_dog",
+     "id": "kitchen_dog.15",
+     "box": [
+      0,
+      766,
+      96,
+      953
+     ],
+     "boxf": [
+      0.0,
+      0.5547,
+      0.06,
+      0.6901
+     ]
+    }
+   ],
+   "earliest_photo": "2023-10-14",
+   "age_years": 1.9,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "area rug price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.5547,
+    0.06,
+    0.6901
+   ]
+  },
+  {
+   "n": 74,
+   "id": "living.0",
+   "photo": "living",
+   "name": "large flat-screen TV",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "large black screen, approximately 65-inch",
+   "shop_as": "65 inch 4K LED smart TV",
+   "seen": "on wooden media console against left wall",
+   "confidence": 0.9,
+   "box": [
+    112,
+    478,
+    584,
+    800
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.0",
+     "box": [
+      112,
+      478,
+      584,
+      800
+     ],
+     "boxf": [
+      0.07,
+      0.4003,
+      0.365,
+      0.67
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "65 inch 4K LED smart TV price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.07,
+    0.4003,
+    0.365,
+    0.67
+   ]
+  },
+  {
+   "n": 75,
+   "id": "living.1",
+   "photo": "living",
+   "name": "PlayStation 5 console",
+   "brand": "Sony",
+   "model": "PlayStation 5",
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "white and black vertical console",
+   "shop_as": "Sony PlayStation 5 disc console",
+   "seen": "standing vertically on left side of media console",
+   "confidence": 0.95,
+   "box": [
+    56,
+    681,
+    152,
+    860
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.1",
+     "box": [
+      56,
+      681,
+      152,
+      860
+     ],
+     "boxf": [
+      0.035,
+      0.5704,
+      0.095,
+      0.7203
+     ]
+    },
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.10",
+     "box": [
+      1104,
+      597,
+      1184,
+      752
+     ],
+     "boxf": [
+      0.69,
+      0.5,
+      0.74,
+      0.6298
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Sony PlayStation 5 disc console price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.035,
+    0.5704,
+    0.095,
+    0.7203
+   ]
+  },
+  {
+   "n": 76,
+   "id": "living.2",
+   "photo": "living",
+   "name": "Nintendo Switch console",
+   "brand": "Nintendo",
+   "model": "Nintendo Switch",
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "white console with Joy-Con controllers",
+   "shop_as": "Nintendo Switch console",
+   "seen": "on right side of media console",
+   "confidence": 0.85,
+   "box": [
+    584,
+    693,
+    648,
+    740
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.2",
+     "box": [
+      584,
+      693,
+      648,
+      740
+     ],
+     "boxf": [
+      0.365,
+      0.5804,
+      0.405,
+      0.6198
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "query": "Nintendo Switch console price",
+    "depth": "basic",
+    "candidates": 19,
+    "sources": [
+     {
+      "price": 339.99,
+      "listed": 339.99,
+      "set_of": 1,
+      "url": "https://www.theverge.com/news/717610/nintendo-switch-original-price-increase",
+      "site": "theverge.com",
+      "quote": "endo Switch, which has cost $299.99 in the US since its release in 2017, is now priced at $339.99 on Nintendo\u2019s online store."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 339.99,
+    "note": "Priced as Nintendo Switch standard model (white console with Joy-Con)"
+   },
+   "unit_rcv": 339.99,
+   "rcv": 339.99,
+   "acv": 244.79,
+   "dep_pct": 28.0,
+   "life": 5,
+   "dep_why": "1.4 yr x 1 (Average) / 5 yr life = 28%",
+   "boxf": [
+    0.365,
+    0.5804,
+    0.405,
+    0.6198
+   ]
+  },
+  {
+   "n": 77,
+   "id": "living_xmas.7",
+   "photo": "living_xmas",
+   "name": "soundbar",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "long black soundbar sitting in front of TV on stand",
+   "shop_as": "soundbar for TV",
+   "seen": "in front of TV on stand",
+   "confidence": 0.9,
+   "box": [
+    1216,
+    758,
+    1504,
+    901
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.3",
+     "box": [
+      272,
+      740,
+      512,
+      812
+     ],
+     "boxf": [
+      0.17,
+      0.6198,
+      0.32,
+      0.6801
+     ]
+    },
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.7",
+     "box": [
+      1216,
+      758,
+      1504,
+      901
+     ],
+     "boxf": [
+      0.76,
+      0.6348,
+      0.94,
+      0.7546
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "soundbar for TV price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.76,
+    0.6348,
+    0.94,
+    0.7546
+   ]
+  },
+  {
+   "n": 78,
+   "id": "living.4",
+   "photo": "living",
+   "name": "wooden media console",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "dark wood TV stand with cabinets and open shelves",
+   "shop_as": "dark wood TV media console with storage",
+   "seen": "under TV along left wall",
+   "confidence": 0.9,
+   "box": [
+    16,
+    716,
+    680,
+    1039
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.4",
+     "box": [
+      16,
+      716,
+      680,
+      1039
+     ],
+     "boxf": [
+      0.01,
+      0.5997,
+      0.425,
+      0.8702
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "dark wood TV media console with storage price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.01,
+    0.5997,
+    0.425,
+    0.8702
+   ]
+  },
+  {
+   "n": 79,
+   "id": "living.5",
+   "photo": "living",
+   "name": "gray sectional sofa",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "large gray fabric sectional with chaise, multiple seat cushions",
+   "shop_as": "gray fabric sectional sofa with chaise",
+   "seen": "center of room, facing TV",
+   "confidence": 0.95,
+   "box": [
+    536,
+    776,
+    1248,
+    1194
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.5",
+     "box": [
+      536,
+      776,
+      1248,
+      1194
+     ],
+     "boxf": [
+      0.335,
+      0.6499,
+      0.78,
+      1.0
+     ]
+    },
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.0",
+     "box": [
+      0,
+      663,
+      688,
+      1194
+     ],
+     "boxf": [
+      0.0,
+      0.5553,
+      0.43,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "gray fabric sectional sofa with chaise price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.335,
+    0.6499,
+    0.78,
+    1.0
+   ]
+  },
+  {
+   "n": 80,
+   "id": "living.6",
+   "photo": "living",
+   "name": "decorative throw pillow",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 2,
+   "detail": "patterned pillows with black and white spots on gray sofa",
+   "shop_as": "decorative throw pillow for sofa",
+   "seen": "on sectional sofa",
+   "confidence": 0.9,
+   "box": [
+    888,
+    764,
+    1064,
+    919
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.6",
+     "box": [
+      888,
+      764,
+      1064,
+      919
+     ],
+     "boxf": [
+      0.555,
+      0.6399,
+      0.665,
+      0.7697
+     ]
+    },
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.2",
+     "box": [
+      0,
+      1033,
+      272,
+      1194
+     ],
+     "boxf": [
+      0.0,
+      0.8652,
+      0.17,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "decorative throw pillow for sofa price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.555,
+    0.6399,
+    0.665,
+    0.7697
+   ]
+  },
+  {
+   "n": 81,
+   "id": "living.7",
+   "photo": "living",
+   "name": "white cube bookshelf",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "white 4x4 cube shelving unit with books and games",
+   "shop_as": "white 4x4 cube bookcase",
+   "seen": "against back wall, filled with books and board games",
+   "confidence": 0.9,
+   "box": [
+    792,
+    501,
+    1168,
+    848
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.7",
+     "box": [
+      792,
+      501,
+      1168,
+      848
+     ],
+     "boxf": [
+      0.495,
+      0.4196,
+      0.73,
+      0.7102
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "white 4x4 cube bookcase price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.495,
+    0.4196,
+    0.73,
+    0.7102
+   ]
+  },
+  {
+   "n": 82,
+   "id": "living.8",
+   "photo": "living",
+   "name": "books",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 30,
+   "detail": "mixed hardcover and paperback books on bookshelf",
+   "shop_as": "hardcover and paperback books",
+   "seen": "on white bookshelf shelves",
+   "confidence": 0.85,
+   "box": [
+    800,
+    513,
+    1040,
+    788
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.8",
+     "box": [
+      800,
+      513,
+      1040,
+      788
+     ],
+     "boxf": [
+      0.5,
+      0.4296,
+      0.65,
+      0.66
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "query": "hardcover and paperback books price",
+    "depth": "basic+advanced",
+    "candidates": 8,
+    "sources": [],
+    "rejected": [
+     {
+      "n": 2,
+      "price": 27.5,
+      "why": "$27.5 isn't in sentence 2"
+     },
+     {
+      "n": 8,
+      "price": 27.5,
+      "why": "$27.5 isn't in sentence 8"
+     },
+     {
+      "n": 5,
+      "price": 26.95,
+      "why": "$26.95 isn't in sentence 5"
+     }
+    ],
+    "status": "needs a price",
+    "price": null,
+    "note": "Priced as new hardcover/paperback mix using mainstream mid-range averages.",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.5,
+    0.4296,
+    0.65,
+    0.66
+   ]
+  },
+  {
+   "n": 83,
+   "id": "living.9",
+   "photo": "living",
+   "name": "board games",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 10,
+   "detail": "boxed board games stacked on bookshelf",
+   "shop_as": "board games",
+   "seen": "on right side of white bookshelf",
+   "confidence": 0.85,
+   "box": [
+    992,
+    513,
+    1120,
+    812
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.9",
+     "box": [
+      992,
+      513,
+      1120,
+      812
+     ],
+     "boxf": [
+      0.62,
+      0.4296,
+      0.7,
+      0.6801
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "query": "board games price",
+    "depth": "basic+advanced",
+    "candidates": 12,
+    "sources": [
+     {
+      "price": 30.0,
+      "listed": 30.0,
+      "set_of": 1,
+      "url": "https://meepleandmat.com/guides/how-much-do-board-games-cost",
+      "site": "meepleandmat.com",
+      "quote": "Full-size board games with a board and plastic pieces run $30 to $50."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 30.0,
+    "note": "Priced as standard new mid-range boxed board game"
+   },
+   "unit_rcv": 30.0,
+   "rcv": 300.0,
+   "acv": 90.0,
+   "dep_pct": 70.0,
+   "life": 2,
+   "dep_why": "1.4 yr x 1 (Average) / 2 yr life = 70%",
+   "boxf": [
+    0.62,
+    0.4296,
+    0.7,
+    0.6801
+   ]
+  },
+  {
+   "n": 84,
+   "id": "living.10",
+   "photo": "living",
+   "name": "framed artwork",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "black framed picture on wall",
+   "shop_as": "framed wall art",
+   "seen": "on wall between TV and bookshelf",
+   "confidence": 0.9,
+   "box": [
+    592,
+    370,
+    680,
+    531
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.10",
+     "box": [
+      592,
+      370,
+      680,
+      531
+     ],
+     "boxf": [
+      0.37,
+      0.3099,
+      0.425,
+      0.4447
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "query": "framed wall art price",
+    "depth": "basic+advanced",
+    "candidates": 8,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No clear match found for unframed/black-framed artwork with given dimensions",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.37,
+    0.3099,
+    0.425,
+    0.4447
+   ]
+  },
+  {
+   "n": 85,
+   "id": "living.11",
+   "photo": "living",
+   "name": "floor lamp",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "tall floor lamp with light shade",
+   "shop_as": "floor lamp with shade",
+   "seen": "behind bookshelf, lit",
+   "confidence": 0.85,
+   "box": [
+    704,
+    466,
+    784,
+    824
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.11",
+     "box": [
+      704,
+      466,
+      784,
+      824
+     ],
+     "boxf": [
+      0.44,
+      0.3903,
+      0.49,
+      0.6901
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "floor lamp with shade price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.44,
+    0.3903,
+    0.49,
+    0.6901
+   ]
+  },
+  {
+   "n": 86,
+   "id": "living.12",
+   "photo": "living",
+   "name": "Dyson stick vacuum",
+   "brand": "Dyson",
+   "model": null,
+   "category": "appliances_small",
+   "quantity": 1,
+   "detail": "cordless stick vacuum in charging dock",
+   "shop_as": "Dyson cordless stick vacuum",
+   "seen": "standing in corner on right wall",
+   "confidence": 0.95,
+   "box": [
+    1232,
+    549,
+    1304,
+    967
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.12",
+     "box": [
+      1232,
+      549,
+      1304,
+      967
+     ],
+     "boxf": [
+      0.77,
+      0.4598,
+      0.815,
+      0.8099
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "query": "Dyson cordless stick vacuum price",
+    "depth": "basic+advanced",
+    "candidates": 4,
+    "sources": [
+     {
+      "price": 729.99,
+      "listed": 729.99,
+      "set_of": 1,
+      "url": "https://www.walmart.com/browse/home/dyson-cordless-vacuums/4044_90548_4047_6505677",
+      "site": "walmart.com",
+      "quote": "Dyson V12 Detect Slim Cordless Stick Vacuum Cleaner | Nickel | New, Price $729.99."
+     },
+     {
+      "price": 499.99,
+      "listed": 499.99,
+      "set_of": 1,
+      "url": "https://www.target.com/c/stick-vacuums-floor-care-home-appliances-decor/dyson/-/N-4y73nZ5vgwm",
+      "site": "target.com",
+      "quote": "$499.99 ; Dyson V10 Cordless Stick Va"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 614.99,
+    "note": "Priced as a mainstream mid-range cordless stick vacuum with charging dock"
+   },
+   "unit_rcv": 614.99,
+   "rcv": 614.99,
+   "acv": 528.89,
+   "dep_pct": 14.0,
+   "life": 10,
+   "dep_why": "1.4 yr x 1 (Average) / 10 yr life = 14%",
+   "boxf": [
+    0.77,
+    0.4598,
+    0.815,
+    0.8099
+   ]
+  },
+  {
+   "n": 87,
+   "id": "living.13",
+   "photo": "living",
+   "name": "Monstera plant",
+   "brand": null,
+   "model": null,
+   "category": "plants",
+   "quantity": 1,
+   "detail": "large Monstera deliciosa with big green leaves in white pot",
+   "shop_as": "Monstera plant potted",
+   "seen": "in white pot on right side of room",
+   "confidence": 0.95,
+   "box": [
+    1328,
+    669,
+    1600,
+    991
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.13",
+     "box": [
+      1328,
+      669,
+      1600,
+      991
+     ],
+     "boxf": [
+      0.83,
+      0.5603,
+      1.0,
+      0.83
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Monstera plant potted price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.83,
+    0.5603,
+    1.0,
+    0.83
+   ]
+  },
+  {
+   "n": 88,
+   "id": "living.14",
+   "photo": "living",
+   "name": "white plant pot",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "white ceramic pot on wooden stand",
+   "shop_as": "white ceramic plant pot",
+   "seen": "holding Monstera plant on right",
+   "confidence": 0.9,
+   "box": [
+    1440,
+    955,
+    1600,
+    1110
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.14",
+     "box": [
+      1440,
+      955,
+      1600,
+      1110
+     ],
+     "boxf": [
+      0.9,
+      0.7998,
+      1.0,
+      0.9296
+     ]
+    }
+   ],
+   "earliest_photo": "2024-04-13",
+   "age_years": 1.4,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "white ceramic plant pot price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.9,
+    0.7998,
+    1.0,
+    0.9296
+   ]
+  },
+  {
+   "n": 89,
+   "id": "living_xmas.3",
+   "photo": "living_xmas",
+   "name": "area rug",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "large light-colored patterned area rug covering most of floor",
+   "shop_as": "large patterned area rug",
+   "seen": "floor covering under tree, sofa, and TV stand",
+   "confidence": 0.9,
+   "box": [
+    384,
+    836,
+    1344,
+    1194
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living",
+     "id": "living.15",
+     "box": [
+      160,
+      991,
+      560,
+      1194
+     ],
+     "boxf": [
+      0.1,
+      0.83,
+      0.35,
+      1.0
+     ]
+    },
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.3",
+     "box": [
+      384,
+      836,
+      1344,
+      1194
+     ],
+     "boxf": [
+      0.24,
+      0.7002,
+      0.84,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "large patterned area rug price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.24,
+    0.7002,
+    0.84,
+    1.0
+   ]
+  },
+  {
+   "n": 90,
+   "id": "living_xmas.1",
+   "photo": "living_xmas",
+   "name": "throw blanket",
+   "brand": null,
+   "model": null,
+   "category": "linens",
+   "quantity": 1,
+   "detail": "multicolored fleece blanket draped on chaise",
+   "shop_as": "multicolored fleece throw blanket",
+   "seen": "draped over chaise section of sofa",
+   "confidence": 0.9,
+   "box": [
+    136,
+    746,
+    512,
+    901
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.1",
+     "box": [
+      136,
+      746,
+      512,
+      901
+     ],
+     "boxf": [
+      0.085,
+      0.6248,
+      0.32,
+      0.7546
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "query": "multicolored fleece throw blanket price",
+    "depth": "basic+advanced",
+    "candidates": 4,
+    "sources": [
+     {
+      "price": 29.51,
+      "listed": 29.51,
+      "set_of": 1,
+      "url": "https://www.homedepot.com/b/Home-Decor-Throw-Blankets/N-5yc1vZcfae",
+      "site": "homedepot.com",
+      "quote": "Fleece 50 x 70 Throw Blanket $29.51."
+     },
+     {
+      "price": 19.5,
+      "listed": 19.5,
+      "set_of": 1,
+      "url": "https://www.target.com/s/multi+color+throw+blanket",
+      "site": "target.com",
+      "quote": "Fleece Throw Blanket, Fleece Essential Throw Blanket Highly rated $19.50 reg $65.00 \u30fb $"
+     }
+    ],
+    "rejected": [],
+    "status": "priced",
+    "price": 24.51,
+    "note": "Priced as a standard fleece throw blanket"
+   },
+   "unit_rcv": 24.51,
+   "rcv": 24.51,
+   "acv": 16.18,
+   "dep_pct": 34.0,
+   "life": 5,
+   "dep_why": "1.7 yr x 1 (Average) / 5 yr life = 34%",
+   "boxf": [
+    0.085,
+    0.6248,
+    0.32,
+    0.7546
+   ]
+  },
+  {
+   "n": 91,
+   "id": "living_xmas.4",
+   "photo": "living_xmas",
+   "name": "artificial Christmas tree",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "tall artificial tree approximately 7-8 feet, decorated with ornaments, lights, gold tinsel garland, star topper",
+   "shop_as": "artificial Christmas tree 7-8 foot pre-lit",
+   "seen": "center of room near windows",
+   "confidence": 0.95,
+   "box": [
+    720,
+    155,
+    1104,
+    812
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.4",
+     "box": [
+      720,
+      155,
+      1104,
+      812
+     ],
+     "boxf": [
+      0.45,
+      0.1298,
+      0.69,
+      0.6801
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "artificial Christmas tree 7-8 foot pre-lit price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.45,
+    0.1298,
+    0.69,
+    0.6801
+   ]
+  },
+  {
+   "n": 92,
+   "id": "living_xmas.5",
+   "photo": "living_xmas",
+   "name": "Christmas ornaments and decorations",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 30,
+   "detail": "mixed red, white, gold, and green ornaments, lights, tinsel garland on tree",
+   "shop_as": "Christmas tree ornaments and lights set",
+   "seen": "on the Christmas tree",
+   "confidence": 0.85,
+   "box": [
+    728,
+    239,
+    1096,
+    776
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.5",
+     "box": [
+      728,
+      239,
+      1096,
+      776
+     ],
+     "boxf": [
+      0.455,
+      0.2002,
+      0.685,
+      0.6499
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Christmas tree ornaments and lights set price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.455,
+    0.2002,
+    0.685,
+    0.6499
+   ]
+  },
+  {
+   "n": 93,
+   "id": "living_xmas.6",
+   "photo": "living_xmas",
+   "name": "flat-screen TV",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "large black flat-screen television approximately 65-75 inch on TV stand",
+   "shop_as": "65 inch 4K LED smart TV",
+   "seen": "right side of room on wooden stand",
+   "confidence": 0.9,
+   "box": [
+    1176,
+    358,
+    1600,
+    884
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.6",
+     "box": [
+      1176,
+      358,
+      1600,
+      884
+     ],
+     "boxf": [
+      0.735,
+      0.2998,
+      1.0,
+      0.7404
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "65 inch 4K LED smart TV price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.735,
+    0.2998,
+    1.0,
+    0.7404
+   ]
+  },
+  {
+   "n": 94,
+   "id": "living_xmas.8",
+   "photo": "living_xmas",
+   "name": "TV stand",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "dark wood media console with open shelves and cabinets, long low profile",
+   "shop_as": "dark wood TV media console stand",
+   "seen": "right side under TV",
+   "confidence": 0.9,
+   "box": [
+    1072,
+    740,
+    1600,
+    1194
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.8",
+     "box": [
+      1072,
+      740,
+      1600,
+      1194
+     ],
+     "boxf": [
+      0.67,
+      0.6198,
+      1.0,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "dark wood TV media console stand price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.67,
+    0.6198,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "n": 95,
+   "id": "living_xmas.9",
+   "photo": "living_xmas",
+   "name": "gaming console",
+   "brand": null,
+   "model": "Xbox Series S",
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "small white rectangular console on bottom shelf of TV stand",
+   "shop_as": "Microsoft Xbox Series S console",
+   "seen": "bottom shelf of TV stand",
+   "confidence": 0.85,
+   "box": [
+    1256,
+    937,
+    1408,
+    1045
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.9",
+     "box": [
+      1256,
+      937,
+      1408,
+      1045
+     ],
+     "boxf": [
+      0.785,
+      0.7848,
+      0.88,
+      0.8752
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "query": "Microsoft Xbox Series S console price",
+    "depth": "basic+advanced",
+    "candidates": 3,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No valid new standalone Xbox Series S price found in provided sentences",
+    "why": "no new-item price survived the checks"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.785,
+    0.7848,
+    0.88,
+    0.8752
+   ]
+  },
+  {
+   "n": 96,
+   "id": "living_xmas.11",
+   "photo": "living_xmas",
+   "name": "Christmas presents",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 20,
+   "detail": "wrapped gift boxes of various sizes under Christmas tree",
+   "shop_as": "wrapped gift boxes",
+   "seen": "under and around Christmas tree",
+   "confidence": 0.9,
+   "box": [
+    624,
+    687,
+    1088,
+    949
+   ],
+   "room": "living room",
+   "sightings": [
+    {
+     "photo": "living_xmas",
+     "id": "living_xmas.11",
+     "box": [
+      624,
+      687,
+      1088,
+      949
+     ],
+     "boxf": [
+      0.39,
+      0.5754,
+      0.68,
+      0.7948
+     ]
+    }
+   ],
+   "earliest_photo": "2023-12-25",
+   "age_years": 1.7,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "wrapped gift boxes price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.39,
+    0.5754,
+    0.68,
+    0.7948
+   ]
+  },
+  {
+   "n": 97,
+   "id": "office.0",
+   "photo": "office",
+   "name": "Canon DSLR camera with lens",
+   "brand": "Canon",
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "black camera body with lens and red strap, on wall shelf",
+   "shop_as": "DSLR camera with lens",
+   "seen": "top left wall shelf",
+   "confidence": 0.9,
+   "box": [
+    72,
+    66,
+    384,
+    167
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.0",
+     "box": [
+      72,
+      66,
+      384,
+      167
+     ],
+     "boxf": [
+      0.045,
+      0.0553,
+      0.24,
+      0.1399
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "DSLR camera with lens price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.045,
+    0.0553,
+    0.24,
+    0.1399
+   ]
+  },
+  {
+   "n": 98,
+   "id": "office.1",
+   "photo": "office",
+   "name": "wood floating wall shelf with metal brackets",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "light wood shelf holding camera, mounted on wall",
+   "shop_as": "floating wood wall shelf",
+   "seen": "top left wall",
+   "confidence": 0.85,
+   "box": [
+    0,
+    24,
+    656,
+    215
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.1",
+     "box": [
+      0,
+      24,
+      656,
+      215
+     ],
+     "boxf": [
+      0.0,
+      0.0201,
+      0.41,
+      0.1801
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "floating wood wall shelf price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.0201,
+    0.41,
+    0.1801
+   ]
+  },
+  {
+   "n": 99,
+   "id": "office.2",
+   "photo": "office",
+   "name": "34-inch ultrawide computer monitor",
+   "brand": "Dell",
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "wide screen showing video call grid, black stand",
+   "shop_as": "34 inch ultrawide LED monitor",
+   "seen": "desk center left",
+   "confidence": 0.9,
+   "box": [
+    160,
+    245,
+    584,
+    597
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.2",
+     "box": [
+      160,
+      245,
+      584,
+      597
+     ],
+     "boxf": [
+      0.1,
+      0.2052,
+      0.365,
+      0.5
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "34 inch ultrawide LED monitor price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.1,
+    0.2052,
+    0.365,
+    0.5
+   ]
+  },
+  {
+   "n": 100,
+   "id": "office.3",
+   "photo": "office",
+   "name": "closed laptop",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "silver laptop closed on desk next to monitor",
+   "shop_as": "13 inch laptop",
+   "seen": "desk surface right of monitor",
+   "confidence": 0.85,
+   "box": [
+    552,
+    591,
+    776,
+    651
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.3",
+     "box": [
+      552,
+      591,
+      776,
+      651
+     ],
+     "boxf": [
+      0.345,
+      0.495,
+      0.485,
+      0.5452
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "13 inch laptop price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.345,
+    0.495,
+    0.485,
+    0.5452
+   ]
+  },
+  {
+   "n": 101,
+   "id": "office.4",
+   "photo": "office",
+   "name": "wood standing desk with black metal legs",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "large wood desktop with black cable tray and legs",
+   "shop_as": "standing desk wood top black frame",
+   "seen": "main desk foreground",
+   "confidence": 0.9,
+   "box": [
+    0,
+    567,
+    912,
+    1194
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.4",
+     "box": [
+      0,
+      567,
+      912,
+      1194
+     ],
+     "boxf": [
+      0.0,
+      0.4749,
+      0.57,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "standing desk wood top black frame price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.0,
+    0.4749,
+    0.57,
+    1.0
+   ]
+  },
+  {
+   "n": 102,
+   "id": "office.5",
+   "photo": "office",
+   "name": "black ergonomic office chair",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "mesh back, black armrests, wheeled base",
+   "shop_as": "ergonomic mesh office chair with arms",
+   "seen": "center right in front of desk",
+   "confidence": 0.9,
+   "box": [
+    576,
+    549,
+    1136,
+    1194
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.5",
+     "box": [
+      576,
+      549,
+      1136,
+      1194
+     ],
+     "boxf": [
+      0.36,
+      0.4598,
+      0.71,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "ergonomic mesh office chair with arms price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.36,
+    0.4598,
+    0.71,
+    1.0
+   ]
+  },
+  {
+   "n": 103,
+   "id": "office.6",
+   "photo": "office",
+   "name": "tall wood bookcase filled with books and binders",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "5-shelf bookcase with books, binders, and media",
+   "shop_as": "tall wood bookcase 5 shelf",
+   "seen": "back center wall",
+   "confidence": 0.9,
+   "box": [
+    680,
+    0,
+    1048,
+    884
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.6",
+     "box": [
+      680,
+      0,
+      1048,
+      884
+     ],
+     "boxf": [
+      0.425,
+      0.0,
+      0.655,
+      0.7404
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "tall wood bookcase 5 shelf price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.425,
+    0.0,
+    0.655,
+    0.7404
+   ]
+  },
+  {
+   "n": 104,
+   "id": "office.7",
+   "photo": "office",
+   "name": "group of books and binders on bookcase",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 60,
+   "detail": "mixed hardcover and paperback books plus ring binders on shelves",
+   "shop_as": "books and binders",
+   "seen": "bookcase shelves",
+   "confidence": 0.8,
+   "box": [
+    688,
+    12,
+    1040,
+    860
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.7",
+     "box": [
+      688,
+      12,
+      1040,
+      860
+     ],
+     "boxf": [
+      0.43,
+      0.0101,
+      0.65,
+      0.7203
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "query": "books and binders price",
+    "depth": "basic+advanced",
+    "candidates": 0,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "",
+    "why": "no page named this item next to a price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.43,
+    0.0101,
+    0.65,
+    0.7203
+   ]
+  },
+  {
+   "n": 105,
+   "id": "office.8",
+   "photo": "office",
+   "name": "black printer",
+   "brand": null,
+   "model": null,
+   "category": "electronics",
+   "quantity": 1,
+   "detail": "black all-in-one printer on small wood stand",
+   "shop_as": "black inkjet printer",
+   "seen": "right side on stand by window",
+   "confidence": 0.85,
+   "box": [
+    1128,
+    555,
+    1424,
+    716
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.8",
+     "box": [
+      1128,
+      555,
+      1424,
+      716
+     ],
+     "boxf": [
+      0.705,
+      0.4648,
+      0.89,
+      0.5997
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "black inkjet printer price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.705,
+    0.4648,
+    0.89,
+    0.5997
+   ]
+  },
+  {
+   "n": 106,
+   "id": "office.9",
+   "photo": "office",
+   "name": "small wood stand under printer",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "light wood stand holding printer, next to window",
+   "shop_as": "small wood printer stand",
+   "seen": "right side under printer",
+   "confidence": 0.85,
+   "box": [
+    1088,
+    681,
+    1440,
+    1003
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.9",
+     "box": [
+      1088,
+      681,
+      1440,
+      1003
+     ],
+     "boxf": [
+      0.68,
+      0.5704,
+      0.9,
+      0.84
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "small wood printer stand price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.68,
+    0.5704,
+    0.9,
+    0.84
+   ]
+  },
+  {
+   "n": 107,
+   "id": "office.10",
+   "photo": "office",
+   "name": "acoustic guitar on stand",
+   "brand": "Yamaha",
+   "model": null,
+   "category": "musical",
+   "quantity": 1,
+   "detail": "natural wood acoustic guitar with black pickguard, on black stand",
+   "shop_as": "Yamaha acoustic guitar",
+   "seen": "right side by window",
+   "confidence": 0.9,
+   "box": [
+    1096,
+    400,
+    1432,
+    1194
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.10",
+     "box": [
+      1096,
+      400,
+      1432,
+      1194
+     ],
+     "boxf": [
+      0.685,
+      0.335,
+      0.895,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Yamaha acoustic guitar price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.685,
+    0.335,
+    0.895,
+    1.0
+   ]
+  },
+  {
+   "n": 108,
+   "id": "office.11",
+   "photo": "office",
+   "name": "potted Monstera plant",
+   "brand": null,
+   "model": null,
+   "category": "plants",
+   "quantity": 1,
+   "detail": "large Monstera with big green leaves in terracotta pot",
+   "shop_as": "Monstera houseplant potted",
+   "seen": "right side by window",
+   "confidence": 0.9,
+   "box": [
+    1336,
+    239,
+    1600,
+    872
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.11",
+     "box": [
+      1336,
+      239,
+      1600,
+      872
+     ],
+     "boxf": [
+      0.835,
+      0.2002,
+      1.0,
+      0.7303
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "Monstera houseplant potted price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.835,
+    0.2002,
+    1.0,
+    0.7303
+   ]
+  },
+  {
+   "n": 109,
+   "id": "office.12",
+   "photo": "office",
+   "name": "black footrest under desk",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "black cushioned footrest on floor under desk",
+   "shop_as": "office footrest",
+   "seen": "floor under desk left of chair",
+   "confidence": 0.8,
+   "box": [
+    312,
+    985,
+    640,
+    1194
+   ],
+   "room": "office",
+   "sightings": [
+    {
+     "photo": "office",
+     "id": "office.12",
+     "box": [
+      312,
+      985,
+      640,
+      1194
+     ],
+     "boxf": [
+      0.195,
+      0.825,
+      0.4,
+      1.0
+     ]
+    }
+   ],
+   "earliest_photo": "2025-03-11",
+   "age_years": 0.5,
+   "condition": "Average",
+   "price": {
+    "status": "needs a price",
+    "price": null,
+    "sources": [],
+    "rejected": [],
+    "why": "price lookup failed (HTTPError)",
+    "query": "office footrest price"
+   },
+   "unit_rcv": null,
+   "boxf": [
+    0.195,
+    0.825,
+    0.4,
+    1.0
+   ]
+  }
+ ],
+ "merges": [
+  {
+   "a": "kitchen.5",
+   "b": "kitchen_dog.0",
+   "a_name": "stainless steel microwave oven",
+   "b_name": "stainless steel French door refrigerator with bottom freezer",
+   "same": false,
+   "confidence": 1.0,
+   "why": "The left object is a microwave with a control panel on the right, while the right object is a French door refrigerator with a bottom freezer and dispensers; they are entirely different appliances.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.7",
+   "b": "kitchen_dog.0",
+   "a_name": "stainless steel refrigerator with water dispenser",
+   "b_name": "stainless steel French door refrigerator with bottom freezer",
+   "same": false,
+   "confidence": 0.95,
+   "why": "The left fridge is a side-by-side model with a single dispenser on the left door, while the right is a French-door model with bottom freezer and dispensers on both doors.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.5",
+   "b": "kitchen_dog.1",
+   "a_name": "stainless steel microwave oven",
+   "b_name": "over-the-range microwave",
+   "same": false,
+   "confidence": 0.9,
+   "why": "The left microwave has a vertical handle and right-side control panel, while the right has a horizontal handle and left-side control panel, indicating different models.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.6",
+   "b": "kitchen_dog.1",
+   "a_name": "gas stove and oven range",
+   "b_name": "over-the-range microwave",
+   "same": false,
+   "confidence": 1.0,
+   "why": "The left image shows a gas stove/oven range, while the right image shows an over-the-range microwave; they are distinct appliances.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.5",
+   "b": "kitchen_dog.2",
+   "a_name": "stainless steel microwave oven",
+   "b_name": "gas stove and oven range",
+   "same": false,
+   "confidence": 1.0,
+   "why": "The left image shows a stainless steel microwave with a handle and control panel on the right, while the right image shows a stainless steel gas range with knobs and an oven below; they are different appliances.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.6",
+   "b": "kitchen_dog.2",
+   "a_name": "gas stove and oven range",
+   "b_name": "gas stove and oven range",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both show the same stainless steel gas range with five burners, matching control knobs, handle, and oven door design, photographed from different angles.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.4",
+   "b": "kitchen_dog.3",
+   "a_name": "Vitamix blender",
+   "b_name": "blender",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both show the same Vitamix blender model with identical clear pitcher, black lid, handle, control panel, and base design, just from different angles and lighting.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.3",
+   "b": "kitchen_dog.4",
+   "a_name": "Ninja air fryer",
+   "b_name": "air fryer",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both are Ninja air fryers with identical control panel layout, handle shape, and overall design, differing only in lighting and angle.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.2",
+   "b": "kitchen_dog.5",
+   "a_name": "espresso machine",
+   "b_name": "espresso machine",
+   "same": true,
+   "confidence": 0.95,
+   "why": "Identical silver Breville espresso machine with matching control panel, portafilter, steam wand, and grinder placement, photographed from slightly different angles.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.0",
+   "b": "kitchen_dog.6",
+   "a_name": "red KitchenAid stand mixer with stainless steel bowl",
+   "b_name": "stand mixer",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both are red KitchenAid tilt-head stand mixers with stainless steel bowls and identical branding, shape, and design, indicating the same model photographed from different angles.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.1",
+   "b": "kitchen_dog.7",
+   "a_name": "wooden knife block with kitchen knives",
+   "b_name": "knife block with knives",
+   "same": false,
+   "confidence": 0.9,
+   "why": "The left block is a light wood two-tier block with a visible logo and a red mixer in the background, while the right block is a darker wood single-tier block with different branding and a different background.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.10",
+   "b": "kitchen_dog.12",
+   "a_name": "glass mixing bowl with flour",
+   "b_name": "glass storage jars",
+   "same": false,
+   "confidence": 0.9,
+   "why": "The left is a large open mixing bowl with flour, while the right shows multiple small lidded storage jars on shelves.",
+   "merged": false
+  },
+  {
+   "a": "kitchen.13",
+   "b": "kitchen_dog.12",
+   "a_name": "glass storage jars with dry goods",
+   "b_name": "glass storage jars",
+   "same": true,
+   "confidence": 0.9,
+   "why": "The jars, their contents, shelf arrangement, and surrounding items like white bowls and the microwave are consistent across both images, indicating the same pantry viewed from different angles.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.14",
+   "b": "kitchen_dog.13",
+   "a_name": "white plates and bowls",
+   "b_name": "plates and bowls",
+   "same": true,
+   "confidence": 0.9,
+   "why": "The corner shelving, white plates/bowls, wooden bowls, and jars match in arrangement and style across both views.",
+   "merged": true
+  },
+  {
+   "a": "kitchen.10",
+   "b": "kitchen_dog.14",
+   "a_name": "glass mixing bowl with flour",
+   "b_name": "wooden bowl",
+   "same": false,
+   "confidence": 1.0,
+   "why": "The left object is a clear glass bowl with flour, while the right is a dark wooden bowl; they differ in material, color, and transparency.",
+   "merged": false
+  },
+  {
+   "a": "living.5",
+   "b": "living_xmas.0",
+   "a_name": "gray sectional sofa",
+   "b_name": "gray fabric sectional sofa with chaise",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both show the same gray L-shaped fabric sectional with chaise, matching back pillows, and a patterned throw pillow, viewed from different angles.",
+   "merged": true
+  },
+  {
+   "a": "living.6",
+   "b": "living_xmas.2",
+   "a_name": "decorative throw pillow",
+   "b_name": "decorative throw pillow",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both pillows share the same white background with gray and tan circular spots, matching fabric texture, and are placed on the same gray sofa.",
+   "merged": true
+  },
+  {
+   "a": "living.15",
+   "b": "living_xmas.3",
+   "a_name": "rug",
+   "b_name": "area rug",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both show the same light-colored patterned area rug in the same living room, with matching sofa and floor layout.",
+   "merged": true
+  },
+  {
+   "a": "living.0",
+   "b": "living_xmas.6",
+   "a_name": "large flat-screen TV",
+   "b_name": "flat-screen TV",
+   "same": false,
+   "confidence": 0.7,
+   "why": "The TVs have different stand designs and bezel widths, and the surrounding furniture and room details differ between the two photos.",
+   "merged": false
+  },
+  {
+   "a": "living.3",
+   "b": "living_xmas.7",
+   "a_name": "soundbar",
+   "b_name": "soundbar",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both show an identical long black soundbar with the same shape, size, and front logo, placed on the same wooden TV stand in front of a TV.",
+   "merged": true
+  },
+  {
+   "a": "living.1",
+   "b": "living_xmas.9",
+   "a_name": "PlayStation 5 console",
+   "b_name": "gaming console",
+   "same": false,
+   "confidence": 1.0,
+   "why": "The left is a tall vertical PS5 with a curved black center, while the right is a small horizontal Xbox Series S with a front vent and circular power button.",
+   "merged": false
+  },
+  {
+   "a": "living.2",
+   "b": "living_xmas.9",
+   "a_name": "Nintendo Switch console",
+   "b_name": "gaming console",
+   "same": false,
+   "confidence": 1.0,
+   "why": "Left is a Nintendo Switch with attached Joy-Cons; right is a flat Xbox Series S with a disc slot and Xbox logo.",
+   "merged": false
+  },
+  {
+   "a": "living.1",
+   "b": "living_xmas.10",
+   "a_name": "PlayStation 5 console",
+   "b_name": "gaming console",
+   "same": true,
+   "confidence": 0.9,
+   "why": "Both images show the same white and black vertical PlayStation 5 console with identical shape, side vent, and stand, viewed from different angles.",
+   "merged": true
+  }
+ ],
+ "building": [
+  {
+   "id": "garage.15",
+   "photo": "garage",
+   "name": "garage door opener light",
+   "brand": null,
+   "model": null,
+   "category": "lighting",
+   "quantity": 1,
+   "detail": "ceiling-mounted garage light fixture",
+   "shop_as": "garage door opener light fixture",
+   "seen": "hanging from ceiling center",
+   "confidence": 0.85,
+   "box": [
+    760,
+    179,
+    872,
+    227
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.475,
+    0.1499,
+    0.545,
+    0.1901
+   ]
+  },
+  {
+   "id": "kitchen.16",
+   "photo": "kitchen",
+   "name": "white kitchen cabinets",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "white shaker-style upper cabinets with round knobs",
+   "shop_as": "white shaker kitchen cabinets upper 30 inch",
+   "seen": "upper right above microwave and refrigerator",
+   "confidence": 0.9,
+   "box": [
+    872,
+    0,
+    1600,
+    180
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.545,
+    0.0,
+    1.0,
+    0.1303
+   ]
+  },
+  {
+   "id": "kitchen.17",
+   "photo": "kitchen",
+   "name": "white lower cabinet",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "white shaker-style lower cabinet with round knob under counter",
+   "shop_as": "white shaker kitchen cabinet lower 24 inch",
+   "seen": "under counter between sink and stove",
+   "confidence": 0.85,
+   "box": [
+    688,
+    822,
+    928,
+    1374
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.43,
+    0.5952,
+    0.58,
+    0.9949
+   ]
+  },
+  {
+   "id": "kitchen.18",
+   "photo": "kitchen",
+   "name": "wood countertop",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "butcher block wood countertop with flour dusting",
+   "shop_as": "butcher block countertop 1.5 inch thick",
+   "seen": "horizontal surface across left and center",
+   "confidence": 0.9,
+   "box": [
+    0,
+    753,
+    944,
+    1374
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.0,
+    0.5453,
+    0.59,
+    0.9949
+   ]
+  },
+  {
+   "id": "kitchen.19",
+   "photo": "kitchen",
+   "name": "stainless steel sink",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "single basin stainless steel kitchen sink",
+   "shop_as": "kitchen sink stainless steel single bowl",
+   "seen": "bottom left corner",
+   "confidence": 0.9,
+   "box": [
+    0,
+    1105,
+    648,
+    1374
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.0,
+    0.8001,
+    0.405,
+    0.9949
+   ]
+  },
+  {
+   "id": "kitchen_dog.10",
+   "photo": "kitchen_dog",
+   "name": "dishwasher",
+   "brand": null,
+   "model": null,
+   "category": "appliances_large",
+   "quantity": 1,
+   "detail": "stainless steel dishwasher under counter on right",
+   "shop_as": "stainless steel dishwasher",
+   "seen": "under counter on far right",
+   "confidence": 0.85,
+   "box": [
+    1344,
+    656,
+    1600,
+    780
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.84,
+    0.475,
+    1.0,
+    0.5648
+   ]
+  },
+  {
+   "id": "living_xmas.12",
+   "photo": "living_xmas",
+   "name": "window blinds",
+   "brand": null,
+   "model": null,
+   "category": "other",
+   "quantity": 2,
+   "detail": "white horizontal blinds on two windows",
+   "shop_as": "window blinds",
+   "seen": "covering both windows in background",
+   "confidence": 0.9,
+   "box": [
+    584,
+    215,
+    1184,
+    298
+   ],
+   "why": "part of the building (dwelling coverage), not contents",
+   "boxf": [
+    0.365,
+    0.1801,
+    0.74,
+    0.2496
+   ]
+  }
+ ],
+ "dropped": [
+  {
+   "id": "bedroom.12",
+   "photo": "bedroom",
+   "name": "children's toys",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 5,
+   "detail": "stuffed animals and colorful toys on rug and floor",
+   "shop_as": "children's plush toys and activity toys",
+   "seen": "scattered on rug and floor",
+   "confidence": 0.8,
+   "box": [
+    944,
+    872,
+    1600,
+    1194
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.59,
+    0.7303,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "id": "garage.2",
+   "photo": "garage",
+   "name": "child's bicycle",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "small blue bike with training wheels, on drop cloth",
+   "shop_as": "child bicycle with training wheels",
+   "seen": "being worked on by person in center",
+   "confidence": 0.95,
+   "box": [
+    896,
+    591,
+    1040,
+    884
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.56,
+    0.495,
+    0.65,
+    0.7404
+   ]
+  },
+  {
+   "id": "kids_room.5",
+   "photo": "kids_room",
+   "name": "children's books",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 40,
+   "detail": "mixed hardcover and paperback children's books on shelves",
+   "shop_as": "children's books",
+   "seen": "on middle and bottom shelves of bookcase",
+   "confidence": 0.85,
+   "box": [
+    584,
+    543,
+    856,
+    955
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.365,
+    0.4548,
+    0.535,
+    0.7998
+   ]
+  },
+  {
+   "id": "kids_room.8",
+   "photo": "kids_room",
+   "name": "white child's desk and chair set",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "small white desk with matching white chair, child height",
+   "shop_as": "white kids desk and chair set",
+   "seen": "by window, child sitting at desk",
+   "confidence": 0.9,
+   "box": [
+    864,
+    728,
+    1208,
+    1110
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.54,
+    0.6097,
+    0.755,
+    0.9296
+   ]
+  },
+  {
+   "id": "kitchen.9",
+   "photo": "kitchen",
+   "name": "baking sheet with cookies",
+   "brand": null,
+   "model": null,
+   "category": "kitchenware",
+   "quantity": 1,
+   "detail": "metal baking sheet with about 12 chocolate chip cookies",
+   "shop_as": "rimmed baking sheet half size aluminum",
+   "seen": "being held by person being removed from oven",
+   "confidence": 0.95,
+   "box": [
+    1032,
+    960,
+    1568,
+    1236
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.645,
+    0.6951,
+    0.98,
+    0.895
+   ]
+  },
+  {
+   "id": "living_xmas.13",
+   "photo": "living_xmas",
+   "name": "birthday banner",
+   "brand": null,
+   "model": null,
+   "category": "decor",
+   "quantity": 1,
+   "detail": "colorful HAPPY BIRTHDAY letter banner on wall",
+   "shop_as": "HAPPY BIRTHDAY banner",
+   "seen": "on wall above TV",
+   "confidence": 0.95,
+   "box": [
+    1280,
+    209,
+    1600,
+    304
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.8,
+    0.175,
+    1.0,
+    0.2546
+   ]
+  },
+  {
+   "id": "living_xmas.14",
+   "photo": "living_xmas",
+   "name": "child's pajamas",
+   "brand": null,
+   "model": null,
+   "category": "clothing",
+   "quantity": 1,
+   "detail": "patterned pajamas with vehicle prints worn by child",
+   "shop_as": "children's pajamas",
+   "seen": "worn by child sitting on floor",
+   "confidence": 0.9,
+   "box": [
+    544,
+    901,
+    752,
+    1182
+   ],
+   "why": "a person, pet, food or decoration, not property",
+   "boxf": [
+    0.34,
+    0.7546,
+    0.47,
+    0.9899
+   ]
+  }
+ ],
+ "totals": {
+  "items": 109,
+  "priced": 28,
+  "needs_price": 81,
+  "rcv": 7231.7,
+  "acv": 5698.86
+ },
+ "cost": {
+  "calls": 70,
+  "usd": 0.0355,
+  "by_model": {
+   "nano": 0,
+   "super": 38,
+   "ultra": 0,
+   "vision": 32
+  }
+ },
+ "seconds": 97.7
+}

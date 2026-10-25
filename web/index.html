@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Roomprint</title>
+<meta name="description" content="After a fire, flood or earthquake, insurers ask for a list of everything you owned. Roomprint builds it from the photos already on your phone, with a source for every price. NVIDIA Nemotron on Nebius Token Factory, Tavily.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="mark" aria-hidden="true"></span>Roomprint</div>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="https://github.com/mini4ai4/roomprint" target="_blank" rel="noopener">Code</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Your home is still in your photos.</h1>
+  <p class="lede">After a fire, flood or earthquake, the insurer asks for a list of everything you owned: what it was,
+    how old, what it costs to replace. Most families have no list. But the birthday photos, the Christmas mornings and
+    the first-day-of-school pictures show the rooms behind the people. Roomprint reads them, prices each thing at a real
+    store, and hands you a list your insurer can load, with proof on every line.</p>
+  <div class="cta">
+    <button id="show-sample" class="btn primary">See a family's list, built from 9 old photos</button>
+    <label class="btn ghost" for="files">Try your own photos
+      <input id="files" type="file" accept="image/*" multiple hidden>
+    </label>
+  </div>
+  <p class="fine">The sample family, their home and photos are made up. Your own photos are read once to build your
+    list and are not used for anything else.</p>
+</section>
+
+<main id="app" hidden>
+  <div class="bar">
+    <div class="who" id="who"></div>
+    <div class="totals" id="totals"></div>
+  </div>
+
+  <div class="work">
+    <section class="photos" aria-label="Photos">
+      <div class="side-label">1 · The family's old photos</div>
+      <div class="stage" id="stage"><img id="big" alt=""><div id="boxes"></div></div>
+      <div class="caption" id="caption"></div>
+      <div class="roll" id="roll"></div>
+    </section>
+
+    <section class="list" aria-label="Inventory">
+      <div class="side-label">2 · The list for the insurer</div>
+      <div class="rooms" id="rooms"></div>
+      <ol class="lines" id="lines"></ol>
+      <div class="export" id="export"></div>
+    </section>
+  </div>
+
+  <section class="also">
+    <details id="merged-box"><summary>Same thing, different photos</summary><div id="merged"></div></details>
+    <details id="building-box"><summary>Part of the house, not contents</summary><div id="building"></div></details>
+    <details id="dropped-box"><summary>Seen but not listed</summary><div id="dropped"></div></details>
+  </section>
+
+  <section class="clock" id="clock"></section>
+</main>
+
+<section class="how" id="how">
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Read each photo.</b> NVIDIA Nemotron 3.5 Super VL looks past the people at the room: the TV, the sofa, the
+      stand mixer, the bikes on the garage wall. It gives each thing a box on the photo, and that crop becomes the
+      line's evidence. Code drops people, food and party decorations, and moves the house itself (cabinets, sinks,
+      flooring) to a separate list, because policies pay for those under the building, not the contents.</li>
+    <li><b>Count each thing once.</b> The same TV is in the birthday photo and the Christmas photo. Code only pairs
+      sightings that could be the same thing (same room, same kind of item, no clashing brand); Nemotron VL then looks
+      at the two crops side by side. Two lamps in one photo are always two lamps.</li>
+    <li><b>Price it at a real store.</b> Tavily searches for a new like-kind replacement. Code keeps only sentences
+      that name the item next to a dollar amount, Nemotron 3 Super picks the fair ones, and code checks every pick:
+      the amount is in that sentence, it isn't used, "was", "starting at" or per-month. Two stores or more give the
+      median; one store is flagged; none means "needs a price". Nothing is guessed.</li>
+    <li><b>Show the maths.</b> Age comes from the earliest photo the thing appears in. Actual cash value follows the
+      depreciation rules State Farm publishes (effective age by condition, capped at 80%) with the useful lives from
+      United Policyholders, and every line shows its own calculation.</li>
+    <li><b>Hand it over in their columns.</b> One click gives State Farm's XactContents worksheet or FEMA's contents
+      worksheet, with the store link in each line.</li>
+  </ol>
+  <p class="fine">Built for the Nebius x NVIDIA Global AI Hackathon. Models: NVIDIA Nemotron 3.5 Super VL and
+    Nemotron 3 Super on Nebius Token Factory. Search: Tavily. Not legal or insurance advice.</p>
+</section>
+
+<template id="line-tpl">
+  <li class="line">
+    <button class="row">
+      <span class="thumb"></span>
+      <span class="what"><span class="name"></span><span class="sub"></span></span>
+      <span class="money"><span class="rcv"></span><span class="chip"></span></span>
+    </button>
+    <div class="more" hidden></div>
+  </li>
+</template>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
