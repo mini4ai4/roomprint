@@ -14,7 +14,7 @@ columns the insurer already uses, with proof on every line: the crop of the phot
 photo, and the store page the price came from.
 
 - **Live demo:** https://roomprint.onrender.com
-- **Video (3 min):** _link after upload_
+- **Video (2 min):** https://youtu.be/TPDdAWozMEA
 
 ## What it does
 
