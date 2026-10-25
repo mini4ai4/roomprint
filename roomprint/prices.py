@@ -47,6 +47,7 @@ def words(s: str) -> set[str]:
 CACHE = os.path.join(os.environ.get("ROOMPRINT_DATA", os.path.join(os.path.dirname(__file__), "..", "data")),
                      "tavily_cache.json")
 _cache: dict | None = None
+CREDITS = 0  # Tavily credits spent by this process (cache hits are free)
 
 
 def _load_cache() -> dict:
@@ -68,7 +69,9 @@ def tavily(query: str, depth: str = "basic") -> list[dict]:
     hit = c.get(key)
     if hit and time.time() - hit["t"] < 7 * 86400:
         return hit["results"]
-    body = {"api_key": os.environ["TAVILY_API_KEY"], "query": query, "search_depth": depth, "max_results": 8,
+    global CREDITS
+    CREDITS += 2 if depth == "advanced" else 1
+    body = {"api_key": os.environ.get("ROOMPRINT_TAVILY_API_KEY") or os.environ["TAVILY_API_KEY"], "query": query, "search_depth": depth, "max_results": 8,
             "country": "united states"}
     if depth == "advanced":
         body["chunks_per_source"] = 3
@@ -96,7 +99,7 @@ def amounts(s: str) -> list[float]:
 
 # Places where a price is someone's opinion or a second-hand sale, not a store's price for a new item.
 NOT_A_STORE = re.compile(r"(reddit|facebook|youtube|tiktok|instagram|pinterest|quora|craigslist|offerup|mercari|poshmark|"
-                         r"pricecharting|camelcamelcamel|slickdeals)\.")
+                         r"pricecharting|camelcamelcamel|slickdeals|ebay)\.")
 
 
 def candidates(item: dict, results: list[dict]) -> list[dict]:

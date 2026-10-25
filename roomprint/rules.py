@@ -26,7 +26,7 @@ DWELLING = [r"\b(kitchen|upper|lower|base|wall|bathroom|vanity) cabinet(s|ry)?\b
 # Never items: people, the moment, the room itself.
 NOT_ITEMS = [r"\bperson\b", r"\bpeople\b", r"\bchild(ren)?\b", r"\bkid(s)?\b", r"\bbaby\b", r"\bman\b", r"\bwoman\b",
              r"\bballoon", r"\bbanner\b", r"\bstreamer", r"\bconfetti\b", r"\bcake\b", r"\bcookies?\b", r"\bfood\b",
-             r"\bpet\b", r"\bdog\b", r"\bcat\b", r"\bshadow\b", r"\bsunlight\b", r"\breflection\b"]
+             r"\bwrapped\b", r"\bpresents?\b", r"\bgifts?\b(?! card)", r"\bpet\b", r"\bdog\b", r"\bcat\b", r"\bshadow\b", r"\bsunlight\b", r"\breflection\b"]
 
 # Useful life in years, from United Policyholders' published depreciation schedule
 # (uphelp.org/wp-content/uploads/2020/09/UP-Depreciation-Schedule.pdf). 0 = not depreciated (plants are
