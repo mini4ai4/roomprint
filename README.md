@@ -13,7 +13,7 @@ Roomprint reads those photos, finds the things in them, prices each one at a rea
 columns the insurer already uses, with proof on every line: the crop of the photo it was seen in, the date of that
 photo, and the store page the price came from.
 
-- **Live demo:** _link after deploy_
+- **Live demo:** https://roomprint.onrender.com
 - **Video (3 min):** _link after upload_
 
 ## What it does
