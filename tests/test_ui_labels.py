@@ -78,3 +78,30 @@ def test_a_reason_reads_as_a_sentence_before_the_next_one():
     assert js('f.sentence("only second-hand listings found")') == "Only second-hand listings found."
     assert js('f.sentence("Two sources disagree.")') == "Two sources disagree."
     assert js('f.sentence("")') == ""
+
+
+@node
+def test_your_turn_lists_every_unpriced_line_with_its_reason():
+    h = json.loads((ROOT / "demo" / "household.json").read_text())
+    t = js(f'f.yourTurn({json.dumps(h["items"])})')
+    unpriced = [l["n"] for l in h["items"] if not l.get("rcv")]
+    assert [x["n"] for x in t["lines"]] == unpriced and len(unpriced) == h["totals"]["needs_price"]
+    assert all(x["why"] and x["why"].endswith((".", "!", "?")) for x in t["lines"])
+    assert sum(n for _, n in t["kinds"]) == len(unpriced)
+    by_name = {x["name"]: x for x in t["lines"]}
+    assert by_name["white child's desk and chair set"]["kind"] == "only a different set or size found"
+    assert by_name["books on shelf"]["kind"] == "books: list the titles"
+    assert by_name["baking sheet"]["kind"] == "not searched yet"
+    assert t["oneStore"] == sum(1 for l in h["items"] if l.get("rcv") and l["price"]["status"] == "one source")
+
+
+@node
+def test_your_turn_search_starts_from_the_words_the_app_searched():
+    url = js('f.shopSearch({name: "area rug", price: {query: "large gray area rug 8x10 price"}})')
+    assert url.endswith("q=large%20gray%20area%20rug%208x10")
+    assert js('f.turnKind({status: "check", why: "two sources disagree too much"})') == "shops disagree: pick one"
+
+
+def test_the_page_has_a_your_turn_place():
+    page = (ROOT / "web" / "index.html").read_text()
+    assert 'id="turn"' in page and page.index('id="turn"') < page.index('id="lines"')

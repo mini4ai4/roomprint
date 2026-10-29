@@ -109,18 +109,40 @@ function markLine(n, on) { const li = $(`#lines .line[data-n="${n}"]`); if (li) 
 
 function openLine(n) {
   const li = $(`#lines .line[data-n="${n}"]`);
-  if (!li) { S.room = "all"; drawRooms(); drawLines(); return openLine(n); }
+  if (!li) { S.room = "all"; drawRooms(); drawLines(); drawTurn(); return openLine(n); }
   li.scrollIntoView({ block: "center", behavior: "smooth" });
   toggleMore(li, true);
 }
 
+const TURN = "__turn";  // the room filter value that shows only the lines waiting on the family
+
+function drawTurn() {
+  const t = yourTurn(S.h.items);
+  const el = $("#turn");
+  if (!t.lines.length) { el.innerHTML = `<div class="turn-head"><b>Every line has a price.</b></div>`; return; }
+  el.innerHTML = `
+    <div class="turn-head">
+      <div><b>Your turn: ${plural(t.lines.length, "line")} need${t.lines.length === 1 ? "s" : ""} a price from you.</b>
+        <span>${t.kinds.map(([k, n]) => `${n} ${esc(k)}`).join(" · ")}${t.oneStore ? ` · and ${t.oneStore} priced from one shop, worth a second look` : ""}</span></div>
+      <button class="btn ghost" id="turn-only">${S.room === TURN ? "Show the whole list" : "Show only these"}</button>
+    </div>
+    <details id="turn-list"><summary>Each one, and why</summary><ol>${t.lines.map(x => `
+      <li><button data-n="${x.n}">${x.quantity > 1 ? x.quantity + " × " : ""}${esc(x.name)}</button>
+        <small>${esc(x.room)} · ${esc(x.why)}</small>
+        ${x.kind.startsWith("books") ? "" : `<a href="${esc(x.search)}" target="_blank" rel="noopener">search shops</a>`}</li>`).join("")}</ol></details>`;
+  $("#turn-only").onclick = () => { S.room = S.room === TURN ? "all" : TURN; drawRooms(); drawLines(); drawTurn(); };
+  el.querySelectorAll("li button").forEach(b => b.onclick = () => openLine(b.dataset.n));
+}
+
 function drawRooms() {
   const rs = roomsOf(S.h.items);
+  const waiting = S.h.items.filter(l => !l.rcv).length;
   $("#rooms").innerHTML = `<button data-r="all" class="${S.room === "all" ? "on" : ""}">All<span>${S.h.items.length}</span></button>` +
-    rs.map(([r, n]) => `<button data-r="${esc(r)}" class="${S.room === r ? "on" : ""}">${esc(r)}<span>${n}</span></button>`).join("");
+    rs.map(([r, n]) => `<button data-r="${esc(r)}" class="${S.room === r ? "on" : ""}">${esc(r)}<span>${n}</span></button>`).join("") +
+    (waiting ? `<button data-r="${TURN}" class="turn-filter ${S.room === TURN ? "on" : ""}">Your turn<span>${waiting}</span></button>` : "");
   $("#rooms").querySelectorAll("button").forEach(b => b.onclick = () => {
-    S.room = b.dataset.r; drawRooms(); drawLines();
-    if (S.room !== "all") {
+    S.room = b.dataset.r; drawRooms(); drawLines(); drawTurn();
+    if (S.room !== "all" && S.room !== TURN) {
       const first = Object.keys(S.h.photos).find(p => S.h.photos[p].room === S.room);
       if (first) showPhoto(first);
     }
@@ -142,7 +164,7 @@ function drawLines(animate) {
   const ol = $("#lines");
   ol.innerHTML = "";
   const tpl = $("#line-tpl");
-  S.h.items.filter(l => S.room === "all" || l.room === S.room).forEach(l => {
+  S.h.items.filter(l => S.room === "all" || l.room === S.room || (S.room === TURN && !l.rcv)).forEach(l => {
     const li = tpl.content.firstElementChild.cloneNode(true);
     li.dataset.n = l.n;
     const s0 = l.sightings[0];
@@ -152,6 +174,7 @@ function drawLines(animate) {
     if (l.brand || l.model) bits.push(brandModel(l.brand, l.model));
     if (l.sightings.length > 1) bits.push(`in ${l.sightings.length} photos`);
     if (l.earliest_photo) bits.push(`since ${l.earliest_photo.slice(0, 4)} or earlier`);
+    if (S.room === TURN) bits.push(sentence((l.price || {}).why || "no shop price found"));
     $(".sub", li).textContent = bits.join(" · ");
     $(".rcv", li).textContent = l.rcv ? money(l.rcv) : "";
     $(".chip", li).outerHTML = chip(l.price);
@@ -229,7 +252,8 @@ async function showHousehold(h, base, who) {
   await loadSizes(Object.keys(h.photos));
   $("#app").hidden = false;
   $("#who").innerHTML = who;
-  drawTotals(true); drawRoll(); drawRooms(); drawLines(true); drawAlso(); drawClock();
+  S.room = "all";
+  drawTotals(true); drawRoll(); drawTurn(); drawRooms(); drawLines(true); drawAlso(); drawClock();
   showPhoto(Object.keys(h.photos)[0]);
 }
 
@@ -248,7 +272,7 @@ $("#files").onchange = async e => {
   $("#app").hidden = false;
   $("#who").innerHTML = `<b>Your photos</b><span>Reading ${plural(files.length, "photo")} on live Nemotron…</span>`;
   $("#totals").innerHTML = ""; $("#lines").innerHTML = ""; $("#roll").innerHTML = ""; $("#rooms").innerHTML = "";
-  $("#export").innerHTML = ""; $("#boxes").innerHTML = ""; $("#big").removeAttribute("src");
+  $("#export").innerHTML = ""; $("#boxes").innerHTML = ""; $("#big").removeAttribute("src"); $("#turn").innerHTML = "";
   $("#lines").insertAdjacentHTML("beforebegin", `<div class="live" id="live">Uploading…<div class="bar2"><i></i></div></div>`);
   $("#app").scrollIntoView({ behavior: "smooth" });
   // show the visitor's first photo straight away; boxes arrive as Nemotron reads it

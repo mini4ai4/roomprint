@@ -32,7 +32,34 @@
     return /[.!?]$/.test(t) ? t : t + ".";
   }
 
-  const api = { brandModel, plural, photoLabel, sentence };
+  // what kind of work an unpriced line leaves for the family, from the reason the pricing step gave
+  function turnKind(p) {
+    const why = String((p || {}).why || "").toLowerCase();
+    if ((p || {}).status === "check" || why.includes("disagree")) return "shops disagree: pick one";
+    if (why.includes("titles")) return "books: list the titles";
+    if (why.includes("like-for-like")) return "only a different set or size found";
+    if (why.includes("searched yet")) return "not searched yet";
+    return "no shop price found";
+  }
+
+  // a shop search for the line, so the family can start from the same words the app searched with
+  function shopSearch(l) {
+    const q = String(((l.price || {}).query) || l.name || "").replace(/\s+price$/i, "");
+    return "https://www.google.com/search?tbm=shop&q=" + encodeURIComponent(q);
+  }
+
+  // "Your turn": every line still without a price, with the reason in a sentence, and how many of each kind
+  function yourTurn(items) {
+    const lines = (items || []).filter(l => !l.rcv).map(l => ({
+      n: l.n, name: l.name, room: l.room, quantity: l.quantity || 1, kind: turnKind(l.price),
+      why: sentence((l.price || {}).why || "no shop price found"), search: shopSearch(l) }));
+    const c = {};
+    lines.forEach(t => c[t.kind] = (c[t.kind] || 0) + 1);
+    const oneStore = (items || []).filter(l => l.rcv && (l.price || {}).status === "one source").length;
+    return { lines, kinds: Object.entries(c).sort((a, b) => b[1] - a[1]), oneStore };
+  }
+
+  const api = { brandModel, plural, photoLabel, sentence, turnKind, shopSearch, yourTurn };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else Object.assign(root, api);
 })(this);
