@@ -9,7 +9,7 @@ described (United Policyholders, 6-month survey). People write these lists from 
 they forget most of what they had.
 
 But the birthday photos, the Christmas mornings and the first-day-of-school pictures show the rooms behind the people.
-Roomprint reads those photos, finds the things in them, prices each one at a real store, and hands back a list in the
+Roomprint reads those photos, finds the things in them, prices each one from shop pages, and hands back a list in the
 columns the insurer already uses, with proof on every line: the crop of the photo it was seen in, the date of that
 photo, and the store page the price came from.
 
@@ -20,16 +20,19 @@ photo, and the store page the price came from.
 
 1. **Reads each photo.** NVIDIA Nemotron 3.5 Super VL looks past the people at the room and lists the things in it,
    each with a box on the photo. The crop becomes that line's evidence.
-2. **Keeps the claim clean.** Code drops people, pets, food and party decorations, and moves the house itself
+2. **Keeps the claim clean.** Code drops people, pets, food and party decorations (judged by what a line *is*, so a
+   child's desk, children's books, a food processor or a dog bed stay on the claim), and moves the house itself
    (kitchen cabinets, sinks, counters, flooring) to a separate list: policies pay for those under the building, not the
    contents, and an adjuster strikes them from a contents list.
 3. **Counts each thing once.** The same TV is in the birthday photo and the Christmas photo. Code proposes a pair only
-   when two sightings could be the same thing (same room, same kind, no clashing brand, never two from one photo);
+   when two sightings could be the same thing (same room, same kind of thing, no clashing brand, never two from one
+   photo: a microwave is never compared with a fridge);
    Nemotron VL then compares the two crops side by side. A merged item keeps every sighting.
-4. **Prices it at a real store.** Tavily searches for a new like-kind replacement. Code keeps only sentences that name
-   the item next to a dollar amount; Nemotron 3 Super picks the fair ones; code checks every pick (the amount is in
+4. **Prices it from shop pages.** Tavily searches for a new like-kind replacement. Code keeps only shop pages (news,
+   review, blog and publishing sites don't count) and only sentences that name the item next to a dollar amount; Nemotron 3 Super picks the fair ones; code checks every pick (the amount is in
    that sentence; not used, refurbished, "was", "starting at", per-month or an accessory; a "set of 4" becomes a unit
-   price). Two stores or more → the median. One store → flagged. None → "needs a price". Nothing is guessed.
+   price). Two stores or more → the median. One store → flagged. None → "needs a price". A shelf of books is priced
+   title by title, never as one number. Nothing is guessed.
 5. **Shows the maths.** Age comes from the earliest photo the item appears in. Actual cash value uses the rules State
    Farm publishes on its own worksheet (effective age ×1.4 below average, ×0.6 above average, depreciation capped at
    80%) with useful lives from United Policyholders' schedule, and each line shows its calculation. California requires
@@ -63,6 +66,26 @@ photo, and the store page the price came from.
 
 Reading nine photos and pricing about a hundred things costs about $0.05 in model calls. A daily cap stops calls
 before they happen.
+
+## How well it works on the sample home
+
+- **Reading photos:** 72 of 72 clearly visible things found in each of 3 runs over the 9 sample photos, rooms right
+  9/9, no fixtures and no people leaked into contents (`eval/run_vision.py --runs 3`, graded by code against a
+  hand-made list in `eval/ground_truth.json`).
+- **The sample home today:** 113 lines; 68 priced (16 from two or more shops, 52 from one shop and flagged);
+  45 still need a price (5 of them because two shops disagree too much to pick one). `eval/reapply_rules.py` re-applies the current rules to the finished run without reading
+  the photos again.
+- **Tests:** 68, no network and no models (`pytest -q tests`).
+
+## Limitations
+
+- The sample family and their photos are generated, and the eval's answer key was labelled on those same photos.
+  Real camera rolls are messier: low light, clutter, half-visible things.
+- Most priced lines rest on one shop and are flagged; 45 of 113 lines need a price from you. The list is a strong
+  first draft for an adjuster, not a finished claim.
+- Two similar things in different photos can still be counted twice when the crops are too small to compare (for
+  example two flat-screen TVs in one living room). Every line shows its photos so a person can check.
+- No family, adjuster or non-profit has used it yet.
 
 ## Run it
 
