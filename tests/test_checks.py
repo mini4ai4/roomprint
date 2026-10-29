@@ -21,7 +21,7 @@ def test_fixtures_go_to_the_building_not_the_claim():
 
 
 def test_people_food_and_party_things_are_not_property():
-    for n in ["child", "birthday cake", "balloons", "plate of cookies", "golden retriever dog"]:
+    for n in ["child", "birthday cake", "balloons", "cookies", "golden retriever dog"]:
         assert rules.is_not_an_item(n), n
     assert not rules.is_not_an_item("Peloton bike")
 
@@ -31,9 +31,10 @@ def test_things_for_children_pets_and_food_stay_on_the_claim():
     for n in ["children's toys", "child's bicycle", "children's books", "children's books (stack of ~40)",
               "white child's desk and chair set", "food processor", "baby crib", "baby monitor", "baby gate",
               "dog bed", "cat tree", "cake stand", "pet carrier", "kids bunk bed", "stuffed dog", "gift card",
-              "standing desk", "sleeping bag", "set of dog bowls", "desk with hutch"]:
+              "standing desk", "sleeping bag", "set of dog bowls", "desk with hutch", "baking sheet with cookies",
+              "dining table with food", "plate of cookies", "kitchen island with snacks"]:
         assert not rules.is_not_an_item(n), n
-    for n in ["young boy", "woman", "family", "sleeping cat", "baking sheet with cookies", "Happy Birthday banner",
+    for n in ["young boy", "woman", "family", "sleeping cat", "cookies on a baking sheet", "Happy Birthday banner",
               "wrapped Christmas presents", "gold balloon arch", "sunlight", "reflection in window",
               "presents under tree", "dog on the couch", "child standing on bed"]:
         assert rules.is_not_an_item(n), n
@@ -117,3 +118,17 @@ def test_export_columns_are_the_insurers():
     assert rows[0] == export.XACT and rows[1][4].startswith("PlayStation 5 console") and rows[1][10] == "649.99"
     rows = list(csv.reader(io.StringIO(export.to_csv(h, "fema"))))
     assert rows[0] == export.FEMA and "gamestop.example" in rows[1][2] and rows[1][11] == "428.99"
+
+
+def test_a_photo_read_keeps_the_baking_sheet_and_leaves_the_cookies(monkeypatch):
+    from PIL import Image
+    from roomprint.llm import Answer
+    reply = ('{"room": "kitchen", "items": ['
+             '{"name": "baking sheet with cookies", "category": "kitchenware", "box": [100, 100, 500, 400]},'
+             '{"name": "plate of cupcakes", "category": "kitchenware", "box": [500, 500, 700, 700]},'
+             '{"name": "cookies", "category": "other", "box": [100, 500, 400, 800]}]}')
+    monkeypatch.setattr(vision, "nemotron", lambda *a, **k: Answer(reply, "m", 0.1, 0.0, 1, 1))
+    r = vision.read_photo(Image.new("RGB", (800, 600)), "p1")
+    assert [i["name"] for i in r["items"]] == ["baking sheet", "plate"]
+    assert r["items"][0]["as_read"] == "baking sheet with cookies"
+    assert [d["name"] for d in r["dropped"]] == ["cookies"]

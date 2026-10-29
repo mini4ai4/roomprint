@@ -32,7 +32,16 @@ NOT_ITEM_HEADS = {"person", "people", "child", "children", "kid", "kids", "baby"
                   "cupcakes", "cookie", "cookies", "food", "snack", "snacks", "meal", "present", "presents", "gift",
                   "gifts", "shadow", "shadows", "sunlight", "reflection", "reflections"}
 # Party things that are never claimed whatever the head noun ("wrapped gift box", "balloon arch").
-NOT_ITEMS = [r"\bwrapped\b", r"\bballoons?\b", r"\bconfetti\b", r"\bbirthday banner\b", r"\b(with|of) (cookies|cupcakes|food|cake|candy|snacks)\b"]
+NOT_ITEMS = [r"\bwrapped\b", r"\bballoons?\b", r"\bconfetti\b", r"\bbirthday banner\b"]
+# Food sitting in or on something: the food is left off, the thing holding it is property. "baking sheet with
+# cookies" is a baking sheet; "cookies" alone is food (its head noun) and is dropped by NOT_ITEM_HEADS.
+FOOD_ON_IT = re.compile(r"(?i)\s+(?:with|of|full of)\s+(?:[a-z' -]*\s)?(?:cookies|cupcakes?|food|cakes?|candy|snacks?|"
+                        r"treats|fruit|sweets)\s*$")
+
+
+def without_food(name: str) -> str:
+    """The container's name with the food taken off: "plate of cookies" -> "plate"."""
+    return FOOD_ON_IT.sub("", name).strip() or name
 # A head noun like "dog" can still be a thing: a stuffed dog, a dog figurine.
 THING_WORDS = r"\b(stuffed|plush|toy|figurine|statue|sculpture|print|poster|painting|photo|frame|ornament|model)\b"
 

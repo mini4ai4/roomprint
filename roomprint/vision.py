@@ -101,8 +101,10 @@ def read_photo(im: Image.Image, photo_id: str) -> dict:
         name = str(it.get("name") or "").strip()
         if not name:
             continue
+        as_read = name
+        name = rules.without_food(name)  # "baking sheet with cookies": keep the sheet, not the cookies
         px, why = check_box(it.get("box"), im.width, im.height)
-        row = {"id": f"{photo_id}.{i}", "photo": photo_id, "name": name,
+        row = {"id": f"{photo_id}.{i}", "photo": photo_id, "name": name, **({"as_read": as_read} if as_read != name else {}),
                "brand": it.get("brand") or None, "model": it.get("model") or None,
                "category": rules.category(it.get("category")),
                "quantity": max(1, int(it.get("quantity") or 1)) if str(it.get("quantity") or "1").isdigit() else 1,
