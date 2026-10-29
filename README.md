@@ -31,8 +31,9 @@ photo, and the store page the price came from.
 4. **Prices it from shop pages.** Tavily searches for a new like-kind replacement. Code keeps only shop pages (news,
    review, blog and publishing sites don't count) and only sentences that name the item next to a dollar amount; Nemotron 3 Super picks the fair ones; code checks every pick (the amount is in
    that sentence; not used, refurbished, "was", "starting at", per-month or an accessory; a "set of 4" becomes a unit
-   price). Two stores or more → the median. One store → flagged. None → "needs a price". A shelf of books is priced
-   title by title, never as one number. Nothing is guessed.
+   price; a price for one piece never stands in for a set, and a set's price never stands in for one thing). Two
+   stores or more → the median. One store → flagged. None → "needs a price". Books are never priced by the shelf:
+   the line asks the family for the titles. Nothing is guessed.
 5. **Shows the maths.** Age comes from the earliest photo the item appears in. Actual cash value uses the rules State
    Farm publishes on its own worksheet (effective age ×1.4 below average, ×0.6 above average, depreciation capped at
    80%) with useful lives from United Policyholders' schedule, and each line shows its calculation. California requires
@@ -50,9 +51,9 @@ photo, and the store page the price came from.
 
 | A model proposes | Code checks |
 |---|---|
-| an item and its box | box inside the photo and big enough to show; not a person, pet, food or decoration; fixtures go to the building list |
+| an item and its box | box inside the photo and big enough to show; not a person, pet, food or decoration (a baking sheet of cookies stays, as a baking sheet); fixtures go to the building list |
 | "same object as in that photo" | only asked for plausible pairs; never two sightings from one photo; merged only on a confident yes |
-| a price | the amount is in a sentence Tavily returned, next to the item's name; new, not "was" or monthly; median of stores |
+| a price | the amount is in a sentence Tavily returned, next to the item's name; new, not "was" or monthly; the same set or single as the line; median of stores |
 | an age | from the photo's own date, not from the model |
 | the export | totals recomputed; every line carries its photo and its store link |
 
@@ -72,20 +73,21 @@ before they happen.
 - **Reading photos:** 72 of 72 clearly visible things found in each of 3 runs over the 9 sample photos, rooms right
   9/9, no fixtures and no people leaked into contents (`eval/run_vision.py --runs 3`, graded by code against a
   hand-made list in `eval/ground_truth.json`).
-- **The sample home today:** 113 lines; 68 priced (16 from two or more shops, 52 from one shop and flagged);
-  45 still need a price (5 of them because two shops disagree too much to pick one). `eval/reapply_rules.py` re-applies the current rules to the finished run without reading
-  the photos again.
-- **Real photographs:** 13 real photos of rooms from 13 different homes, never seen before: 12 read (one answer
-  came back unreadable and is reported), 217 things listed, 117 priced from shop pages. Checked by hand on two
-  photos: 21 of about 26 and 21 of about 22 visible things found. Results (names and numbers only, no photos):
+- **The sample home today:** 114 lines; 66 priced (16 from two or more shops, 50 from one shop and flagged);
+  48 still need a price (5 of them because two shops disagree too much to pick one). `eval/reapply_rules.py`
+  re-applies the current rules to the finished run without reading the photos or searching again (no paid calls).
+- **Real photographs:** 13 stock interior photos (real rooms, not generated; mostly bedrooms, no people in them),
+  never seen before: 12 read (one answer came back unreadable and is reported), 218 things listed, 114 priced
+  from shop pages under today's rules (117 before the set and books checks). Checked by hand on two photos: 21 of
+  about 26 and 21 of about 22 visible things found. Results (names and numbers only, no photos):
   `eval/results/real-photos-*.json`.
-- **Tests:** 68, no network and no models (`pytest -q tests`).
+- **Tests:** 113, no network and no models (`pytest -q tests`).
 
 ## Limitations
 
 - The sample family and their photos are generated, and the eval's answer key was labelled on those same photos.
   Real camera rolls are messier: low light, clutter, half-visible things.
-- Most priced lines rest on one shop and are flagged; 45 of 113 lines need a price from you. The list is a strong
+- Most priced lines rest on one shop and are flagged; 48 of 114 lines need a price from you (the "Your turn" list shows each one and why). The list is a strong
   first draft for an adjuster, not a finished claim.
 - Two similar things in different photos can still be counted twice when the crops are too small to compare (for
   example two flat-screen TVs in one living room). Every line shows its photos so a person can check.
