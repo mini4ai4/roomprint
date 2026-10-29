@@ -42,7 +42,7 @@ def index():
     hidden behind a cached old copy."""
     from fastapi.responses import HTMLResponse
     html = (WEB / "index.html").read_text()
-    for name in ("app.css", "app.js"):
+    for name in ("app.css", "fmt.js", "app.js"):
         v = int((WEB / "static" / name).stat().st_mtime)
         html = html.replace(f"/static/{name}", f"/static/{name}?v={v}")
     return HTMLResponse(html, headers={"Cache-Control": "no-cache"})
@@ -154,7 +154,7 @@ def export_csv(which: str, fmt: str = "xact"):
         h = json.loads(p.read_text())
     if fmt not in ("xact", "fema"):
         raise HTTPException(400)
-    name = f"inventory-{'state-farm-xactcontents' if fmt == 'xact' else 'fema-ff-206-fy-21-106'}.csv"
+    name = f"inventory-{'xactcontents' if fmt == 'xact' else 'fema-ff-206-fy-21-106'}.csv"
     return PlainTextResponse(export.to_csv(h, fmt), media_type="text/csv",
                              headers={"Content-Disposition": f'attachment; filename="{name}"'})
 

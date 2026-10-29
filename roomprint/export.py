@@ -28,7 +28,8 @@ def _desc(l: dict) -> str:
     bits = [l["name"]]
     if l.get("detail"):
         bits.append(l["detail"])
-    seen = f"seen in {len(l['sightings'])} photo(s)" + (f", earliest {l['earliest_photo']}" if l.get("earliest_photo") else "")
+    k = len(l['sightings'])
+    seen = f"seen in {k} photo{'' if k == 1 else 's'}" + (f", earliest {l['earliest_photo']}" if l.get("earliest_photo") else "")
     bits.append(seen)
     return "; ".join(bits)
 

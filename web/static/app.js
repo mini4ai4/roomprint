@@ -34,7 +34,7 @@ function chip(p) {
   if (!p || p.status === undefined) return `<span class="chip pending">pricing…</span>`;
   if (p.status === "priced") return `<span class="chip priced">${p.sources.length} stores</span>`;
   if (p.status === "one source") return `<span class="chip one">1 store</span>`;
-  if (p.status === "check") return `<span class="chip one">check</span>`;
+  if (p.status === "check") return `<span class="chip one" title="Two shops disagree too much to pick one">shops disagree</span>`;
   return `<span class="chip none">needs a price</span>`;
 }
 
@@ -86,7 +86,7 @@ function showPhoto(pid, hot) {
   $("#big").src = photoUrl(pid);
   $("#caption").textContent = `${ph.room[0].toUpperCase() + ph.room.slice(1)}` +
     (ph.taken ? ` · photo taken ${new Date(ph.taken + "T12:00").toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" })}` : " · no date in the file") +
-    ` · ${itemsInPhoto(pid).length} things on the list` + (ph.error ? ` · ${ph.error}` : "");
+    ` · ${plural(itemsInPhoto(pid).length, "thing")} on the list` + (ph.error ? ` · ${ph.error}` : "");
   $("#boxes").innerHTML = itemsInPhoto(pid).map(({ l, s }) => {
     const [x0, y0, x1, y1] = s.boxf;
     return `<div class="box ${l.sightings.length > 1 ? "merged" : ""}" data-n="${l.n}"
@@ -149,7 +149,7 @@ function drawLines(animate) {
     $(".thumb", li).setAttribute("style", cropStyle(s0.photo, s0.boxf, 56, 44));
     $(".name", li).textContent = (l.quantity > 1 ? l.quantity + " × " : "") + l.name;
     const bits = [l.room];
-    if (l.brand) bits.push(l.brand + (l.model ? " " + l.model : ""));
+    if (l.brand || l.model) bits.push(brandModel(l.brand, l.model));
     if (l.sightings.length > 1) bits.push(`in ${l.sightings.length} photos`);
     if (l.earliest_photo) bits.push(`since ${l.earliest_photo.slice(0, 4)} or earlier`);
     $(".sub", li).textContent = bits.join(" · ");
@@ -190,7 +190,7 @@ function drawAlso() {
   const h = S.h;
   $("#merged").innerHTML = (h.merges || []).map(m => `<div class="it"><b>${m.merged ? "One thing" : "Kept apart"}:</b>
       ${esc(m.a_name)} / ${esc(m.b_name)}<br><small>${esc(m.why)} (${Math.round(m.confidence * 100)}% sure)</small></div>`).join("") || "<div class='it'>Nothing seen twice.</div>";
-  $("#building").innerHTML = (h.building || []).map(b => `<div class="it"><b>${esc(b.name)}</b> · ${esc(b.photo)}<br><small>${esc(b.why)}</small></div>`).join("") || "<div class='it'>None.</div>";
+  $("#building").innerHTML = (h.building || []).map(b => `<div class="it"><b>${esc(b.name)}</b> · ${esc(photoLabel(h.photos, b.photo))}<br><small>${esc(b.why)}</small></div>`).join("") || "<div class='it'>None.</div>";
   $("#dropped").innerHTML = (h.dropped || []).map(b => `<div class="it"><b>${esc(b.name)}</b><br><small>${esc(b.why)}</small></div>`).join("") || "<div class='it'>None.</div>";
 }
 
@@ -219,9 +219,9 @@ function drawClock() {
 
 function drawExport(which) {
   $("#export").innerHTML = `
-    <a class="btn primary" href="/api/export/${which}.csv?fmt=xact">Download for State Farm (XactContents)</a>
-    <a class="btn ghost" href="/api/export/${which}.csv?fmt=fema">FEMA contents worksheet</a>
-    <span class="note">Columns copied from the insurers' own worksheets. Each line keeps its store link.</span>`;
+    <a class="btn primary" href="/api/export/${which}.csv?fmt=xact">Export: XactContents format</a>
+    <a class="btn ghost" href="/api/export/${which}.csv?fmt=fema">Export: FEMA contents worksheet</a>
+    <span class="note">Columns copied from the claim worksheets adjusters use. The FEMA file keeps each priced line's store link.</span>`;
 }
 
 async function showHousehold(h, base, who) {
@@ -246,7 +246,7 @@ $("#files").onchange = async e => {
   const files = [...e.target.files].slice(0, 8);
   if (!files.length) return;
   $("#app").hidden = false;
-  $("#who").innerHTML = `<b>Your photos</b><span>Reading ${files.length} photo(s) on live Nemotron…</span>`;
+  $("#who").innerHTML = `<b>Your photos</b><span>Reading ${plural(files.length, "photo")} on live Nemotron…</span>`;
   $("#totals").innerHTML = ""; $("#lines").innerHTML = ""; $("#roll").innerHTML = ""; $("#rooms").innerHTML = "";
   $("#export").innerHTML = ""; $("#boxes").innerHTML = ""; $("#big").removeAttribute("src");
   $("#lines").insertAdjacentHTML("beforebegin", `<div class="live" id="live">Uploading…<div class="bar2"><i></i></div></div>`);
@@ -273,7 +273,7 @@ async function poll(job, n) {
   if (j.stage === "error") return liveError(j.error);
   if (j.stage === "done") {
     live && live.remove();
-    await showHousehold(j.result, `/photos/${job}`, `<b>Your list</b><span>${Object.keys(j.result.photos).length} photos · ${j.result.cost.calls} model calls · $${j.result.cost.usd.toFixed(3)}. Nothing here is saved to an account; keep the download.</span>`);
+    await showHousehold(j.result, `/photos/${job}`, `<b>Your list</b><span>${plural(Object.keys(j.result.photos).length, "photo")} · ${plural(j.result.cost.calls, "model call")} · $${j.result.cost.usd.toFixed(3)}. Nothing here is saved to an account; keep the download.</span>`);
     drawExport(job);
     return;
   }
@@ -286,7 +286,7 @@ async function poll(job, n) {
       return `<div class="box" style="left:${x0 * 100}%;top:${y0 * 100}%;width:${(x1 - x0) * 100}%;height:${(y1 - y0) * 100}%"><span class="tag">${esc(i.name)}</span></div>`;
     }).join("");
     [...$("#boxes").children].forEach((b, k) => setTimeout(() => b.classList.add("on"), 120 * k));
-    $("#caption").textContent = `${ph.room ? ph.room[0].toUpperCase() + ph.room.slice(1) : "Your photo"} · ${ph.items.length} things found`;
+    $("#caption").textContent = `${ph.room ? ph.room[0].toUpperCase() + ph.room.slice(1) : "Your photo"} · ${plural(ph.items.length, "thing")} found`;
   }
   if (total) {
     $("#lines").innerHTML = (j.items || []).map(i => {
@@ -298,7 +298,7 @@ async function poll(job, n) {
     }).join("");
   }
   const pct = j.stage === "pricing" || j.stage === "priced" ? 40 + 60 * priced / Math.max(1, total) : 40 * read / n;
-  live.innerHTML = (j.stage === "priced" || j.stage === "pricing" ? `Found ${total} things. Pricing each from shop pages: ${priced} of ${total}…` :
+  live.innerHTML = (j.stage === "priced" || j.stage === "pricing" ? `Found ${plural(total, "thing")}. Pricing each from shop pages: ${priced} of ${total}…` :
     j.stage === "merging" ? "Checking which things appear in more than one photo…" : `Reading photos: ${read} of ${n}…`) +
     `<div class="bar2"><i style="width:${pct}%"></i></div>`;
   setTimeout(() => poll(job, n), 1500);
