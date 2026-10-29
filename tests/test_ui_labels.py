@@ -71,3 +71,10 @@ def test_export_file_name_carries_no_insurer_brand():
     assert "xactcontents" in cd and "state-farm" not in cd
     page = TestClient(app).get("/").text
     assert "/static/fmt.js?v=" in page and page.index("fmt.js") < page.index("app.js")
+
+
+@node
+def test_a_reason_reads_as_a_sentence_before_the_next_one():
+    assert js('f.sentence("only second-hand listings found")') == "Only second-hand listings found."
+    assert js('f.sentence("Two sources disagree.")') == "Two sources disagree."
+    assert js('f.sentence("")') == ""

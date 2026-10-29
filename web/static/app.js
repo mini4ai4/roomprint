@@ -179,7 +179,7 @@ function toggleMore(li, force) {
     <div class="sights">${l.sightings.map(s => `<span data-p="${s.photo}" style="${cropStyle(s.photo, s.boxf, 92, 70)}"><i>${esc((S.h.photos[s.photo] || {}).taken || s.photo)}</i></span>`).join("")}</div>
     <h4>Price today, new, like kind and quality</h4>
     ${l.unit_rcv ? `<div>${money2(l.unit_rcv)} each${p.status === "priced" ? ", the median of " + p.sources.length + " stores" : p.status === "one source" ? ", one store only: worth a second look" : ""}. ${esc(p.note || "")}</div>` :
-      `<div>${esc(p.why || "Still looking.")} You can add a price from a receipt or a store page by hand.</div>`}
+      `<div>${esc(sentence(p.why || "Still looking"))} You can add a price from a receipt or a store page by hand.</div>`}
     ${src}${aside}${rej}
     <div style="font-size:12px;color:var(--ink-3);margin-top:4px">Searched: “${esc(p.query || "")}”</div>
     ${l.unit_rcv ? `<h4>Actual cash value</h4><div class="maths">${money2(l.rcv)} − ${l.dep_pct}% = ${money2(l.acv)} · ${esc(l.dep_why || "")}</div>` : ""}`;

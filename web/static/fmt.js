@@ -24,7 +24,15 @@
     return ph.taken ? `${room} photo, ${ph.taken}` : `${room} photo`;
   }
 
-  const api = { brandModel, plural, photoLabel };
+  // "only second-hand listings found" -> "Only second-hand listings found." so the next sentence doesn't run on
+  function sentence(t) {
+    t = String(t || "").trim();
+    if (!t) return "";
+    t = t[0].toUpperCase() + t.slice(1);
+    return /[.!?]$/.test(t) ? t : t + ".";
+  }
+
+  const api = { brandModel, plural, photoLabel, sentence };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else Object.assign(root, api);
 })(this);
