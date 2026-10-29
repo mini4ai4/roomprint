@@ -75,6 +75,10 @@ before they happen.
 - **The sample home today:** 113 lines; 68 priced (16 from two or more shops, 52 from one shop and flagged);
   45 still need a price (5 of them because two shops disagree too much to pick one). `eval/reapply_rules.py` re-applies the current rules to the finished run without reading
   the photos again.
+- **Real photographs:** 13 real photos of rooms from 13 different homes, never seen before: 12 read (one answer
+  came back unreadable and is reported), 217 things listed, 117 priced from shop pages. Checked by hand on two
+  photos: 21 of about 26 and 21 of about 22 visible things found. Results (names and numbers only, no photos):
+  `eval/results/real-photos-*.json`.
 - **Tests:** 68, no network and no models (`pytest -q tests`).
 
 ## Limitations
