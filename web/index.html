@@ -23,7 +23,7 @@
   <div class="eyebrow">For families after a fire, flood or earthquake</div>
   <h1>Your home is still<br>in your photos.</h1>
   <p class="lede">The insurer wants a list of everything you owned. Roomprint rebuilds it from the birthday and
-    holiday photos already on your phone: every thing it finds, priced at a real store, with the photo that proves it.</p>
+    holiday photos already on your phone: every thing it finds, priced from a shop's own page, with the photo that proves it.</p>
   <div class="cta">
     <button id="show-sample" class="btn primary">Rebuild a sample home</button>
     <label class="btn ghost" for="files">Try your own photos
@@ -83,10 +83,11 @@
     <li><b>Count each thing once.</b> The same TV is in the birthday photo and the Christmas photo. Code only pairs
       sightings that could be the same thing (same room, same kind of item, no clashing brand); Nemotron VL then looks
       at the two crops side by side. Two lamps in one photo are always two lamps.</li>
-    <li><b>Price it at a real store.</b> Tavily searches for a new like-kind replacement. Code keeps only sentences
-      that name the item next to a dollar amount, Nemotron 3 Super picks the fair ones, and code checks every pick:
+    <li><b>Price it from shop pages.</b> Tavily searches for a new like-kind replacement. Code keeps only shop pages
+      (news, reviews and blogs don't count) and only sentences that name the item next to a dollar amount, Nemotron 3 Super picks the fair ones, and code checks every pick:
       the amount is in that sentence, it isn't used, "was", "starting at" or per-month. Two stores or more give the
-      median; one store is flagged; none means "needs a price". Nothing is guessed.</li>
+      median; one store is flagged; none means "needs a price". A shelf of books is priced title by title.
+      Nothing is guessed.</li>
     <li><b>Show the maths.</b> Age comes from the earliest photo the thing appears in. Actual cash value follows the
       depreciation rules State Farm publishes (effective age by condition, capped at 80%) with the useful lives from
       United Policyholders, and every line shows its own calculation.</li>

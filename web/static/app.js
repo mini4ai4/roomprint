@@ -298,7 +298,7 @@ async function poll(job, n) {
     }).join("");
   }
   const pct = j.stage === "pricing" || j.stage === "priced" ? 40 + 60 * priced / Math.max(1, total) : 40 * read / n;
-  live.innerHTML = (j.stage === "priced" || j.stage === "pricing" ? `Found ${total} things. Pricing each at real stores: ${priced} of ${total}…` :
+  live.innerHTML = (j.stage === "priced" || j.stage === "pricing" ? `Found ${total} things. Pricing each from shop pages: ${priced} of ${total}…` :
     j.stage === "merging" ? "Checking which things appear in more than one photo…" : `Reading photos: ${read} of ${n}…`) +
     `<div class="bar2"><i style="width:${pct}%"></i></div>`;
   setTimeout(() => poll(job, n), 1500);
