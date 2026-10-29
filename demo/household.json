@@ -739,40 +739,7 @@
     "query": "hardcover and paperback books price",
     "depth": "basic+advanced",
     "candidates": 8,
-    "sources": [
-     {
-      "price": 20.0,
-      "listed": 20.0,
-      "set_of": 1,
-      "url": "https://ebookwritingexperts.com/blog/how-much-does-a-book-cost",
-      "site": "ebookwritingexperts.com",
-      "quote": "Then, hardcover books will, on average, cost between $20 and $35."
-     },
-     {
-      "price": 8.0,
-      "listed": 8.0,
-      "set_of": 1,
-      "url": "https://heyimreading.com/2024/08/15/paperback-vs-hardcover-books",
-      "site": "heyimreading.com",
-      "quote": "Hardcover books are typically more expensive, too, maybe $8-10 more, depending on the boo"
-     },
-     {
-      "price": 15.95,
-      "listed": 15.95,
-      "set_of": 1,
-      "url": "https://prcbookprinting.com/hardcover-vs-paperback-book-printing-costs",
-      "site": "prcbookprinting.com",
-      "quote": "A paperback priced at $15.95 would be released in hardcove"
-     },
-     {
-      "price": 10.0,
-      "listed": 10.0,
-      "set_of": 1,
-      "url": "https://thepublishingheaven.com/blog/average-book-price",
-      "site": "thepublishingheaven.com",
-      "quote": "Paperback $10 to $20 Hardcover $20 to $35+"
-     }
-    ],
+    "sources": [],
     "rejected": [
      {
       "n": 3,
@@ -780,8 +747,8 @@
       "why": "$10 isn't in sentence 3"
      }
     ],
-    "status": "priced",
-    "price": 12.97,
+    "status": "needs a price",
+    "price": null,
     "note": "Priced as individual mixed hardcover/paperback books",
     "set_aside": [
      {
@@ -792,14 +759,10 @@
       "site": "printingcenterusa.com",
       "quote": "gCenterUSA, 500 copies of the same 100-page, 6\u00d79 book, paperback runs $2,443.23  which is $4.89 per copy, and hardcover runs"
      }
-    ]
+    ],
+    "why": "a shelf of books is priced title by title: list the titles you remember"
    },
-   "unit_rcv": 12.97,
-   "rcv": 77.82,
-   "acv": 52.14,
-   "dep_pct": 33.0,
-   "life": 10,
-   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%"
+   "unit_rcv": null
   },
   {
    "n": 6,
@@ -1202,19 +1165,10 @@
     "query": "stationary exercise bike with screen price",
     "depth": "basic+advanced",
     "candidates": 6,
-    "sources": [
-     {
-      "price": 200.0,
-      "listed": 200.0,
-      "set_of": 1,
-      "url": "https://www.runnersworld.com/gear/g39453730/best-exercise-bikes",
-      "site": "runnersworld.com",
-      "quote": "You can find a solid, no-frills stationary bike for around $200 to $300, while feature-packed"
-     }
-    ],
+    "sources": [],
     "rejected": [],
-    "status": "one source",
-    "price": 200.0,
+    "status": "needs a price",
+    "price": null,
     "note": "priced as mainstream mid-range new stationary exercise bike with screen and flywheel",
     "set_aside": [
      {
@@ -1225,14 +1179,20 @@
       "site": "nytimes.com",
       "quote": "You could spend $2,000 on a stationary bike \u2014 but $800 could still get you a quality"
      }
-    ]
+    ],
+    "not_shops": [
+     {
+      "price": 200.0,
+      "listed": 200.0,
+      "set_of": 1,
+      "url": "https://www.runnersworld.com/gear/g39453730/best-exercise-bikes",
+      "site": "runnersworld.com",
+      "quote": "You can find a solid, no-frills stationary bike for around $200 to $300, while feature-packed"
+     }
+    ],
+    "why": "no shop page priced it (news, review and blog pages don't count)"
    },
-   "unit_rcv": 200.0,
-   "rcv": 200.0,
-   "acv": 134.0,
-   "dep_pct": 33.0,
-   "life": 10,
-   "dep_why": "3.3 yr x 1 (Average) / 10 yr life = 33%"
+   "unit_rcv": null
   },
   {
    "n": 12,
@@ -3774,7 +3734,12 @@
     "query": "Nintendo Switch console price",
     "depth": "basic",
     "candidates": 19,
-    "sources": [
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "Priced as current Nintendo Switch Standard model",
+    "not_shops": [
      {
       "price": 339.99,
       "listed": 339.99,
@@ -3784,17 +3749,9 @@
       "quote": "endo Switch, which has cost $299.99 in the US since its release in 2017, is now priced at $339.99 on Nintendo\u2019s online store."
      }
     ],
-    "rejected": [],
-    "status": "one source",
-    "price": 339.99,
-    "note": "Priced as current Nintendo Switch Standard model"
+    "why": "no shop page priced it (news, review and blog pages don't count)"
    },
-   "unit_rcv": 339.99,
-   "rcv": 339.99,
-   "acv": 271.99,
-   "dep_pct": 20.0,
-   "life": 5,
-   "dep_why": "1 yr x 1 (Average) / 5 yr life = 20%"
+   "unit_rcv": null
   },
   {
    "n": 48,
@@ -4305,7 +4262,14 @@
       "url": "https://www.kohls.com/product/prd-3397105/ninja-air-fryer.jsp",
       "site": "kohls.com",
       "quote": "$97.49 $149.99 \u2026 4 Quart Electric Di"
-     },
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 97.49,
+    "note": "Priced as a standard 4-quart digital air fryer",
+    "set_aside": [],
+    "not_shops": [
      {
       "price": 69.0,
       "listed": 69.0,
@@ -4322,16 +4286,11 @@
       "site": "digitaltrends.com",
       "quote": "Normally priced at $99, Walmart just drastically cut the Ninja Air Fryer's price to $69."
      }
-    ],
-    "rejected": [],
-    "status": "priced",
-    "price": 69.0,
-    "note": "Priced as a standard 4-quart digital air fryer",
-    "set_aside": []
+    ]
    },
-   "unit_rcv": 69.0,
-   "rcv": 69.0,
-   "acv": 55.89,
+   "unit_rcv": 97.49,
+   "rcv": 97.49,
+   "acv": 78.97,
    "dep_pct": 19.0,
    "life": 10,
    "dep_why": "1.9 yr x 1 (Average) / 10 yr life = 19%"
@@ -5820,7 +5779,13 @@
       "url": "https://www.walmart.com/browse/electronics/65-inch-tvs/3944_1060825_2489948_3421074",
       "site": "walmart.com",
       "quote": "e TV (NEW 2025) - 144Hz, Dolby Atmos Onkyo Audio, Halo Control System - 65QM6K, Price Now $648.00 Was $799.99 Options from $648"
-     },
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 648.0,
+    "note": "Priced as mainstream mid-range 65-inch 4K Smart TV",
+    "not_shops": [
      {
       "price": 398.0,
       "listed": 398.0,
@@ -5829,15 +5794,11 @@
       "site": "us.smartprix.com",
       "quote": "Vizio VQM65C 65 inch Ultra HD 4K Smart QLED TV | $398 | Feb, 2026"
      }
-    ],
-    "rejected": [],
-    "status": "priced",
-    "price": 523.0,
-    "note": "Priced as mainstream mid-range 65-inch 4K Smart TV"
+    ]
    },
-   "unit_rcv": 523.0,
-   "rcv": 523.0,
-   "acv": 449.78,
+   "unit_rcv": 648.0,
+   "rcv": 648.0,
+   "acv": 557.28,
    "dep_pct": 14.0,
    "life": 10,
    "dep_why": "1.4 yr x 1 (Average) / 10 yr life = 14%"
@@ -5982,7 +5943,12 @@
     "query": "Nintendo Switch console price",
     "depth": "basic",
     "candidates": 19,
-    "sources": [
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "Priced as current Nintendo Switch (standard/white) model",
+    "not_shops": [
      {
       "price": 339.99,
       "listed": 339.99,
@@ -5992,17 +5958,9 @@
       "quote": "endo Switch, which has cost $299.99 in the US since its release in 2017, is now priced at $339.99 on Nintendo\u2019s online store."
      }
     ],
-    "rejected": [],
-    "status": "one source",
-    "price": 339.99,
-    "note": "Priced as current Nintendo Switch (standard/white) model"
+    "why": "no shop page priced it (news, review and blog pages don't count)"
    },
-   "unit_rcv": 339.99,
-   "rcv": 339.99,
-   "acv": 244.79,
-   "dep_pct": 28.0,
-   "life": 5,
-   "dep_why": "1.4 yr x 1 (Average) / 5 yr life = 28%"
+   "unit_rcv": null
   },
   {
    "n": 77,
@@ -8486,19 +8444,288 @@
    "dep_pct": 0.0,
    "life": 0,
    "dep_why": "not depreciated (no useful life)"
+  },
+  {
+   "id": "bedroom.12",
+   "photo": "bedroom",
+   "name": "children's toys",
+   "brand": null,
+   "model": null,
+   "category": "toys_games",
+   "quantity": 5,
+   "detail": "stuffed animals and colorful toys on rug and floor",
+   "shop_as": "children's plush toys and activity toys",
+   "seen": "scattered on rug and floor",
+   "confidence": 0.8,
+   "box": [
+    944,
+    872,
+    1600,
+    1194
+   ],
+   "boxf": [
+    0.59,
+    0.7303,
+    1.0,
+    1.0
+   ],
+   "room": "bedroom",
+   "sightings": [
+    {
+     "photo": "bedroom",
+     "id": "bedroom.12",
+     "box": [
+      944,
+      872,
+      1600,
+      1194
+     ],
+     "boxf": [
+      0.59,
+      0.7303,
+      1.0,
+      1.0
+     ]
+    }
+   ],
+   "price": {
+    "query": "children's plush toys and activity toys price",
+    "depth": "basic+advanced",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 8.94,
+      "listed": 8.94,
+      "set_of": 1,
+      "url": "https://www.walmart.com/browse/baby/soft-plush-toys/5427_491351_521195",
+      "site": "walmart.com",
+      "quote": "Sustainable Plush Stuffed Animal Baby and Toddler Toys, Price $8.94 \u2026 options"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 8.94,
+    "note": "priced as individual new plush stuffed animal"
+   },
+   "n": 110,
+   "earliest_photo": "2022-06-05",
+   "age_years": 3.3,
+   "condition": "Average",
+   "unit_rcv": 8.94,
+   "rcv": 44.7,
+   "acv": 8.94,
+   "dep_pct": 80.0,
+   "life": 2,
+   "dep_why": "3.3 yr x 1 (Average) / 2 yr life = 80% (capped at 80%)"
+  },
+  {
+   "id": "garage.2",
+   "photo": "garage",
+   "name": "child's bicycle",
+   "brand": null,
+   "model": null,
+   "category": "sports_outdoor",
+   "quantity": 1,
+   "detail": "small blue bike with training wheels, on drop cloth",
+   "shop_as": "child bicycle with training wheels",
+   "seen": "being worked on by person in center",
+   "confidence": 0.95,
+   "box": [
+    896,
+    591,
+    1040,
+    884
+   ],
+   "boxf": [
+    0.56,
+    0.495,
+    0.65,
+    0.7404
+   ],
+   "room": "garage",
+   "sightings": [
+    {
+     "photo": "garage",
+     "id": "garage.2",
+     "box": [
+      896,
+      591,
+      1040,
+      884
+     ],
+     "boxf": [
+      0.56,
+      0.495,
+      0.65,
+      0.7404
+     ]
+    }
+   ],
+   "price": {
+    "query": "child bicycle with training wheels price",
+    "depth": "basic+advanced",
+    "candidates": 5,
+    "sources": [
+     {
+      "price": 88.0,
+      "listed": 88.0,
+      "set_of": 1,
+      "url": "https://www.walmart.com/browse/sports-outdoors/bicycles-with-training-wheels/4125_1081404_9240575_7312004",
+      "site": "walmart.com",
+      "quote": "ck, Huffy 12\" Paw Patrol Kids' Bike, Fits Riders 37\" - 42\", Blue, Youth, Boy's, Price Now $88.00 Was $129.99"
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 88.0,
+    "note": "Priced as a new 12-inch child's bike with training wheels, mainstream mid-range"
+   },
+   "n": 111,
+   "earliest_photo": "2023-05-20",
+   "age_years": 2.3,
+   "condition": "Average",
+   "unit_rcv": 88.0,
+   "rcv": 88.0,
+   "acv": 67.76,
+   "dep_pct": 23.0,
+   "life": 10,
+   "dep_why": "2.3 yr x 1 (Average) / 10 yr life = 23%"
+  },
+  {
+   "id": "kids_room.5",
+   "photo": "kids_room",
+   "name": "children's books",
+   "brand": null,
+   "model": null,
+   "category": "books_media",
+   "quantity": 40,
+   "detail": "mixed hardcover and paperback children's books on shelves",
+   "shop_as": "children's books",
+   "seen": "on middle and bottom shelves of bookcase",
+   "confidence": 0.85,
+   "box": [
+    584,
+    543,
+    856,
+    955
+   ],
+   "boxf": [
+    0.365,
+    0.4548,
+    0.535,
+    0.7998
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.5",
+     "box": [
+      584,
+      543,
+      856,
+      955
+     ],
+     "boxf": [
+      0.365,
+      0.4548,
+      0.535,
+      0.7998
+     ]
+    }
+   ],
+   "price": {
+    "query": "children's books price",
+    "depth": "basic",
+    "candidates": 10,
+    "sources": [],
+    "rejected": [],
+    "status": "needs a price",
+    "price": null,
+    "note": "No specific new individual children's book price found in provided sentences",
+    "why": "no new-item price survived the checks"
+   },
+   "n": 112,
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "unit_rcv": null
+  },
+  {
+   "id": "kids_room.8",
+   "photo": "kids_room",
+   "name": "white child's desk and chair set",
+   "brand": null,
+   "model": null,
+   "category": "furniture",
+   "quantity": 1,
+   "detail": "small white desk with matching white chair, child height",
+   "shop_as": "white kids desk and chair set",
+   "seen": "by window, child sitting at desk",
+   "confidence": 0.9,
+   "box": [
+    864,
+    728,
+    1208,
+    1110
+   ],
+   "boxf": [
+    0.54,
+    0.6097,
+    0.755,
+    0.9296
+   ],
+   "room": "kid's room",
+   "sightings": [
+    {
+     "photo": "kids_room",
+     "id": "kids_room.8",
+     "box": [
+      864,
+      728,
+      1208,
+      1110
+     ],
+     "boxf": [
+      0.54,
+      0.6097,
+      0.755,
+      0.9296
+     ]
+    }
+   ],
+   "price": {
+    "query": "white kids desk and chair set price",
+    "depth": "basic+advanced",
+    "candidates": 6,
+    "sources": [
+     {
+      "price": 29.99,
+      "listed": 29.99,
+      "set_of": 1,
+      "url": "https://www.ikea.com/us/en/cat/study-furniture-accessories-700414",
+      "site": "ikea.com",
+      "quote": "Child's desk chair, white $29.99Price."
+     }
+    ],
+    "rejected": [],
+    "status": "one source",
+    "price": 29.99,
+    "note": "Priced as a single child's desk chair at IKEA"
+   },
+   "n": 113,
+   "earliest_photo": "2024-09-02",
+   "age_years": 1.0,
+   "condition": "Average",
+   "unit_rcv": 29.99,
+   "rcv": 29.99,
+   "acv": 26.99,
+   "dep_pct": 10.0,
+   "life": 10,
+   "dep_why": "1 yr x 1 (Average) / 10 yr life = 10%"
   }
  ],
  "merges": [
-  {
-   "a": "kitchen.5",
-   "b": "kitchen_dog.0",
-   "a_name": "stainless steel microwave oven",
-   "b_name": "stainless steel French door refrigerator with bottom freezer",
-   "same": false,
-   "confidence": 1.0,
-   "why": "The left object is a microwave with a control panel on the right, while the right object is a French door refrigerator with a bottom freezer and dispensers; they are entirely different appliances.",
-   "merged": false
-  },
   {
    "a": "kitchen.7",
    "b": "kitchen_dog.0",
@@ -8517,26 +8744,6 @@
    "same": false,
    "confidence": 0.9,
    "why": "The left microwave has a vertical handle and right-side control panel, while the right has a horizontal handle and left-side control panel, indicating different models.",
-   "merged": false
-  },
-  {
-   "a": "kitchen.6",
-   "b": "kitchen_dog.1",
-   "a_name": "gas stove and oven range",
-   "b_name": "over-the-range microwave",
-   "same": false,
-   "confidence": 1.0,
-   "why": "The left image shows a gas stove/oven range, while the right image shows an over-the-range microwave; they are distinct appliances.",
-   "merged": false
-  },
-  {
-   "a": "kitchen.5",
-   "b": "kitchen_dog.2",
-   "a_name": "stainless steel microwave oven",
-   "b_name": "gas stove and oven range",
-   "same": false,
-   "confidence": 1.0,
-   "why": "The left image shows a stainless steel microwave with a handle and control panel on the right, while the right image shows a stainless steel gas range with knobs and an oven below; they are different appliances.",
    "merged": false
   },
   {
@@ -8597,16 +8804,6 @@
    "same": false,
    "confidence": 0.9,
    "why": "The left block is a light wood two-tier angled block with a visible logo, while the right is a darker, more uniform block with a different handle arrangement and no matching logo.",
-   "merged": false
-  },
-  {
-   "a": "kitchen.10",
-   "b": "kitchen_dog.11",
-   "a_name": "glass mixing bowl with flour",
-   "b_name": "glass storage jars",
-   "same": false,
-   "confidence": 0.95,
-   "why": "The left is a single open mixing bowl with flour, while the right shows multiple lidded storage jars on shelves.",
    "merged": false
   },
   {
@@ -8739,9 +8936,7 @@
    "extension cords"
   ],
   "kid's room": [
-   "children's clothing",
    "shoes",
-   "board books",
    "art supplies",
    "backpack",
    "bedding",
@@ -8937,110 +9132,6 @@
  ],
  "dropped": [
   {
-   "id": "bedroom.12",
-   "photo": "bedroom",
-   "name": "children's toys",
-   "brand": null,
-   "model": null,
-   "category": "toys_games",
-   "quantity": 5,
-   "detail": "stuffed animals and colorful toys on rug and floor",
-   "shop_as": "children's plush toys and activity toys",
-   "seen": "scattered on rug and floor",
-   "confidence": 0.8,
-   "box": [
-    944,
-    872,
-    1600,
-    1194
-   ],
-   "boxf": [
-    0.59,
-    0.7303,
-    1.0,
-    1.0
-   ],
-   "why": "a person, pet, food or decoration, not property"
-  },
-  {
-   "id": "garage.2",
-   "photo": "garage",
-   "name": "child's bicycle",
-   "brand": null,
-   "model": null,
-   "category": "sports_outdoor",
-   "quantity": 1,
-   "detail": "small blue bike with training wheels, on drop cloth",
-   "shop_as": "child bicycle with training wheels",
-   "seen": "being worked on by person in center",
-   "confidence": 0.95,
-   "box": [
-    896,
-    591,
-    1040,
-    884
-   ],
-   "boxf": [
-    0.56,
-    0.495,
-    0.65,
-    0.7404
-   ],
-   "why": "a person, pet, food or decoration, not property"
-  },
-  {
-   "id": "kids_room.5",
-   "photo": "kids_room",
-   "name": "children's books",
-   "brand": null,
-   "model": null,
-   "category": "books_media",
-   "quantity": 40,
-   "detail": "mixed hardcover and paperback children's books on shelves",
-   "shop_as": "children's books",
-   "seen": "on middle and bottom shelves of bookcase",
-   "confidence": 0.85,
-   "box": [
-    584,
-    543,
-    856,
-    955
-   ],
-   "boxf": [
-    0.365,
-    0.4548,
-    0.535,
-    0.7998
-   ],
-   "why": "a person, pet, food or decoration, not property"
-  },
-  {
-   "id": "kids_room.8",
-   "photo": "kids_room",
-   "name": "white child's desk and chair set",
-   "brand": null,
-   "model": null,
-   "category": "furniture",
-   "quantity": 1,
-   "detail": "small white desk with matching white chair, child height",
-   "shop_as": "white kids desk and chair set",
-   "seen": "by window, child sitting at desk",
-   "confidence": 0.9,
-   "box": [
-    864,
-    728,
-    1208,
-    1110
-   ],
-   "boxf": [
-    0.54,
-    0.6097,
-    0.755,
-    0.9296
-   ],
-   "why": "a person, pet, food or decoration, not property"
-  },
-  {
    "id": "kitchen.9",
    "photo": "kitchen",
    "name": "baking sheet with cookies",
@@ -9168,18 +9259,18 @@
   }
  ],
  "totals": {
-  "items": 109,
-  "priced": 69,
-  "needs_price": 40,
-  "rcv": 23757.35,
-  "acv": 19761.14
+  "items": 113,
+  "priced": 68,
+  "needs_price": 45,
+  "rcv": 23115.73,
+  "acv": 19292.49
  },
  "cost": {
-  "calls": 132,
-  "usd": 0.0516,
+  "calls": 136,
+  "usd": 0.0525,
   "by_model": {
    "nano": 0,
-   "super": 101,
+   "super": 105,
    "ultra": 0,
    "vision": 31
   }

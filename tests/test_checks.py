@@ -26,6 +26,19 @@ def test_people_food_and_party_things_are_not_property():
     assert not rules.is_not_an_item("Peloton bike")
 
 
+def test_things_for_children_pets_and_food_stay_on_the_claim():
+    # The filter reads what the line IS, not words that describe it. Dropping these under-claims the loss.
+    for n in ["children's toys", "child's bicycle", "children's books", "children's books (stack of ~40)",
+              "white child's desk and chair set", "food processor", "baby crib", "baby monitor", "baby gate",
+              "dog bed", "cat tree", "cake stand", "pet carrier", "kids bunk bed", "stuffed dog", "gift card",
+              "standing desk", "sleeping bag", "set of dog bowls", "desk with hutch"]:
+        assert not rules.is_not_an_item(n), n
+    for n in ["young boy", "woman", "family", "sleeping cat", "baking sheet with cookies", "Happy Birthday banner",
+              "wrapped Christmas presents", "gold balloon arch", "sunlight", "reflection in window",
+              "presents under tree", "dog on the couch", "child standing on bed"]:
+        assert rules.is_not_an_item(n), n
+
+
 # ---------------------------------------------------------------- depreciation, shown and capped
 def test_acv_follows_the_published_rules():
     d = rules.acv(649.99, "electronics", 2, "Average", "PlayStation 5")
@@ -54,6 +67,12 @@ def test_only_plausible_pairs_are_compared():
     assert not dedupe.could_match(a, b, "living room", "bedroom")
     assert not dedupe.could_match({**a, "brand": "IKEA"}, {**b, "brand": "West Elm"}, "living room", "living room")
     assert not dedupe.could_match(a, {**b, "name": "floor lamp", "category": "lighting"}, "living room", "living room")
+    # same room and category, but a different kind of thing: never sent to the model
+    m = {"photo": "p1", "name": "stainless steel microwave", "category": "appliances_large", "brand": None}
+    f = {"photo": "p2", "name": "stainless steel French door refrigerator", "category": "appliances_large", "brand": None}
+    assert not dedupe.could_match(m, f, "kitchen", "kitchen")
+    assert dedupe.kind("65 inch flat screen TV") == dedupe.kind("large flat screen television") == "tv"
+    assert dedupe.kind("white child's desk and chair set") == "desk"
 
 
 # ---------------------------------------------------------------- a price has to be where the model says it is

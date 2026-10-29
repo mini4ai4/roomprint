@@ -4,7 +4,7 @@ Counting it three times would inflate the claim, and an adjuster who notices one
 the rest. Counting two real TVs as one cheats the family. So merging is careful:
 
 1. Code proposes pairs only when two sightings could be the same thing: same room type, same category,
-   names that share a word, and brands that don't contradict each other.
+   the same kind of thing (head noun), names that share a word, and brands that don't contradict each other.
 2. Nemotron Super VL looks at the two crops side by side and says whether it's the same physical object.
 3. Code merges only on a confident "same", and never merges two sightings from the same photo (two lamps in
    one picture are two lamps). A merged item keeps every sighting as evidence.
@@ -15,6 +15,7 @@ import re
 
 from PIL import Image
 
+from . import rules
 from .llm import nemotron
 from .vision import crop, jpeg_b64
 
@@ -40,7 +41,29 @@ def could_match(a: dict, b: dict, room_a: str, room_b: str) -> bool:
         return False
     if a.get("brand") and b.get("brand") and a["brand"].lower() != b["brand"].lower():
         return False
+    # Same kind of thing: a microwave and a fridge can share "stainless steel", but one is never the other.
+    if kind(a["name"]) != kind(b["name"]):
+        return False
     return bool(_words(a["name"]) & _words(b["name"]))
+
+
+SAME_KIND = {"television": "tv", "tvs": "tv", "fridge": "refrigerator", "sofa": "couch", "settee": "couch",
+             "sectional": "couch",
+             "laptop": "computer", "notebook": "computer", "lamp": "lamp", "lamps": "lamp"}
+
+
+def kind(name: str) -> str:
+    """The head noun, singular, with a few synonyms folded: 'gray fabric sofa' -> 'couch'."""
+    n = re.sub(r"\s+(set|unit|system|combo|piece|pieces|item|items)\s*$", "", name.strip(), flags=re.I)
+    if re.search(r"\bmicrowave\b", n, re.I):
+        return "microwave"  # "microwave oven" and "over-the-range microwave" are one kind
+    h = rules.head_noun(n)
+    h = SAME_KIND.get(h, h)
+    if h.endswith("ies") and len(h) > 4:
+        h = h[:-3] + "y"
+    elif h.endswith("s") and not h.endswith("ss") and len(h) > 3:
+        h = h[:-1]
+    return SAME_KIND.get(h, h)
 
 
 def side_by_side(left: Image.Image, right: Image.Image, h: int = 360) -> Image.Image:

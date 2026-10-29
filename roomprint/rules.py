@@ -23,10 +23,28 @@ DWELLING = [r"\b(kitchen|upper|lower|base|wall|bathroom|vanity) cabinet(s|ry)?\b
             r"^(built-in )?dishwasher$", r"\bshelving\b.*\bopen\b|\bopen shelving\b", r"\bmounted shelves\b",
             r"\bwindow blinds?\b|\bblinds\b"]
 
-# Never items: people, the moment, the room itself.
-NOT_ITEMS = [r"\bperson\b", r"\bpeople\b", r"\bchild(ren)?\b", r"\bkid(s)?\b", r"\bbaby\b", r"\bman\b", r"\bwoman\b",
-             r"\bballoon", r"\bbanner\b", r"\bstreamer", r"\bconfetti\b", r"\bcake\b", r"\bcookies?\b", r"\bfood\b",
-             r"\bwrapped\b", r"\bpresents?\b", r"\bgifts?\b(?! card)", r"\bpet\b", r"\bdog\b", r"\bcat\b", r"\bshadow\b", r"\bsunlight\b", r"\breflection\b"]
+# Never items: people, pets, food, party decorations, light. Matched on what the line IS (its head noun, the
+# last word), never on a word that only describes it: "child's desk", "food processor", "dog bed" and
+# "baby crib" are property and stay on the claim.
+NOT_ITEM_HEADS = {"person", "people", "child", "children", "kid", "kids", "baby", "babies", "toddler", "boy", "girl",
+                  "man", "woman", "men", "women", "family", "pet", "pets", "dog", "dogs", "puppy", "cat", "cats",
+                  "kitten", "balloon", "balloons", "banner", "streamer", "streamers", "confetti", "cake", "cupcake",
+                  "cupcakes", "cookie", "cookies", "food", "snack", "snacks", "meal", "present", "presents", "gift",
+                  "gifts", "shadow", "shadows", "sunlight", "reflection", "reflections"}
+# Party things that are never claimed whatever the head noun ("wrapped gift box", "balloon arch").
+NOT_ITEMS = [r"\bwrapped\b", r"\bballoons?\b", r"\bconfetti\b", r"\bbirthday banner\b", r"\b(with|of) (cookies|cupcakes|food|cake|candy|snacks)\b"]
+# A head noun like "dog" can still be a thing: a stuffed dog, a dog figurine.
+THING_WORDS = r"\b(stuffed|plush|toy|figurine|statue|sculpture|print|poster|painting|photo|frame|ornament|model)\b"
+
+
+def head_noun(name: str) -> str:
+    n = re.sub(r"\([^)]*\)", " ", name.lower())
+    n = re.sub(r"[^a-z' ]", " ", n)
+    n = re.split(r"\b(?:in|on|under|with|at|by|near|from|of|for|and)\b", n)[0] if not n.startswith(("set of", "stack of", "pair of")) else n
+    words = [w.strip("'") for w in n.split() if w.strip("'")]
+    while len(words) > 1 and re.fullmatch(r"(standing|sitting|sleeping|lying|holding|playing|smiling|posing|eating)", words[-1]):
+        words.pop()  # "child standing" is a child, not a stand
+    return re.sub(r"'s$", "", words[-1]) if words else ""
 
 # Useful life in years, from United Policyholders' published depreciation schedule
 # (uphelp.org/wp-content/uploads/2020/09/UP-Depreciation-Schedule.pdf). 0 = not depreciated (plants are
@@ -55,7 +73,11 @@ def is_dwelling(name: str) -> bool:
 
 def is_not_an_item(name: str) -> bool:
     n = name.lower()
-    return any(re.search(p, n) for p in NOT_ITEMS)
+    if any(re.search(p, n) for p in NOT_ITEMS):
+        return True
+    if re.search(THING_WORDS, n):
+        return False
+    return head_noun(n) in NOT_ITEM_HEADS
 
 
 def category(c: str | None) -> str:

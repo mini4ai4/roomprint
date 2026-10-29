@@ -100,6 +100,18 @@ def amounts(s: str) -> list[float]:
 # Places where a price is someone's opinion or a second-hand sale, not a store's price for a new item.
 NOT_A_STORE = re.compile(r"(reddit|facebook|youtube|tiktok|instagram|pinterest|quora|craigslist|offerup|mercari|poshmark|"
                          r"pricecharting|camelcamelcamel|slickdeals|ebay)\.")
+# News, reviews, magazines, blogs and publishing services: they mention prices, they don't sell the item. An
+# adjuster asks "where can I buy it for that?", so only shops count.
+EDITORIAL = re.compile(r"(theverge|runnersworld|cnet|wired|engadget|techradar|tomsguide|rtings|pcmag|zdnet|gizmodo|"
+                       r"nytimes|wirecutter|consumerreports|bestreviews|goodhousekeeping|foodandwine|bonappetit|"
+                       r"apartmenttherapy|thespruce|bobvila|forbes|businessinsider|cnn|usatoday|buzzfeed|wikipedia|"
+                       r"digitaltrends|smartprix|pricespy|medium|substack|blogspot|wordpress|tumblr)\.|"
+                       r"(blog|news|review|magazine|publishing|writing|writer|reading|printing|guide|digest)")
+LOT_OF_BOOKS = re.compile(r"(?i)\b(stack|pile|shelf|shelves|row|collection|assorted|set)\b.*\bbooks?\b|\bbooks?\b.*\b(stack|pile)\b")
+
+
+def is_store(host: str) -> bool:
+    return not NOT_A_STORE.search(host + ".") and not EDITORIAL.search(host + ".")
 
 
 def candidates(item: dict, results: list[dict]) -> list[dict]:
@@ -109,7 +121,7 @@ def candidates(item: dict, results: list[dict]) -> list[dict]:
     out = []
     for r in results:
         host = r["url"].split("/")[2].replace("www.", "")
-        if NOT_A_STORE.search(host + "."):
+        if not is_store(host):
             continue
         for s in re.split(r"(?<=[.!?])\s+|\n+", r.get("content") or ""):
             s = s.strip(" #*-·|")
@@ -126,7 +138,7 @@ quality.
 Item: {item}
 {rule}
 
-Numbered sentences from shopping and review pages (only these exist):
+Numbered sentences from shop pages (only these exist):
 {cands}
 
 Pick the sentences that state a price for a NEW product that would be a fair like-kind replacement.
@@ -198,6 +210,9 @@ def _price(item: dict, results: list[dict] | None, depth: str) -> dict:
     cands = candidates(item, results)
     out = {"query": q, "depth": depth, "candidates": len(cands), "sources": [], "rejected": [], "status": "needs a price",
            "price": None, "note": ""}
+    if LOT_OF_BOOKS.search(item["name"]) and not item.get("model"):
+        out["why"] = "a shelf of books is priced title by title: list the titles you remember"
+        return out
     if not cands:
         out["why"] = "no page named this item next to a price"
         return out
